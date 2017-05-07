@@ -1315,7 +1315,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Youtube', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+		$wp_customize->add_setting( 'facebook', array(		'default' => '',		'type' => 'theme_mod',		'capability' => 'edit_theme_options',		'transport' => '',		'sanitize_callback' => 'sanitize_text_field',	) );	$wp_customize->add_control( 'facebook', array(	    'type' => 'url',	    'priority' => 27,	    'section' => 'social_media_links',	    'label' => __( 'facebook', 'setmore-spasalon' ),	    'description' => '',	) );        
 //Business Hours Section
 
 	$wp_customize->add_section( 'business_hours', array(

@@ -72,7 +72,7 @@
  	$setmore_spasalon_email_send_button_custom			= get_theme_mod('email_send_button_custom');
  	$setmore_spasalon_linkedin							= get_theme_mod('linkedin');
  	$setmore_spasalon_twitter							= get_theme_mod('twitter');
- 	$setmore_spasalon_google_plus						= get_theme_mod('google_plus');
+ 	$setmore_spasalon_google_plus						= get_theme_mod('google_plus'); 	$setmore_spasalon_facebook  						= get_theme_mod('facebook');
  	$setmore_spasalon_youtube							= get_theme_mod('youtube');
  	$setmore_spasalon_sun_start							= get_theme_mod('sun_start');
  	$setmore_spasalon_mon_start							= get_theme_mod('mon_start');
