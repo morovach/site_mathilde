@@ -19,7 +19,7 @@ abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,  footer, header, hgroup,
-menu, nav, section, summary, time, mark, audio, video {
+menu, nav, section, summary, time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -29,7 +29,7 @@ menu, nav, section, summary, time, mark, audio, video {
 	background: transparent;
 }
 
-html {
+html{
 	font-size: 62.5%;
 	overflow-y: scroll;
 }
@@ -45,30 +45,30 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section{
 	display: block;
 }
 
 /* ul & li resets */
-ol, ul {
+ol, ul{
 	list-style: none;
 }
 
 /* blockquote reset */
-blockquote, q {
+blockquote, q{
 	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after {
+q:after{
 	content: '';
 	content: none;
 }
 
 /* link style resets */
-a {
+a{
 	margin: 0;
 	padding: 0;
 	font-size: 100%;
@@ -77,30 +77,30 @@ a {
 }
 
 a:hover,
-a:active {
+a:active{
 	outline: none;
 }
 
 /* table resets */
-table {
+table{
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 td,
-td img {
+td img{
 	vertical-align: top;
 }
 
 /* type & header styles */
-body {
+body{
 	font-size: 16px; /* for ie8 & below */
 	font-size: 1.6rem;
 	line-height: 1.6;
 	font-family: "Noto Sans", Tahoma, Geneva, sans-serif;
 }
 
-p {
+p{
 	hyphenate: auto;
 	hyphenate-before: 2;
 	hyphenate-after: 3;
@@ -111,27 +111,27 @@ p {
 select,
 input,
 textarea,
-button {
+button{
 	font: 99% sans-serif;
 	border-radius: 0;
 }
-	select {
+	select{
 		max-width: 100%;
 	}
 
-	input[type=search] {
+	input[type=search]{
 	  -webkit-appearance: none;
 	}
 
 body,
 select,
 input,
-textarea {
+textarea{
 	color: #222;
 }
 
 small,
-.small {
+.small{
 	font-size: 12px; /* for ie8 & below */
 	font-size: 1.2rem;
 	letter-spacing: 2px; /* for ie8 & below */
@@ -143,23 +143,23 @@ small,
 
 strong,
 th,
-.strong {
+.strong{
 	font-weight: bold;
 }
 
 em,
-.em {
+.em{
 	font-style: italic;
 }
 
 ins,
-.ins {
+.ins{
 	color: #000;
 	text-decoration: underline;
 }
 
 mark,
-.mark {
+.mark{
 	background-color: #ff9;
 	color: #000;
 	font-style: italic;
@@ -167,28 +167,28 @@ mark,
 }
 
 del,
-.del {
+.del{
 	text-decoration: line-through;
 }
 
 abbr[title],
-dfn[title] {
+dfn[title]{
 	border-bottom: 1px dotted;
 	cursor:help;
 }
 
-sub {
+sub{
 	vertical-align: sub;
 	font-size: smaller;
 }
 
-sup {
+sup{
 	vertical-align: super;
 	font-size: smaller;
 }
 
 /* code & pre box resets */
-pre {
+pre{
 	padding: 15px;
 	white-space: pre;
 	white-space: pre-wrap;
@@ -200,61 +200,61 @@ pre {
 pre,
 code,
 kbd,
-samp {
+samp{
 	font-family: monospace, sans-serif;
 	margin: 24px; /* for ie8 & below */
 	margin: 2.4rem;
 }
 
 input,
-select {
+select{
 	vertical-align:middle;
 }
 
-textarea {
+textarea{
 	overflow: auto;
 }
 
 .ie6 legend,
-.ie7 legend {
+.ie7 legend{
 	margin-left: -7px;
 }
 
-input[type="radio"] {
+input[type="radio"]{
 	vertical-align: text-bottom;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]{
 	vertical-align: bottom;
 }
 
-.ie7 input[type="checkbox"] {
+.ie7 input[type="checkbox"]{
 	vertical-align: baseline;
 }
 
-.ie6 input {
+.ie6 input{
 	vertical-align: text-bottom;
 }
 
 label,
 input[type=button],
 input[type=submit],
-button {
+button{
 	cursor: pointer;
 }
 
 button,
 input,
 select,
-textarea {
+textarea{
 	margin: 0;
 }
 
 /* vaidation */
 input:valid,
-textarea:valid {  }
+textarea:valid{  }
 input:invalid,
-textarea:invalid {
+textarea:invalid{
 	border-radius: 1px;
 
 
@@ -262,28 +262,28 @@ textarea:invalid {
 }
 
 .no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid {
+.no-boxshadow textarea:invalid{
 	background-color: #f0dddd;
 }
 
-button {
+button{
 	width: auto;
 	overflow: visible;
 }
 
 /* image resets */
 .ie7 img,
-.irem7 img {
+.irem7 img{
 	-ms-interpolation-mode: bicubic;
 }
 
 /* hidden elements */
-.hidden {
+.hidden{
 	display: none;
 	visibility: hidden;
 }
 
-.visuallyhidden {
+.visuallyhidden{
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
@@ -292,7 +292,7 @@ button {
 /* added from 320&Up Project */
 
 input,
-textarea  {
+textarea{
 	-webkit-box-sizing : border-box;
 	-moz-box-sizing : border-box;
 	-o-box-sizing : border-box;
@@ -301,7 +301,7 @@ textarea  {
 
 /* clearfixes */
 .clearfix:after,
-.menu ul:after {
+.menu ul:after{
 	content: ".";
 	display: block;
 	height: 0;
@@ -309,11 +309,11 @@ textarea  {
 	visibility: hidden;
 }
 
-.clearfix {
+.clearfix{
 	zoom: 1;
 }
 
-.clearfix:after {
+.clearfix:after{
 	clear: both;
 }
 
@@ -322,30 +322,30 @@ COMMON & REUSABLE STYLES
 ******************************************************************/
 
 /* floats */
-.left {
+.left{
 	float: left;
 }
 
-.right {
+.right{
 	float: right;
 }
 
 /* text alignment */
-.text-left {
+.text-left{
 	text-align: left;
 }
 
-.text-center {
+.text-center{
 	text-align: center;
 }
 
-.text-right {
+.text-right{
 	text-align: right;
 }
 
 /* highlighting search term on search page */
 mark,
-.search-term {
+.search-term{
 	background: #EBE16F;
 }
 
@@ -353,28 +353,28 @@ mark,
 .help,
 .info,
 .error,
-.success {
+.success{
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid #cecece;
 }
 
-.help {
+.help{
 	border-color: #E0C618;
 	background: #EBE16F;
 }
 
-.info {
+.info{
 	border-color: #92cae4;
 	background: #d5edf8;
 }
 
-.error {
+.error{
 	border-color: #fbc2c4;
 	background: #fbe3e4;
 }
 
-.success {
+.success{
 	border-color: #c6d880;
 	background: #e6efc2;
 }
@@ -383,7 +383,7 @@ mark,
 GENERAL STYLES
 ******************************************************************/
 
-body {
+body{
 	-webkit-text-size-adjust : 100%; /* font size on apple devices */
 	-ms-text-size-adjust : 100%;  /* font size on windows devices */
 }
@@ -396,39 +396,39 @@ h1 a, .h1 a,
 h2 a, .h2 a,
 h3 a, .h3 a,
 h4 a, .h4 a,
-h5 a, .h5 a {
+h5 a, .h5 a{
 	text-decoration: none;
 }
 
-h1, .h1 {
+h1, .h1{
 	font-size: 35px; /* for ie8 & below */
 	font-size: 3.5rem;
 	line-height: 32px; /* for ie8 & below */
 	line-height: 3.2rem;
 }
 
-h2, .h2 {
+h2, .h2{
 	font-size: 24px; /* for ie8 & below */
 	font-size: 2.4rem;
 	line-height: 30px; /* for ie8 & below */
 	line-height: 3.0rem;
 }
 
-h3, .h3 {
+h3, .h3{
 	font-size: 19px; /* for ie8 & below */
 	font-size: 1.9rem;
 	line-height: 24px; /* for ie8 & below */
 	line-height: 2.4rem;
 }
 
-h4, .h4 {
+h4, .h4{
 	font-size: 16px; /* for ie8 & below */
 	font-size: 1.6rem;
 	line-height: 18px; /* for ie8 & below */
 	line-height: 1.8rem;
 }
 
-h5, .h5 {
+h5, .h5{
 	font-size: 12px; /* for ie8 & below */
 	font-size: 1.2rem;
 	line-height: 40px; /* for ie8 & below */
@@ -441,18 +441,18 @@ h5, .h5 {
 GENERAL LAYOUT STYLES
 ******************************************************************/
 
-html, body {
+html, body{
 	height: 100%;
 }
 
-#wrapper {
+#wrapper{
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -70px;
 }
 
-#container {
+#container{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -461,55 +461,55 @@ html, body {
 
     z-index: 2500;
     background-size: cover;
-}
+}.main-page-parallax-0{    margin-bottom: -140px;    background-image: url(http://osteosaintjulien.x10host.com/wp-content/uploads/2017/05/bg-gris-degrade.jpg);    background-size: 100% 100%;}.main-page-parallax-1{    background-image: url(http://osteosaintjulien.x10host.com/wp-content/uploads/2017/05/bg-gris-degrade.jpg);    background-size: 100% 100%;}
 
 	/* layout options ( all have margins right & left of 1%) */
 
-	.col60 {
+	.col60{
 		width: 6.333%;
 	} /* width 60px / grid_1 */
 
-	.col140 {
+	.col140{
 		width: 14.667%;
 	} /* width 140px / grid_2 */
 
-	.col220 {
+	.col220{
 		width: 23.0%;
 	} /* width 220px / grid_3 */
 
-	.col300 {
+	.col300{
 		width: 31.333%;
 	} /* width 300px / grid_4 */
 
-	.col380 {
+	.col380{
 		width: 39.667%;
 	} /* width 380px / grid_5 */
 
-	.col480 {
+	.col480{
 		width: 48.0%;
 	} /* width 480px / grid_6 */
 
-	.col540 {
+	.col540{
 		width: 56.333%;
 	} /* width 540px / grid_7 */
 
-	.col620 {
+	.col620{
 		width: 64.667%;
 	} /* width 620px / grid_8 */
 
-	.col700 {
+	.col700{
 		width: 73.0%;
 	} /* width 700px / grid_9 */
 
-	.col780 {
+	.col780{
 		width: 81.333%;
 	} /* width 780px / grid_10 */
 
-	.col860 {
+	.col860{
 		width: 89.667%;
 	} /* width 860px / grid_11 */
 
-	.col940 {
+	.col940{
 		width: 98.0%;
 	} /* width 940px / grid_12 */
 
@@ -525,7 +525,7 @@ html, body {
 	.col700,
 	.col780,
 	.col860,
-	.col940 {
+	.col940{
 		display: inline;
 		float: left;
 		margin-left: 1%;
@@ -534,11 +534,11 @@ html, body {
 	}
 
 	/* default styles & fixes */
-	#main {
+	#main{
 		margin-left: 0;
 	} /* fixes alignment (defaulted at col620) */
 
-	#sidebar {
+	#sidebar{
 		margin-right: 0;
 	} /* fixes alignment (defaulted at col300) */
 
@@ -546,14 +546,14 @@ html, body {
 LINK STYLES
 ******************************************************************/
 
-a, a:visited {
+a, a:visited{
 	text-decoration: underline;
 }
-a:hover {
+a:hover{
 	text-decoration: none;
 }
-a:active {} /* on click */
-a:link {
+a:active{} /* on click */
+a:link{
 	-webkit-tap-highlight-color : rgba(0,0,0,0); /* this highlights links on Iphones / iPads */
 }
 
@@ -562,21 +562,21 @@ TEXT SELECTION STYLES
 ******************************************************************/
 
 /* Safari, Chrome, iPhones, iPads */
-::-webkit-selection {
+::-webkit-selection{
 	background: #000;
 	color: #fff;
 	text-shadow : none;
 }
 
 /* Firefox */
-::-moz-selection {
+::-moz-selection{
 	background: #000;
 	color: #fff;
 	text-shadow : none;
 }
 
 /* The Rest */
-::selection {
+::selection{
 	background: #000;
 	color: #fff;
 	text-shadow : none;
@@ -588,76 +588,76 @@ WORDPRESS BODY CLASSES
 want to style a page via body class? go ahead
 ******************************************************************/
 
-body.rtl {}
-body.home {} /* home page */
-body.blog {}
-body.archive {} /* archive page */
-body.date {} /* date archive page */
-	body.date-paged-1 {} /* replace the number to the corresponding page number */
-body.search {} /* search page */
-	body.search-results {} /* search result page */
-	body.search-no-results {} /* no results search page */
-	body.search-paged-1 {} /* individual paged search (i.e. body.search-paged-3) */
-body.error404 {} /* 404 page */
-body.single {} /* single post page */
-	body.postid-1 {} /* individual post page by id (i.e. body.postid-73) */
-	body.single-paged-1 {} /* individual paged single (i.e. body.single-paged-3) */
-body.attachment {} /* attatchment page */
-	body.attachmentid-1 {} /* individual attatchment page (i.e. body.attachmentid-763) */
-	body.attachment-mime-type {} /* style mime type pages */
-body.author {} /* author page */
-	body.author-nicename {} /* user nicename (i.e. body.author-samueladams) */
-	body.author-paged-1 {} /* paged author archives (i.e. body.author-paged-4) for page 4 */
-body.category {} /* category page */
-	body.category-1 {} /* individual category page (i.e. body.category-6) */
-	body.category-paged-1 {} /* replace the number to the corresponding page number */
-body.tag {} /* tag page */
-	body.tag-slug {} /* individual tag page (i.e. body.tag-news) */
-	body.tag-paged-1 {} /* replace the number to the corresponding page number */
-body.page-template {} /* custom page template page */
-	body.page-template-page-php {} /* individual page template (i.e. body.page-template-contact-php */
-	body.page-paged-1 {} /* replace the number to the corresponding page number */
-	body.page-parent {}
-	body.page-child {}
-	body.parent-pageid-1 {} /* replace the number to the corresponding page number */
-body.logged-in {} /* if user is logged in */
-body.paged {} /* paged items like search results or archives */
-	body.paged-1 {} /* individual paged (i.e. body.paged-3) */
+body.rtl{}
+body.home{} /* home page */
+body.blog{}
+body.archive{} /* archive page */
+body.date{} /* date archive page */
+	body.date-paged-1{} /* replace the number to the corresponding page number */
+body.search{} /* search page */
+	body.search-results{} /* search result page */
+	body.search-no-results{} /* no results search page */
+	body.search-paged-1{} /* individual paged search (i.e. body.search-paged-3) */
+body.error404{} /* 404 page */
+body.single{} /* single post page */
+	body.postid-1{} /* individual post page by id (i.e. body.postid-73) */
+	body.single-paged-1{} /* individual paged single (i.e. body.single-paged-3) */
+body.attachment{} /* attatchment page */
+	body.attachmentid-1{} /* individual attatchment page (i.e. body.attachmentid-763) */
+	body.attachment-mime-type{} /* style mime type pages */
+body.author{} /* author page */
+	body.author-nicename{} /* user nicename (i.e. body.author-samueladams) */
+	body.author-paged-1{} /* paged author archives (i.e. body.author-paged-4) for page 4 */
+body.category{} /* category page */
+	body.category-1{} /* individual category page (i.e. body.category-6) */
+	body.category-paged-1{} /* replace the number to the corresponding page number */
+body.tag{} /* tag page */
+	body.tag-slug{} /* individual tag page (i.e. body.tag-news) */
+	body.tag-paged-1{} /* replace the number to the corresponding page number */
+body.page-template{} /* custom page template page */
+	body.page-template-page-php{} /* individual page template (i.e. body.page-template-contact-php */
+	body.page-paged-1{} /* replace the number to the corresponding page number */
+	body.page-parent{}
+	body.page-child{}
+	body.parent-pageid-1{} /* replace the number to the corresponding page number */
+body.logged-in{} /* if user is logged in */
+body.paged{} /* paged items like search results or archives */
+	body.paged-1{} /* individual paged (i.e. body.paged-3) */
 
 /* new browser classes */
-body.browser-lynx {} /* lynx browsers */
-body.browser-gecko {} /* firefox browsers */
-body.browser-opera {} /* opera browsers */
-body.browser-ns4 {} /* ns4 browsers */
-body.browser-safari {} /* safari browsers */
-body.browser-chrome {} /* chrome browsers */
-body.browser-ie {} /* ie browsers ( aka dinosaurs) */
-body.browser-iphone {} /* iphones (expirimental, best to use Media Queries) */
+body.browser-lynx{} /* lynx browsers */
+body.browser-gecko{} /* firefox browsers */
+body.browser-opera{} /* opera browsers */
+body.browser-ns4{} /* ns4 browsers */
+body.browser-safari{} /* safari browsers */
+body.browser-chrome{} /* chrome browsers */
+body.browser-ie{} /* ie browsers ( aka dinosaurs) */
+body.browser-iphone{} /* iphones (expirimental, best to use Media Queries) */
 
 
 /******************************************************************
 HEADLINES & TITLES
 ******************************************************************/
 
-h1, .h1 {
+h1, .h1{
 	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
-h2, .h2 {
+h2, .h2{
 	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
-h3, .h3 {}
-h4, .h4 {}
-h5, .h5 {}
+h3, .h3{}
+h4, .h4{}
+h5, .h5{}
 
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {}
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a{}
 
 /******************************************************************
 HEADER SYTLES
 ******************************************************************/
 
-header[role=banner] {
+header[role=banner]{
     position: fixed;
     z-index: 3000;
     width: 100%;
@@ -665,14 +665,14 @@ header[role=banner] {
     padding: 20px 0;
 }
 	header[role=banner],
-	header[role=banner] div {
+	header[role=banner] div{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
-	#inner-header {
+	#inner-header{
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2%;
@@ -681,11 +681,11 @@ header[role=banner] {
         padding:5px;
 	}
 
-	#site-logo img {
+	#site-logo img{
 		max-width: 100%;
 	}
 
-	#site-heading {
+	#site-heading{
 		float: left;
 		width: 35%;
 		min-height: 60px; /* for ie8 & below */
@@ -696,7 +696,7 @@ header[role=banner] {
 		margin-bottom: 1rem;
 	}
 
-	#site-title {
+	#site-title{
 		margin-bottom: 8px; /* for ie8 & below */
 		margin-bottom: 0.8rem;
 		font-family: "Droid Sans", Arial, Helvetica, sans-serif;
@@ -708,17 +708,17 @@ header[role=banner] {
 		word-wrap: break-word;
 	}
 
-	#site-title a {
+	#site-title a{
 		text-decoration: none;
 	}
 
-	#site-description {
+	#site-description{
 		font-size: 14px; /* for ie8 & below */
 		font-size: 1.4rem;
 		color: #222;
 	}
 
-header[role=banner] #searchform {
+header[role=banner] #searchform{
 		position: absolute;
 		right: 0;
 		top: 25px; /* for ie8 & below */
@@ -726,11 +726,11 @@ header[role=banner] #searchform {
 	}
 
 	#searchform label,
-	#searchform input[type=submit] {
+	#searchform input[type=submit]{
 		display: none;
 	}
 
-	#s {
+	#s{
 		font-size: 20px; /* for ie8 & below */
 		font-size: 2.0rem;
 		background: url(library/images/icon-search.png) no-repeat #fff; /* for ie8 & below */
@@ -742,13 +742,13 @@ header[role=banner] #searchform {
 		border: 0;
 		outline: none;
 	}
-		header[role=banner] #s {
+		header[role=banner] #s{
 			min-width: 270px; /* for ie8 & below */
 			min-width: 27rem;
 		}
 
 		.post-content #s,
-		.widget #s {
+		.widget #s{
 			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
 			min-width: 80%;
@@ -756,17 +756,17 @@ header[role=banner] #searchform {
 			background-position: 7px 7px; /* for ie8 & below */
 			background-position: 0.7rem 0.7rem;
 		}
-			.widget #s {
+			.widget #s{
 				min-width: 100%;
 			}
 
-	#headerimg {
+	#headerimg{
 		width: 100%;
 		margin-bottom: 20px; /* for ie8 & below */
 		margin-bottom: 2rem;
 	}
 
-	#headerimg img {
+	#headerimg img{
 		width: 100%;
 		height: auto;
 		-webkit-box-sizing: border-box;
@@ -775,34 +775,34 @@ header[role=banner] #searchform {
 		box-sizing: border-box;
 	}
 
-.entry-header {
+.entry-header{
 	margin-bottom: 24px; /* for ie8 & below */
 	margin-bottom: 2.4rem;
 }
 
-.entry-title {
+.entry-title{
 	font-size: 24px; /* for ie8 & below */
 	font-size: 2.4rem;
 	line-height: 26px; /* for ie8 & below */
 	line-height: 2.6rem;
 }
-	.entry-title a {
+	.entry-title a{
 
 	}
-		.entry-title a:hover {
+		.entry-title a:hover{
 			color: #95a5a6;
 			text-decoration: underline;
 		}
 	body.page .entry-title,
 	body.single .entry-title,
-	.error404 .entry-title {
+	.error404 .entry-title{
 		font-size: 35px; /* for ie8 & below */
 		font-size: 3.5rem;
 		line-height: 38px; /* for ie8 & below */
 		line-height: 3.8rem;
 	}
 
-.page-header {
+.page-header{
 	margin: 20px 30px 0 30px; /* for ie8 & below */
 	margin: 2.0rem 3.0rem 0 3.0rem;
 }
@@ -811,16 +811,16 @@ header[role=banner] #searchform {
 NAVIGATION STYLES
 (Main Navigation)
 ******************************************************************/
-div.menu {
+div.menu{
 	font-size: 14px; /* for ie8 & below */
-	font-size: 1.4rem;        font-weight: bold
+	font-size: 1.4rem;    font-weight: bold
 }
-	div.menu > ul { }
-		div.menu ul li {
+	div.menu > ul{ }
+		div.menu ul li{
 			list-style-type: none;
 			float: left;
 		}
-			div.footer-menu ul li {
+			div.footer-menu ul li{
 				list-style-type: none;
 				display: inline-block;
 				padding-left: 7px;
@@ -828,20 +828,20 @@ div.menu {
 			}
 
 			div.footer-menu ul.sub-menu,
-			div.footer-menu ul.children {
+			div.footer-menu ul.children{
 				display: none;
 			}
 
-			div.menu ul li a {
+			div.menu ul li a{
 				display: block;
 				text-decoration: none;
 			}
-				div.menu ul li:last-child a {}
-				div.menu ul li a:hover {}
+				div.menu ul li:last-child a{}
+				div.menu ul li a:hover{}
 		div.menu ul li.current-menu-item a,
-		div.menu ul li.current_page_item a {}
+		div.menu ul li.current_page_item a{}
 		div.menu ul li ul.sub-menu,
-		div.menu ul li ul.children {
+		div.menu ul li ul.children{
 			position: absolute;
 			z-index: 9999;
 			width: 200px; /* for ie8 & below */
@@ -849,14 +849,14 @@ div.menu {
 			word-wrap: break-word;
 			display: none;
 		}
-			div.menu ul li ul li a {}
-				div.menu ul li ul li a:hover {}
-			div.menu ul li ul li:last-child a {}
-			div.menu ul li:hover > ul {
+			div.menu ul li ul li a{}
+				div.menu ul li ul li a:hover{}
+			div.menu ul li ul li:last-child a{}
+			div.menu ul li:hover > ul{
 				display: inline;
 			}
 				div.menu ul li ul li ul.sub-menu,
-				div.menu ul li ul li ul.children {
+				div.menu ul li ul li ul.children{
 					right: -199px; /* for ie8 & below */
 					right: -19.9rem;
 					position: absolute;
@@ -864,18 +864,18 @@ div.menu {
 					display: none;
 				}
 					div.menu ul li ul li:hover > ul.sub-menu,
-					div.menu ul li ul li:hover > ul.children {
+					div.menu ul li ul li:hover > ul.children{
 						display: inline;
 					}
 
-		.widget_nav_menu ul li {
+		.widget_nav_menu ul li{
 			float:none
 		}
 
 		.widget_nav_menu ul li ul.sub-menu,
 		.widget_nav_menu ul li ul.children,
 		.widget_pages ul li ul.sub-menu,
-		.widget_pages ul li ul.children {
+		.widget_pages ul li ul.children{
 			position: relative;
 			left: auto;
 			z-index: 9999;
@@ -887,10 +887,10 @@ div.menu {
 			margin-top: 0.8rem;
 		}
 			.widget_nav_menu ul li ul.sub-menu a,
-			.widget_nav_menu ul li ul.children a {}
+			.widget_nav_menu ul li ul.children a{}
 
 			.widget_nav_menu ul li ul li ul.sub-menu,
-			.widget_nav_menu ul li ul li ul.children {
+			.widget_nav_menu ul li ul li ul.children{
 				left: auto;
 				position: relative;
 				margin-left: 16px; /* for ie8 & below */
@@ -901,22 +901,22 @@ div.menu {
 				word-wrap: break-word;
 			}
 
-nav[role=navigation] {
+nav[role=navigation]{
 	display: inline-block;
 	padding-top: 20px;
 	padding-top: 2rem; /* for ie8 & below */
 	width: 50%;
     float:right;
 }
-	nav[role=navigation] div.menu {
+	nav[role=navigation] div.menu{
 		margin-right: -30px;
 		float: left;
 
 	}
 
-		nav[role=navigation] .menu ul li {}
+		nav[role=navigation] .menu ul li{}
 			nav[role=navigation] .menu ul li a,
-			nav[role=navigation] .menu #menu-icon {
+			nav[role=navigation] .menu #menu-icon{
 				padding: 10px 20px; /* for ie8 & below */
 				padding: 1rem 2rem;
 				-webkit-box-sizing: border-box;
@@ -926,22 +926,22 @@ nav[role=navigation] {
 				text-transform: uppercase;
 			}
 
-			nav[role=navigation] .menu #menu-icon {
+			nav[role=navigation] .menu #menu-icon{
 				cursor: pointer;
 				display: none;
 			}
 
-				nav[role=navigation] .menu ul li a:hover {
+				nav[role=navigation] .menu ul li a:hover{
 
 				}
 
-				nav[role=navigation] .menu ul li:first-child a {
+				nav[role=navigation] .menu ul li:first-child a{
 
 				}
 
 		nav[role=navigation] .menu ul li.current-menu-item a,
 		.nav ul li.current_page_item a,
-		nav[role=navigation] .menu ul li.current_page_item a {
+		nav[role=navigation] .menu ul li.current_page_item a{
 
 		}
 
@@ -953,7 +953,7 @@ nav[role=navigation] {
 			nav[role=navigation] .menu ul li.current_page_parent ul.children li a,
 			nav[role=navigation] .menu ul li.current_page_item ul.children li a,
 			.nav ul li.current_page_item ul.sub-menu li a,
-			nav[role=navigation] .menu ul li.current_page_item ul.sub-menu li a {
+			nav[role=navigation] .menu ul li.current_page_item ul.sub-menu li a{
 				background: none;
 			}
 
@@ -965,26 +965,26 @@ nav[role=navigation] {
 				nav[role=navigation] .menu ul li.current_page_parent ul.children li a:hover,
 				nav[role=navigation] .menu ul li.current_page_item ul.children li a:hover,
 				.nav ul li.current_page_item ul.sub-menu li a:hover,
-				nav[role=navigation] .menu ul li.current_page_item ul.sub-menu li a:hover {
+				nav[role=navigation] .menu ul li.current_page_item ul.sub-menu li a:hover{
 					background: #f2f2f2;
 
 				}
 
 
 		nav[role=navigation] .menu ul li ul.sub-menu,
-		nav[role=navigation] .menu ul li ul.children {
+		nav[role=navigation] .menu ul li ul.children{
 			background: #fcfcfc;
 		}
 
 		nav[role=navigation] .menu ul li ul.sub-menu li,
-		nav[role=navigation] .menu ul li ul.children li {
+		nav[role=navigation] .menu ul li ul.children li{
 			border-bottom: 1px solid #f0f0f0;
 			width: 200px; /* for ie8 & below */
 			width: 20rem;
 		}
 
 		nav[role=navigation] .menu ul li ul.sub-menu li a,
-		nav[role=navigation] .menu ul li ul.children li a {
+		nav[role=navigation] .menu ul li ul.children li a{
 			display: block;
 			min-height: 38px; /* for ie8 & below */
 			min-height: 3.8rem;
@@ -1000,37 +1000,37 @@ nav[role=navigation] {
 		}
 
 		nav[role=navigation] .menu ul li ul.sub-menu li:first-child,
-		nav[role=navigation] .menu ul li ul.children li:first-child {
+		nav[role=navigation] .menu ul li ul.children li:first-child{
 
 		}
 
 		nav[role=navigation] .menu ul li ul.sub-menu li:first-child a,
-		nav[role=navigation] .menu ul li ul.children li:first-child a {
+		nav[role=navigation] .menu ul li ul.children li:first-child a{
 
 		}
-			nav[role=navigation] .menu ul li ul li a {
+			nav[role=navigation] .menu ul li ul li a{
 				color: #555;
 				text-shadow: 0px 0px;
 
 			}
-				nav[role=navigation] .menu ul li ul li a:hover {
+				nav[role=navigation] .menu ul li ul li a:hover{
 					background: #f5f5f5;
 					color: #555;
 				}
 
-				nav[role=navigation] .menu ul li ul li ul li:first-child > a {
+				nav[role=navigation] .menu ul li ul li ul li:first-child > a{
 
 				}
 
-			nav[role=navigation] .menu ul li ul li:last-child a {}
-			nav[role=navigation] .menu ul li:hover ul {}
+			nav[role=navigation] .menu ul li ul li:last-child a{}
+			nav[role=navigation] .menu ul li:hover ul{}
 				nav[role=navigation] .menu ul li ul li ul.sub-menu,
-				nav[role=navigation] .menu ul li ul li ul.children {
+				nav[role=navigation] .menu ul li ul li ul.children{
 					margin-top: -38px; /* for ie8 & below */
 					margin-top: -3.8rem;
 				}
 					nav[role=navigation] .menu ul li ul li:hover ul.sub-menu,
-					nav[role=navigation] .menu ul li ul li:hover ul.children {
+					nav[role=navigation] .menu ul li ul li:hover ul.children{
 
 					}
 
@@ -1040,13 +1040,13 @@ THEME DEFAULT COLOR
 .pagination li a:hover, .pagination li.active a, #nav-above .nav-next a, #nav-below .nav-next a, #image-navigation .next-image a, #nav-above .nav-previous a, #nav-below .nav-previous a,	#image-navigation .previous-image a, .commentlist .comment-reply-link, .commentlist .comment-reply-login, #respond #submit, .intro-copy-box, .inner-title-wrap, .post-content ol > li:before, .post-content ul > li:before, .about-us-team-title h1:before, table.two th, .staff-book-now, #button-blue, .crunchify-top{
     background-color: #27c3bb;
 }
-.sendCopy label, .business-days, footer[role=contentinfo] {
+.sendCopy label, .business-days, footer[role=contentinfo]{
     background: #27c3bb;
 }
-.otw-button,.wrapup-button {
+.otw-button,.wrapup-button{
     background: #27c3bb;
 }
-.feedback-input:focus, #book-now-button a, .panel-button, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover {
+.feedback-input:focus, #book-now-button a, .panel-button, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover{
     border: 2px solid #27c3bb;
 }
 .main-page-post .grid-box:hover, .main-staff-post .grid-box:hover, .services-wrap .grid-box:hover{
@@ -1055,7 +1055,7 @@ THEME DEFAULT COLOR
 .staff-book-now:hover, .crunchify-top:hover, .otw-button:hover{
     color: #27c3bb;
 }
-a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-contact-icon-text ul li strong, .about-us-email-icon-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .about-us-location-icon-text ul li strong, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation] .menu ul li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation] .menu #menu-icon {
+a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-contact-icon-text ul li strong, .about-us-email-icon-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .about-us-location-icon-text ul li strong, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation] .menu ul li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation] .menu #menu-icon{
     color: #27c3bb;
 }
 p{
@@ -1068,7 +1068,7 @@ p{
 POSTS & CONTENT STYLES
 ******************************************************************/
 
-#content {
+#content{
 	padding-bottom: 1px; /* for ie8 & below */
 	padding-bottom: 0.1rem;
 	width: 96%;
@@ -1078,75 +1078,75 @@ POSTS & CONTENT STYLES
 	max-width: 125.4rem;
 }
 	#content,
-	#content div {
+	#content div{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
-	#content.alt-home-cont {
+	#content.alt-home-cont{
 		padding-top: 25px;
 	}
 
-	#main {
+	#main{
 		 /* adds bg to post area */
 		overflow: hidden;
 	}
-		#main #searchform {
+		#main #searchform{
 			margin-bottom: 35px; /* for ie8 & below */
 			margin-bottom: 3.5rem;
 		}
 
 	body.page-template-full-width-php #main,
-	body.page-template-full-width-page-php #main {}
-	body.attachment #main {}
+	body.page-template-full-width-page-php #main{}
+	body.attachment #main{}
 
-		article[id*=post-] {
+		article[id*=post-]{
 			padding: 35px 30px; /* for ie8 & below */
 			padding: 3.5rem 3.0rem;
 			word-wrap: break-word;
 		}
-			.sbfix article[id*=post-] {
+			.sbfix article[id*=post-]{
 				padding-left: 0;
 			}
 
-			.single article[id*=post-] {
+			.single article[id*=post-]{
 				padding-bottom: 0;
 			}
 
-			.single article[id*=post-].people {
+			.single article[id*=post-].people{
 				padding-top: 15px;
 			}
 
-			.full-width-content article[id*=post-] {
+			.full-width-content article[id*=post-]{
 				padding: 35px 0; /* for ie8 & below */
 				padding: 3.5rem 0;
 				padding-bottom: 0;
 			}
 
 		/* archive title */
-		.archive_title {
+		.archive_title{
 			padding: 0 20px;
 			margin: 20px 0 12px; /* for ie8 & below */
 			margin: 2.0rem 0 1.2rem;
 		}
 
-		article[id=post-not-found] h1 {}
+		article[id=post-not-found] h1{}
 
 		/* want to style individual post classes? Booya! */
-		.post-id {} /* post by id (i.e. post-3) */
-		.post {} /* general post style */
-		.page {} /* general article on a page style */
-		.attachment {} /* general style on an attatchment */
-		.sticky {} /* sticky post style */
-		.hentry {} /* hentry class */
-		.category-slug {} /* style by category (i.e. category-videos) */
-		.tag-slug {} /* style by tag (i.e. tag-news) */
+		.post-id{} /* post by id (i.e. post-3) */
+		.post{} /* general post style */
+		.page{} /* general article on a page style */
+		.attachment{} /* general style on an attatchment */
+		.sticky{} /* sticky post style */
+		.hentry{} /* hentry class */
+		.category-slug{} /* style by category (i.e. category-videos) */
+		.tag-slug{} /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.entry-meta,
-		.category-archive-meta {
+		.category-archive-meta{
 			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
 			line-height: 1.2;
@@ -1155,25 +1155,25 @@ POSTS & CONTENT STYLES
 			margin: 0 0 2.4rem 0;
 		}
 
-		.entry-summary {
+		.entry-summary{
 			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
 		}
-			.entry-meta a {
+			.entry-meta a{
 				color: #95a5a6 !important;
 				text-decoration: none;
 			}
-				.entry-meta a:hover {
+				.entry-meta a:hover{
 					text-decoration: underline;
 				}
 
-			.meta time {}
+			.meta time{}
 
 			.meta-by,
 			.meta-on,
 			.meta-com,
 			.meta-cat,
-			.meta-tag {
+			.meta-tag{
 				display: inline-block;
 				width: 20px;
 				height: 12px;
@@ -1185,35 +1185,35 @@ POSTS & CONTENT STYLES
 				margin-right: 2px;
 			}
 
-				.meta-by {
+				.meta-by{
 					background-image: url(library/images/meta-author-g.png);
 					margin-left: 15px;
 
 				}
-					.grid-box .byline {
+					.grid-box .byline{
 						display: none;
 						margin-top: 7px;
 					}
 
-					.grid-box .meta-by {
+					.grid-box .meta-by{
 						margin-left: 0;
 					}
 
-				.meta-on {
+				.meta-on{
 					background-image: url(library/images/meta-date-g.png);
 
 				}
 
-				.meta-com {
+				.meta-com{
 					background-image: url(library/images/meta-comment.png);
 				}
 
-				.meta-cat {
+				.meta-cat{
 					background-image: url(library/images/meta-cat.png);
 
 				}
 
-				.meta-tag {
+				.meta-tag{
 					background-image: url(library/images/meta-tag.png);
 					width: 16px;
 					margin-left: 20px;
@@ -1221,20 +1221,20 @@ POSTS & CONTENT STYLES
 
 
 		/* post content */
-		.post-content {
+		.post-content{
 			word-wrap: break-word;
 			margin-bottom: 40px; /* for ie8 & below */
 			margin-bottom: 4.0rem;
 			overflow: hidden;
 		}
 			.commentlist li.comment article[id*=comment-] p,
-			.post-content p {
+			.post-content p{
 				margin: 0 0 24px 0; /* for ie8 & below */
 				margin: 0 0 2.4rem 0;
 			}
 
 			.commentlist li.comment article[id*=comment-] p:last-child,
-			.post-content p:last-child {
+			.post-content p:last-child{
 
 			}
 
@@ -1244,7 +1244,7 @@ POSTS & CONTENT STYLES
 			.post-content h4, .commentlist li.comment article[id*=comment-] h4,
 			.post-content h5, .commentlist li.comment article[id*=comment-] h5,
 			.post-content h6, .commentlist li.comment article[id*=comment-] h6,
-			.post-content address, .commentlist li.comment article[id*=comment-] address {
+			.post-content address, .commentlist li.comment article[id*=comment-] address{
 				margin: 0 0 24px 0; /* for ie8 & below */
 				margin: 0 0 2.4rem 0;
 			}
@@ -1252,36 +1252,36 @@ POSTS & CONTENT STYLES
 			.commentlist li.comment article[id*=comment-] ul, .post-content ul,
 			.commentlist li.comment article[id*=comment-] ol, .post-content ol,
 			.commentlist li.comment article[id*=comment-] table, .post-content table,
-			.commentlist li.comment article[id*=comment-] dl, .post-content dl {
+			.commentlist li.comment article[id*=comment-] dl, .post-content dl{
 				margin: 24px 0; /* for ie8 & below */
 				margin: 2.4rem 0;
 			}
 				.commentlist li.comment article[id*=comment-] dl.wp-caption,
-				.post-content dl.wp-caption {
+				.post-content dl.wp-caption{
 					max-width: 100%;
 					margin: 0 auto;
 				}
 
 			.commentlist li.comment article[id*=comment-] table,
-			.post-content table {
+			.post-content table{
 				width: 100%;
 			}
 
 				.commentlist li.comment article[id*=comment-] table th,
-				.post-content table th {
+				.post-content table th{
 					border-bottom: 2px solid #848484;
 					text-align: left;
 				}
 
 				.commentlist li.comment article[id*=comment-] table td,
-				.post-content table td {
+				.post-content table td{
 					border-bottom: 1px solid #d0d0d0;
 					padding: 5px; /* for ie8 & below */
 					padding: 0.5rem;
 				}
 
 			.commentlist li.comment article[id*=comment-] ul, .post-content ul,
-			.commentlist li.comment article[id*=comment-] ol, .post-content ol {
+			.commentlist li.comment article[id*=comment-] ol, .post-content ol{
 				list-style-position: outside;
 				line-height: 1.5;
 				margin-left: 20px; /* for ie8 & below */
@@ -1291,29 +1291,29 @@ POSTS & CONTENT STYLES
 			}
 
 			.commentlist li.comment article[id*=comment-] li,
-			.post-content li {
+			.post-content li{
 				margin-bottom: 12px; /* for ie8 & below */
 				margin-bottom: 1.2rem;
 			}
 
 
-			.post-content ol {
+			.post-content ol{
 				list-style: none; /* Remove default numbering */
 				*list-style: decimal; /* Keep using default numbering for IE6/7 */
 				counter-reset: my-counter;
 			}
-				.commentlist li.comment article[id*=comment-] ol {
+				.commentlist li.comment article[id*=comment-] ol{
 					list-style: decimal;
 				}
 
-				.post-content ol > li {
+				.post-content ol > li{
 					list-style-type: none;
 					position: relative;
 					padding-left: 22px; /* for ie8 & below */
 					padding-left: 2.2rem;
 				}
 
-				.post-content ol > li:before {
+				.post-content ol > li:before{
 					content: counter(my-counter);
 					counter-increment: my-counter;
 					position: absolute;
@@ -1331,17 +1331,17 @@ POSTS & CONTENT STYLES
 				}
 
 
-			.post-content ul > li {
+			.post-content ul > li{
 				list-style: none;
 				position: relative;
 				padding-left: 22px; /* for ie8 & below */
 				padding-left: 2.2rem;
 			}
-				.commentlist li.comment article[id*=comment-] ul li {
+				.commentlist li.comment article[id*=comment-] ul li{
 					list-style: disc;
 				}
 
-				.post-content ul > li:before {
+				.post-content ul > li:before{
 					content: "";
 					position: absolute;
 					left: 0;
@@ -1362,7 +1362,7 @@ POSTS & CONTENT STYLES
 				}
 
 			.commentlist li.comment article[id*=comment-] blockquote,
-			.post-content blockquote {
+			.post-content blockquote{
 				font-style: italic;
 				line-height: 26px; /* for ie8 & below */
 				line-height: 2.6rem;
@@ -1371,7 +1371,7 @@ POSTS & CONTENT STYLES
 			}
 
 			.commentlist li.comment article[id*=comment-] blockquote:before,
-			.post-content blockquote:before {
+			.post-content blockquote:before{
 				font-family: Georgia, serif;
 				font-weight: 700;
 				content: "“";
@@ -1387,13 +1387,13 @@ POSTS & CONTENT STYLES
 
 
 			.commentlist li.comment article[id*=comment-] dl,
-			.post-content dl {
+			.post-content dl{
 				margin: 26px 0 26px; /* for ie8 & below */
 				margin: 2.6rem 0 2.6rem;
 			}
 
 			.commentlist li.comment article[id*=comment-] dt,
-			.post-content dt {
+			.post-content dt{
 				font-style: italic;
 				margin-top: 19px; /* for ie8 & below */
 				margin-top: 1.9rem;
@@ -1403,13 +1403,13 @@ POSTS & CONTENT STYLES
 				border-bottom: 1px solid #999;
 			}
 				.commentlist li.comment article[id*=comment-] dt.wp-caption-dt,
-				.post-content dt.wp-caption-dt {
+				.post-content dt.wp-caption-dt{
 					border: 0;
 					margin: 0 auto;
 				}
 
 			.commentlist li.comment article[id*=comment-] dd,
-			.post-content dd {
+			.post-content dd{
 				font-style: italic;
 				font-size: 13px; /* for ie8 & below */
 				font-size: 1.3rem;
@@ -1422,7 +1422,7 @@ POSTS & CONTENT STYLES
 			.commentlist li.comment article[id*=comment-] video, .post-content video,
 			.commentlist li.comment article[id*=comment-] object, .post-content object,
 			.commentlist li.comment article[id*=comment-] embed, .post-content embed,
-			.commentlist li.comment article[id*=comment-] iframe, .post-content iframe {
+			.commentlist li.comment article[id*=comment-] iframe, .post-content iframe{
 				display: block;
 				margin: 0 0 24px 0; /* for ie8 & below */
 				margin: 0 0 2.4rem 0;
@@ -1435,14 +1435,14 @@ POSTS & CONTENT STYLES
 				.full-width-content .commentlist li.comment article[id*=comment-] video, .full-width-content .post-content video,
 				.full-width-content .commentlist li.comment article[id*=comment-] object, .full-width-content .post-content object,
 				.full-width-content .commentlist li.comment article[id*=comment-] embed, .full-width-content .post-content embed,
-				.full-width-content .commentlist li.comment article[id*=comment-] iframe, .full-width-content .post-content iframe {
+				.full-width-content .commentlist li.comment article[id*=comment-] iframe, .full-width-content .post-content iframe{
 					min-height: 520px; /* for ie8 & below */
 					min-height: 52rem;
 				}
 
 
 			.commentlist li.comment article[id*=comment-] pre,
-			.post-content pre {
+			.post-content pre{
 				overflow: auto;
 				background: #f5f5f5;
 				border: 1px solid #f0f0f0;
@@ -1452,26 +1452,26 @@ POSTS & CONTENT STYLES
 			}
 
 			.commentlist li.comment article[id*=comment-] img,
-			.post-content img {
+			.post-content img{
 				margin: 0 0 24px 0; /* for ie8 & below */
 				margin: 0 0 2.4rem 0;
 				max-width: 100%;
 				height: auto;
 			}
 
-		article[id*=post-] footer {
+		article[id*=post-] footer{
 			clear: both;
 			margin: 24px 0 0; /* for ie8 & below */
 			margin: 2.4rem 0 0;
 		}
 
-		article[id*=post-] footer a {}
+		article[id*=post-] footer a{}
 
-		.more-link {
+		.more-link{
 
 		}
 
-		.edit-link {
+		.edit-link{
 			background: url(library/images/meta-edit.png) no-repeat left center;
 			padding-left: 20px;
 			margin-left: 20px;
@@ -1480,61 +1480,61 @@ POSTS & CONTENT STYLES
 /******************************************************************
 GALLERY STYLES
 ******************************************************************/
-.gallery {
+.gallery{
 	margin: 0 auto 18px; /* for ie8 & below */
 	margin: 0 auto 1.8rem;
 }
-.gallery .gallery-item {
+.gallery .gallery-item{
 	float: left;
 	margin-top: 0;
 	text-align: center;
 }
 
-.gallery-columns-3 .gallery-item {
+.gallery-columns-3 .gallery-item{
 	width: 33%;
 }
 
-.gallery-columns-2 .gallery-item {
+.gallery-columns-2 .gallery-item{
 	width: 50%;
 }
 
-.gallery-columns-4 .gallery-item {
+.gallery-columns-4 .gallery-item{
 	width: 23%;
 	margin-right: 2%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-5 .gallery-item {
+.gallery-columns-5 .gallery-item{
 	width: 18%;
 	margin-right: 2%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-6 .gallery-item {
+.gallery-columns-6 .gallery-item{
 	width: 14.5%;
 	margin-right: 2.1%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-7 .gallery-item {
+.gallery-columns-7 .gallery-item{
 	width: 12%;
 	margin-right: 2.2%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-8 .gallery-item {
+.gallery-columns-8 .gallery-item{
 	width: 10%;
 	margin-right: 2.5%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-9 .gallery-item {
+.gallery-columns-9 .gallery-item{
 	width: 9%;
 	margin-right: 2.1%;
 	margin-bottom: 0;
 }
 
-	.gallery .gallery-item a {
+	.gallery .gallery-item a{
 		padding: 0;
 		display: block;
 		box-sizing: border-box;
@@ -1542,7 +1542,7 @@ GALLERY STYLES
 		-webkit-box-sizing: border-box;
 	}
 
-.gallery img {
+.gallery img{
 
 	border: 1px solid white;
 	padding: 3%;
@@ -1553,18 +1553,18 @@ GALLERY STYLES
 	-webkit-box-sizing: border-box;
 }
 
-.gallery img:hover {
+.gallery img:hover{
 	background: white;
 }
-.gallery-columns-2 .attachment-medium {
+.gallery-columns-2 .attachment-medium{
 	max-width: 92%;
 	height: auto;
 }
-.gallery-columns-4 .attachment-thumbnail {
+.gallery-columns-4 .attachment-thumbnail{
 	max-width: 84%;
 	height: auto;
 }
-.gallery .gallery-caption {
+.gallery .gallery-caption{
 	color: #888;
 	font-size: 12px; /* for ie8 & below */
 	font-size: 1.2rem;
@@ -1575,22 +1575,22 @@ GALLERY STYLES
 }
 .gallery dl,
 .gallery dt,
-.gallery-icon {
+.gallery-icon{
 	margin: 0;
 	border-bottom: 0;
 	padding: 0;
 }
 /* Pick the second line break if two
 line breaks are adjacent */
-.gallery br+br {
+.gallery br+br{
 	display: none;
 }
 
 
-.size-full {}
-.size-large {}
-.size-medium {}
-.size-thumbnail {}
+.size-full{}
+.size-large{}
+.size-medium{}
+.size-thumbnail{}
 
 /******************************************************************
 POST FORMAT STYLES
@@ -1598,16 +1598,16 @@ POST FORMAT STYLES
 /* Aside, Quote, Status Posts */
 .format-aside .entry-header,
 .format-quote .entry-header,
-.format-status .entry-header {
+.format-status .entry-header{
 	display: none;
 }
 .single .format-aside .entry-header,
 .single .format-quote .entry-header,
-.single .format-status .entry-header  {
+.single .format-status .entry-header{
 	display: block;
 }
 .format-aside .entry-content,
-.format-status .entry-content {
+.format-status .entry-content{
 	padding-top: 0;
 	font-style: italic;
 	line-height: 26px; /* for ie8 & below */
@@ -1620,22 +1620,22 @@ POST FORMAT STYLES
 	border-left: 3px solid #f3f3f3;
 }
 .single .format-aside .entry-content,
-.single .format-aside .entry-summary {
+.single .format-aside .entry-summary{
 	padding-top: 0;
 }
 
 
 /* Image Posts */
 
-.single .format-image .entry-header {
+.single .format-image .entry-header{
 	display: block;
 }
 .format-image .entry-content,
-.format-image .entry-summary {
+.format-image .entry-summary{
 	padding-top: 0;
 }
 .single .format-image .entry-content,
-.single .format-image .entry-summary {
+.single .format-image .entry-summary{
 	padding-top: 0;
 }
 
@@ -1643,7 +1643,7 @@ POST FORMAT STYLES
 PAGE NAVI STYLES
 (Special Feature)
 ******************************************************************/
-.pagination {
+.pagination{
 	clear: both;
 	padding: 20px 0 30px 0; /* for ie8 & below */
 	padding: 2rem 0 3rem 0;
@@ -1657,7 +1657,7 @@ PAGE NAVI STYLES
 }
 
 .pagination a.page-numbers,
-.pagination span.page-numbers.current {
+.pagination span.page-numbers.current{
 	display: inline-block;
 	margin: 2px 2px 2px 0; /* for ie8 & below */
 	margin: 0.2rem 0.2rem 0.2rem 0;
@@ -1671,30 +1671,30 @@ PAGE NAVI STYLES
 
 
 .pagination a.page-numbers:hover,
-.pagination span.page-numbers.current {
+.pagination span.page-numbers.current{
 	padding: 6px 9px 5px 9px; /* for ie8 & below */
 	padding: 0.6rem 0.9rem 0.5rem 0.9rem;
 	color: #fff;
 }
 
 /* fallback previous & next links */
-.wp-prev-next {}
-	.wp-prev-next ul {}
-		.wp-prev-next .prev-link {}
-		.wp-prev-next .next-link {}
+.wp-prev-next{}
+	.wp-prev-next ul{}
+		.wp-prev-next .prev-link{}
+		.wp-prev-next .next-link{}
 
 /******************************************************************
 PAGE LINK STYLES
 ******************************************************************/
 
-.page-link {
+.page-link{
 	clear: both;
 	display: block;
 	margin: 0 0 26px; /* for ie8 & below */
 	margin: 0 0 2.6rem;
 }
 .page-link a,
-.page-link a:visited {
+.page-link a:visited{
 	background-color: #f2f2f2;
 	color: #373737;
 	margin: 0;
@@ -1702,25 +1702,25 @@ PAGE LINK STYLES
 	padding: 0.2rem 0.5rem;
 	text-decoration: none;
 }
-.page-link a:hover {
+.page-link a:hover{
 	background-color: #c9c9c9;
 	color: #fff;
 	font-weight: bold;
 }
-.page-link span {
+.page-link span{
 	margin-right: 6px; /* for ie8 & below */
 	margin-right: 0.6rem;
 }
 
 .wp-prev-next .prev-link,
 .nav-previous,
-.previous-image {
+.previous-image{
 	float: left;
 }
 
 .wp-prev-next .next-link,
 .nav-next,
-.next-image {
+.next-image{
 	float: right;
 }
 
@@ -1728,17 +1728,17 @@ PAGE LINK STYLES
 #comment-nav-below,
 #comment-nav-above,
 #nav-above,
-#nav-below {
+#nav-below{
 	display: block;
 	overflow: hidden;
 	margin: 0 30px 50px 0; /* for ie8 & below */
 	margin: 0 3rem 5rem 0;
 }
-	.pcont #nav-below {
+	.pcont #nav-below{
 		margin-left: 30px;
 	}
 
-	#image-navigation {
+	#image-navigation{
 		margin: 0 0 30px 0; /* for ie8 & below */
 		margin: 0 0 3rem 0;
 	}
@@ -1747,11 +1747,11 @@ PAGE LINK STYLES
 #comment-nav-below a,
 #nav-above a,
 #nav-below a,
-#image-navigation a {}
+#image-navigation a{}
 
 #nav-above a,
 #nav-below a,
-#image-navigation a {
+#image-navigation a{
 	display: block;
 	width: 34px;
 	height: 34px;
@@ -1761,13 +1761,13 @@ PAGE LINK STYLES
 
 	#nav-above .nav-next a,
 	#nav-below .nav-next a,
-	#image-navigation .next-image a {
+	#image-navigation .next-image a{
 		background: url(library/images/arrow-r.png) no-repeat center center;
 	}
 
 	#nav-above .nav-previous a,
 	#nav-below .nav-previous a,
-	#image-navigation .previous-image a {
+	#image-navigation .previous-image a{
 		background: url(library/images/arrow-l.png) no-repeat center center;
 	}
 
@@ -1775,7 +1775,7 @@ PAGE LINK STYLES
 	#comment-nav-below a:hover,
 	#nav-above a:hover,
 	#nav-below a:hover,
-	#image-navigation a:hover {}
+	#image-navigation a:hover{}
 
 
 
@@ -1783,20 +1783,20 @@ PAGE LINK STYLES
 SIDEBARS & ASIDES
 ******************************************************************/
 
-#sidebar {
+#sidebar{
 	float: right;
 	margin-top: 35px; /* for ie8 & below */
 	margin-top: 3.5rem;
 }
-	.sbfix #sidebar {
+	.sbfix #sidebar{
 		margin-top: -100px;
 	}
 
-	.sbfix.pgsb #sidebar {
+	.sbfix.pgsb #sidebar{
 		margin-top: -74px;
 	}
 
-	#sidebar .widget {
+	#sidebar .widget{
 		background-color: transparent;
 		margin: 0 0 50px 0; /* for ie8 & below */
 		margin: 0 0 5rem 0;
@@ -1805,13 +1805,13 @@ SIDEBARS & ASIDES
 		word-wrap: break-word;
 		font-size: 14px;
 	}
-		#sidebar .widget a {}
+		#sidebar .widget a{}
 
-		#sidebar .widget a:hover {}
+		#sidebar .widget a:hover{}
 
 		#sidebar .widget li,
 		.widget_nav_menu li,
-		#meta.widget aside a {
+		#meta.widget aside a{
 			line-height: 24px; /* for ie8 & below */
 			line-height: 2.4rem;
 			margin-bottom: 12px; /* for ie8 & below */
@@ -1819,20 +1819,20 @@ SIDEBARS & ASIDES
 		}
 
 			#sidebar .widget ul.sub-menu li:last-child,
-			#sidebar .widget ul.children li:last-child {
+			#sidebar .widget ul.children li:last-child{
 
 			}
 
-		#sidebar .widget  a {
+		#sidebar .widget  a{
 			color: #222;
 			text-decoration: none;
 		}
 
-		#sidebar .widget a:hover {
+		#sidebar .widget a:hover{
 			text-decoration: underline;
 		}
 
-		#sidebar .widget-title {
+		#sidebar .widget-title{
 			font-size: 18px; /* for ie8 & below */
 			font-size: 1.8rem;
 			line-height: 1;
@@ -1842,88 +1842,88 @@ SIDEBARS & ASIDES
 			border-bottom: 1px solid #dedede;
 			text-transform: uppercase;
 		}
-			#sidebar .widget-title a {
+			#sidebar .widget-title a{
 
 			}
 
-			.post-content .widget-title {}
+			.post-content .widget-title{}
 
 /* links widget */
-.widget_links {}
-.widget_links ul {}
-.widget_links ul li {}
-.widget_links ul li a {}
+.widget_links{}
+.widget_links ul{}
+.widget_links ul li{}
+.widget_links ul li a{}
 
 /* meta widget */
-.widget_meta {}
-.widget_meta ul {}
-.widget_meta ul li {}
-.widget_meta ul li a {}
+.widget_meta{}
+.widget_meta ul{}
+.widget_meta ul li{}
+.widget_meta ul li a{}
 
 /* pages widget */
-.widget_pages {}
-.widget_pages ul {}
-.widget_pages ul li {}
-.widget_pages ul li a {}
+.widget_pages{}
+.widget_pages ul{}
+.widget_pages ul li{}
+.widget_pages ul li a{}
 
 /* recent-posts widget */
-.widget_recent_entries {}
-.widget_recent_entries ul {}
-.widget_recent_entries ul li {}
-.widget_recent_entries ul li a {}
-.widget_recent_entries .post-date {
+.widget_recent_entries{}
+.widget_recent_entries ul{}
+.widget_recent_entries ul li{}
+.widget_recent_entries ul li a{}
+.widget_recent_entries .post-date{
 	margin-left: 10px;
 	font-style: italic;
 	opacity: 0.5;
 }
 
 /* archives widget */
-.widget_archive {}
-.widget_archive ul {}
-.widget_archive ul li {}
-.widget_archive ul li a {}
-.widget_archive select {}
-.widget_archive option {}
+.widget_archive{}
+.widget_archive ul{}
+.widget_archive ul li{}
+.widget_archive ul li a{}
+.widget_archive select{}
+.widget_archive option{}
 
 /* tag-cloud widget */
-.widget_links {}
-.widget_links li:after {}
-.widget_links li:before {}
-.widget_tag_cloud {}
-.widget_tag_cloud a {
+.widget_links{}
+.widget_links li:after{}
+.widget_links li:before{}
+.widget_tag_cloud{}
+.widget_tag_cloud a{
 	padding: 3px; /* for ie8 & below */
 	padding: 0.3rem;
 }
-.widget_tag_cloud a:after {
+.widget_tag_cloud a:after{
 	content: ",";
 }
-.widget_tag_cloud a:before {}
-.tagcloud {}
+.widget_tag_cloud a:before{}
+.tagcloud{}
 
 /* calendar widget */
-.widget_calendar {}
-#wp-calendar {
+.widget_calendar{}
+#wp-calendar{
 	text-align: center;
 	width: 95%;
 	margin: auto;
 }
 
-#calendar_wrap {
+#calendar_wrap{
 	padding: 0;
 }
 
-#calendar_wrap th {
+#calendar_wrap th{
 	border-top: 2px solid #ECF0F1;
 	border-bottom: 2px solid #ECF0F1;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-#calendar_wrap td {
+#calendar_wrap td{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-#wp-calendar tr td {}
-#wp-calendar caption {
+#wp-calendar tr td{}
+#wp-calendar caption{
 	font-size: 18px; /* for ie8 & below */
 	font-size: 1.8rem;
 	font-weight: bold;
@@ -1932,55 +1932,55 @@ SIDEBARS & ASIDES
 	text-transform: uppercase;
 }
 
-#wp-calendar a {}
-#wp-calendar #today {
+#wp-calendar a{}
+#wp-calendar #today{
 	background-color: #ECF0F1;
 }
-#wp-calendar #prev {}
-#wp-calendar #next {}
-#wp-calendar #next a {}
-#wp-calendar #prev a {}
+#wp-calendar #prev{}
+#wp-calendar #next{}
+#wp-calendar #next a{}
+#wp-calendar #prev a{}
 
 /* category widget */
-.widget_categories {}
-.widget_categories ul {}
-.widget_categories ul li {}
-.widget_categories ul ul.children {}
-.widget_categories a {}
+.widget_categories{}
+.widget_categories ul{}
+.widget_categories ul li{}
+.widget_categories ul ul.children{}
+.widget_categories a{}
 .widget_categories select{}
-.widget_categories select#cat {}
-.widget_categories select.postform {}
-.widget_categories option {}
-.widget_categories .level-0 {}
-.widget_categories .level-1 {}
-.widget_categories .level-2 {}
-.widget_categories .level-3 {}
+.widget_categories select#cat{}
+.widget_categories select.postform{}
+.widget_categories option{}
+.widget_categories .level-0{}
+.widget_categories .level-1{}
+.widget_categories .level-2{}
+.widget_categories .level-3{}
 
 /* recent-comments widget */
-.recentcomments {}
-#recentcomments {}
-#recentcomments li {}
-#recentcomments li a {}
-.widget_recent_comments {}
+.recentcomments{}
+#recentcomments{}
+#recentcomments li{}
+#recentcomments li a{}
+.widget_recent_comments{}
 
 /* search widget */
-#searchform {}
-.widget_search {}
-.widget_search #s {
+#searchform{}
+.widget_search{}
+.widget_search #s{
 	width: 60%;
 }
-.screen-reader-text {}
+.screen-reader-text{}
 
 /* text widget */
-.textwidget {}
-.widget_text {}
-.textwidget p {}
+.textwidget{}
+.widget_text{}
+.textwidget p{}
 
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
-#comments {}
-#comments-title {
+#comments{}
+#comments-title{
 	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	font-size: 30px; /* for ie8 & below */
 	font-size: 3rem;
@@ -1989,22 +1989,22 @@ COMMENT STYLES
 	margin: 0 3rem 2rem 0;
 	color: #bdc3c7;
 }/* h3 comment title */
-	#comments span {} /* number of comments span */
-.comment-nav {}
-	.comment-nav ul {}
-		.comment-nav ul li {}
+	#comments span{} /* number of comments span */
+.comment-nav{}
+	.comment-nav ul{}
+		.comment-nav ul li{}
 
-.commentlist {
+.commentlist{
 	margin: 0 30px 0 0;
 }
-	.full-width-content .commentlist {
+	.full-width-content .commentlist{
 		margin-right: 0;
 
 	}
 
-body.page-template-full-width-php .commentlist {}
+body.page-template-full-width-php .commentlist{}
 
-	.commentlist li.comment {
+	.commentlist li.comment{
 		position: relative;
 		margin: 0;
 		padding: 0 0 1px 0;
@@ -2012,11 +2012,11 @@ body.page-template-full-width-php .commentlist {}
 		overflow: hidden;
 	}
 
-		.commentlist footer.comment-head {
+		.commentlist footer.comment-head{
 
 	  	}
 
-	.commentlist li.pingback {
+	.commentlist li.pingback{
 		background-color: #fefefe;
 		padding: 24px; /* for ie8 & below */
 		padding: 2.4rem;
@@ -2026,7 +2026,7 @@ body.page-template-full-width-php .commentlist {}
 		border-radius: 3px;
 	}
 
-	.commentlist li.comment article[id*=comment-] {
+	.commentlist li.comment article[id*=comment-]{
 		background-color: #fefefe;
 		padding: 24px; /* for ie8 & below */
 		padding: 2.4rem;
@@ -2036,55 +2036,55 @@ body.page-template-full-width-php .commentlist {}
 		border-radius: 3px;
 	}
 
-	.commentlist #respond {
+	.commentlist #respond{
 		margin-left: 0;
 		margin-right: 0;
 	}
-		.commentlist #respond label {
+		.commentlist #respond label{
 			margin-left: 0;
 		}
 
 		.commentlist #respond #author,
 		.commentlist #respond #email,
 		.commentlist #respond #url,
-		.commentlist #respond #comment {
+		.commentlist #respond #comment{
 
 		}
 
-		.commentlist li[class*=depth-] {
+		.commentlist li[class*=depth-]{
 			margin-left: 35px; /* for ie8 & below */
 			margin-left: 3.5rem;
 		}
-			.commentlist li.depth-1 {
+			.commentlist li.depth-1{
 				margin-left: 0;
 				margin-top: 0;
 			}
-			.commentlist li.depth-2 {}
-			.commentlist li.depth-3 {}
-			.commentlist li.depth-4 {}
-			.commentlist li.depth-5 {}
-				.commentlist li.comment ul.children li {}
-				.commentlist li.comment ul.children li.alt {}
-				.commentlist li.comment ul.children li.byuser {}
-				.commentlist li.comment ul.children li.comment {}
-				.commentlist li.comment ul.children li.depth-1 {} /* change number for different depth */
-				.commentlist li.comment ul.children li.bypostauthor {}
-				.commentlist li.comment ul.children li.comment-author-admin {}
-				.commentlist li.comment ul.children .alt {}
-				.commentlist li.comment ul.children .odd {}
-				.commentlist li.comment ul.children .even {}
-			.commentlist .alt {}
-			.commentlist .odd {}
-			.commentlist .even {}
-			.commentlist .parent {}
-			.commentlist .comment {}
-			.commentlist .children {}
-			.commentlist .pingback {}
-			.commentlist .bypostauthor {}
-			.commentlist .comment-author {}
-			.commentlist .comment-author-admin {}
+			.commentlist li.depth-2{}
+			.commentlist li.depth-3{}
+			.commentlist li.depth-4{}
+			.commentlist li.depth-5{}
+				.commentlist li.comment ul.children li{}
+				.commentlist li.comment ul.children li.alt{}
+				.commentlist li.comment ul.children li.byuser{}
+				.commentlist li.comment ul.children li.comment{}
+				.commentlist li.comment ul.children li.depth-1{} /* change number for different depth */
+				.commentlist li.comment ul.children li.bypostauthor{}
+				.commentlist li.comment ul.children li.comment-author-admin{}
+				.commentlist li.comment ul.children .alt{}
+				.commentlist li.comment ul.children .odd{}
+				.commentlist li.comment ul.children .even{}
+			.commentlist .alt{}
+			.commentlist .odd{}
+			.commentlist .even{}
+			.commentlist .parent{}
+			.commentlist .comment{}
+			.commentlist .children{}
+			.commentlist .pingback{}
+			.commentlist .bypostauthor{}
+			.commentlist .comment-author{}
+			.commentlist .comment-author-admin{}
 
-				.commentlist .bypostauthor > article > footer > .vcard cite.fn:after {
+				.commentlist .bypostauthor > article > footer > .vcard cite.fn:after{
 					content: " (Author)";
 					font-size: 12px; /* for ie8 & below */
 					font-size: 1.2rem;
@@ -2092,61 +2092,61 @@ body.page-template-full-width-php .commentlist {}
 					font-style: italic;
 				}
 
-			.commentlist .thread-alt {}
-			.commentlist .thread-odd {}
-			.commentlist .thread-even {}
-			.commentlist .vcard {
+			.commentlist .thread-alt{}
+			.commentlist .thread-odd{}
+			.commentlist .thread-even{}
+			.commentlist .vcard{
 				margin-left: 95px; /* for ie8 & below */
 				margin-left: 9.5rem;
 				float: left;
 			}
-				.commentlist .vcard cite.fn {
+				.commentlist .vcard cite.fn{
 					font-size: 18px;
 					font-weight: 400;
 					font-style: normal;
 				}
 
-				.commentlist .vcard cite.fn a {
+				.commentlist .vcard cite.fn a{
 					text-decoration: none;
 				}
-					.commentlist .vcard cite.fn a:hover {
+					.commentlist .vcard cite.fn a:hover{
 						text-decoration: underline;
 					}
 
 				.commentlist .vcard time,
-				.comment-meta {
+				.comment-meta{
 					float: right;
 				}
-					.commentlist .vcard time a {
+					.commentlist .vcard time a{
 						text-decoration: none;
 						color: #999;
 					}
-						.commentlist .vcard time a:hover {
+						.commentlist .vcard time a:hover{
 							text-decoration: underline;
 						}
 
-				.commentlist .vcard img.photo {}
-				.commentlist .vcard img.avatar {
+				.commentlist .vcard img.photo{}
+				.commentlist .vcard img.avatar{
 					position: absolute;
 					left: 26px;
 					top: 26px;
 				}
-				.commentlist .vcard cite.fn a.url {}
-			.commentlist .comment-meta {
+				.commentlist .vcard cite.fn a.url{}
+			.commentlist .comment-meta{
 				line-height: 30px;
 				font-size: 14px;
 			}
-				.commentlist .comment-meta a {
+				.commentlist .comment-meta a{
 					color: #95a5a6;
 					text-decoration: none;
 				}
-					.commentlist .comment-meta a:hover {
+					.commentlist .comment-meta a:hover{
 						text-decoration: underline;
 					}
 
-			.commentlist .commentmetadata {}
-				.commentlist .commentmetadata a {}
-			.commentlist li.comment .comment-content {
+			.commentlist .commentmetadata{}
+				.commentlist .commentmetadata a{}
+			.commentlist li.comment .comment-content{
 				margin-left: 95px; /* for ie8 & below */
 				margin-left: 9.5rem;
 				padding-top: 20px; /* for ie8 & below */
@@ -2156,21 +2156,21 @@ body.page-template-full-width-php .commentlist {}
 				font-size: 14px; /* for ie8 & below */
 				font-size: 1.4rem;
 			}
-				.commentlist li.comment .comment-content p {
+				.commentlist li.comment .comment-content p{
 					line-height: 24px; /* for ie8 & below */
 					line-height: 2.4rem;
 					margin: 12px 0 24px; /* for ie8 & below */
 					margin: 1.2rem 0 2.4rem;
 				}
-					.commentlist li.comment .comment-content p:last-child {
+					.commentlist li.comment .comment-content p:last-child{
 						margin: 0;
 					}
-				.commentlist li.comment ul {
+				.commentlist li.comment ul{
 
 				}
 
 				.commentlist .comment-reply-link,
-				.commentlist .comment-reply-login {
+				.commentlist .comment-reply-login{
 					text-decoration: none;
 					float: right;
 					font-size: 11px; /* for ie8 & below */
@@ -2186,9 +2186,9 @@ body.page-template-full-width-php .commentlist {}
 					border-radius: 3px;
 				}
 
-					.commentlist a.comment-reply-link:hover {}
+					.commentlist a.comment-reply-link:hover{}
 
-					.nocomments {
+					.nocomments{
 						padding: 15px; /* for ie8 & below */
 						padding: 1.5rem;
 						text-align: center;
@@ -2198,10 +2198,10 @@ body.page-template-full-width-php .commentlist {}
 COMMENT FORM STYLES
 ******************************************************************/
 
-#respond-form {}
-body.page-template-full-width-php #respond-form {}
+#respond-form{}
+body.page-template-full-width-php #respond-form{}
 
-#respond {
+#respond{
 	background-color: #fefefe;
 	padding: 40px;
 	margin: 0 30px 60px 0; /* for ie8 & below */
@@ -2209,11 +2209,11 @@ body.page-template-full-width-php #respond-form {}
 	border: 1px solid #e4e9ea;
 	border-radius: 3px;
 }
-	.full-width-content #respond {
+	.full-width-content #respond{
 		margin-right: 0;
 	}
 
-#reply-title {
+#reply-title{
 	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	font-size: 30px; /* for ie8 & below */
 	font-size: 3rem;
@@ -2222,7 +2222,7 @@ body.page-template-full-width-php #respond-form {}
 	margin-bottom: 0.5rem;
 }
 
-#respond label {
+#respond label{
 	display: inline-block;
 	font-size: 16px; /* for ie8 & below */
 	font-size: 1.6rem;
@@ -2232,77 +2232,77 @@ body.page-template-full-width-php #respond-form {}
 	margin-left: 20px;
 }
 	#respond label[for=author],
-	#respond label[for=email] {
+	#respond label[for=email]{
 		min-width: 100px; /* for ie8 & below */
 		min-width: 10rem;
 	}
 
-#respond p {
+#respond p{
 	margin-bottom: 16px; /* for ie8 & below */
 	margin-bottom: 1.6rem;
 }
-#respond p.form-submit {
+#respond p.form-submit{
 	text-align: center;
 	margin-bottom: 19px; /* for ie8 & below */
 	margin-bottom: 1.9rem;
 }
-#respond p.form-allowed-tags {
+#respond p.form-allowed-tags{
 	font-size: 13px; /* for ie8 & below */
 	font-size: 1.3rem;
 	display: none;
 }
-#respond .required {
+#respond .required{
 	margin-left: -14px; /* for ie8 & below */
 	margin-left: -1.4rem;
 	padding-right: 5px; /* for ie8 & below */
 	padding-right: 0.5rem;
 	color: #f00;
 }
-#respond .required:first-child {
+#respond .required:first-child{
 	margin-left:0;
 }
 
 #respond .comment-notes,
-#respond .logged-in-as {
+#respond .logged-in-as{
 	font-size: 13px; /* for ie8 & below */
 	font-size: 1.3rem;
 	margin-bottom: 30px;
 }
-	#respond #comment-form-title {
+	#respond #comment-form-title{
 		margin: 0 0 18px; /* for ie8 & below */
 		margin: 0 0 1.8rem;
 	}
-		#respond #cancel-comment-reply-link {
+		#respond #cancel-comment-reply-link{
 			float: right;
 		}
-			#respond #cancel-comment-reply-link a {}
-	#respond #commentform {}
-		#respond .comments-logged-in-as {}
-		#respond #comment-form-elements {
+			#respond #cancel-comment-reply-link a{}
+	#respond #commentform{}
+		#respond .comments-logged-in-as{}
+		#respond #comment-form-elements{
 			margin: 12px 0; /* for ie8 & below */
 			margin: 1.2rem 0;
 		}
-			#respond #comment-form-elements li {
+			#respond #comment-form-elements li{
 				overflow: hidden;
 				margin-bottom: 12px; /* for ie8 & below */
 				margin-bottom: 1.2rem;
 			}
-				#respond #comment-form-elements label {
+				#respond #comment-form-elements label{
 					display: none;
 				}
-				#respond #comment-form-elements small {
+				#respond #comment-form-elements small{
 					display: none;
 				}
 
 				#respond input[type=text],
 				#respond #author,
 				#respond #email,
-				#respond #url {
+				#respond #url{
 					padding: 5px 7px;
 					width: 65%;
 				}
 
-				#respond #comment {
+				#respond #comment{
 					resize: none;
 					padding: 5px 7px; /* for ie8 & below */
 					padding: 0.5rem 0.7rem;
@@ -2316,7 +2316,7 @@ body.page-template-full-width-php #respond-form {}
 				#respond #author,
 				#respond #email,
 				#respond #url,
-				#respond #comment {
+				#respond #comment{
 					background: #fff;
 					border: 1px solid #e4e9ea;
 					font-size: 16px; /* for ie8 & below */
@@ -2328,19 +2328,19 @@ body.page-template-full-width-php #respond-form {}
 					#respond #author:focus,
 					#respond #email:focus,
 					#respond #url:focus,
-					#respond #comment:focus {
+					#respond #comment:focus{
 						outline: none;
 					}
 
-					#respond input[type=checkbox] {
+					#respond input[type=checkbox]{
 						vertical-align: middle;
 						margin-bottom: 2px;
 					}
 
-				#respond input[type=text] {}
-			#respond #allowed_tags {}
-				#respond #comment {}
-				#respond #submit {
+				#respond input[type=text]{}
+			#respond #allowed_tags{}
+				#respond #comment{}
+				#respond #submit{
 					border: 0;
 					padding: 10px 18px;
 					text-transform: uppercase;
@@ -2350,7 +2350,7 @@ body.page-template-full-width-php #respond-form {}
 
 		/* form validation */
 		#commentform input:invalid,
-		#commentform textarea:invalid {
+		#commentform textarea:invalid{
 			border-color: red;
 			outline: none;
 
@@ -2359,10 +2359,10 @@ body.page-template-full-width-php #respond-form {}
 			background-color: #f6e7eb;
 		}
 
-		#commentform input:valid {}
+		#commentform input:valid{}
 
 		/* no comments */
-		.nocomments {
+		.nocomments{
 			margin: 0 20px 20px; /* for ie8 & below */
 			margin: 0 2rem 2rem;
 		}
@@ -2372,7 +2372,7 @@ body.page-template-full-width-php #respond-form {}
 /******************************************************************
 IMAGE STYLES
 ******************************************************************/
-.post-content img {
+.post-content img{
 	margin-top: 12px; /* for ie8 & below */
 	margin-top: 1.2rem;
 }
@@ -2381,7 +2381,7 @@ IMAGE STYLES
 img.left,
 .alignleft,
 img.alignleft,
-img[align=left] {
+img[align=left]{
 	margin-right: 24px; /* for ie8 & below */
 	margin-right: 2.4rem;
 	margin-bottom: 16px; /* for ie8 & below */
@@ -2396,7 +2396,7 @@ img[align=left] {
 img.right,
 .alignright,
 img.alignright,
-img[align=right] {
+img[align=right]{
 	margin-left: 24px; /* for ie8 & below */
 	margin-left: 2.4rem;
 	margin-bottom: 16px; /* for ie8 & below */
@@ -2409,7 +2409,7 @@ img[align=right] {
 
 .aligncenter,
 img.aligncenter,
-img[align=center] {
+img[align=center]{
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
@@ -2422,13 +2422,13 @@ img.size-large,
 img.size-medium,
 .attachment img,
 .widget-area img,
-.wp-caption {
+.wp-caption{
 	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
 	height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
 
 /* Notices */
-.post .notice {
+.post .notice{
 	background: #eee;
 	display: block;
 	padding: 16px; /* for ie8 & below */
@@ -2439,20 +2439,20 @@ img.size-medium,
 
 
 
-.entry-attachment {
+.entry-attachment{
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.imgthumb img {
+.imgthumb img{
 	min-width: 100%;
 	max-width: 100%;
 	height: auto;
 }
 
 
-.altthumb {
+.altthumb{
 	float: left;
 	margin-right: 30px; /* for ie8 & below */
 	margin-right: 3rem;
@@ -2462,13 +2462,13 @@ img.size-medium,
 	margin-top: 0.5rem;
 }
 
-	.altthumb img {
+	.altthumb img{
 		border-radius: 3px;
 	}
 
 /* wp caption styles */
 
-.wp-caption {
+.wp-caption{
 	margin-bottom: 24px; /* for ie8 & below */
 	margin-bottom: 2.4rem;
 	text-align: center;
@@ -2477,14 +2477,14 @@ img.size-medium,
 	max-width: 100%;
 }
 
-.wp-caption img {
+.wp-caption img{
 	border: 0 none;
 	padding: 0;
 	margin: 0;
 }
 
 .wp-caption p.wp-caption-text,
-.entry-caption {
+.entry-caption{
 	font-size: 12px; /* for ie8 & below */
 	font-size: 1.2rem;
 	font-style: italic;
@@ -2494,7 +2494,7 @@ img.size-medium,
 
 /* misc styles */
 
-.wp-smiley {
+.wp-smiley{
 	margin: 0 !important;
 	max-height: 16px; /* for ie8 & below */
 	max-height: 1.6rem;
@@ -2504,20 +2504,20 @@ img.size-medium,
 FOOTER STYLES
 ******************************************************************/
 
-footer[role=contentinfo] {
+footer[role=contentinfo]{
 	width: 100%;
 	height: 70px;
 	display: table;
 }
-	.push {
+	.push{
 		height: 70px;
 	}
 
-    footer[role=contentinfo], .push {
+    footer[role=contentinfo], .push{
 		clear: both;
 	}
 
-	footer[role=contentinfo] div {
+	footer[role=contentinfo] div{
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		-o-box-sizing: border-box;
@@ -2525,12 +2525,12 @@ footer[role=contentinfo] {
 	}
 
 
-	.attribution {
+	.attribution{
 		float: none;
 		text-align: center;
 	}
 
-	#site-generator {
+	#site-generator{
 		font-size: 15px; /* for ie8 & below */
 		font-size: 15px;
 		text-align: center;display: table-cell;
@@ -2539,22 +2539,22 @@ footer[role=contentinfo] {
         color: #fff;
 	}
 
-	#site-generator a {
+	#site-generator a{
 		text-decoration: none;
 	}
 
-	#site-generator a:hover {
+	#site-generator a:hover{
 		text-decoration: underline;
 	}
 
-	#site-generator .sep {
+	#site-generator .sep{
 		padding: 0 10px; /* for ie8 & below */
 		padding: 0 1rem;
 	}
 
 /* Text meant only for screen readers */
 .screen-reader-text,
-.assistive-text {
+.assistive-text{
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
@@ -2563,24 +2563,24 @@ footer[role=contentinfo] {
 /******************************************************************
 ALT HOMEPAGE STYLES
 ******************************************************************/
-.intro-copy-box {
+.intro-copy-box{
 	padding: 50px 0 60px 0; /* for ie8 & below */
 	padding: 5rem 0 6rem 0;
 	text-align: center;
     margin-top: 137px;
 }
 
-	body.page .intro-copy-box .entry-header {
+	body.page .intro-copy-box .entry-header{
 		margin-bottom: 0;
 	}
 
-	body.page .intro-copy-box .entry-title {
+	body.page .intro-copy-box .entry-title{
 		color: #fff;
 		font-size: 48px; /* for ie8 & below */
 		font-size: 4.8rem;
 	}
 
-	.intro-copy-box article[id*=post-] {
+	.intro-copy-box article[id*=post-]{
 		width: 96%;
 		margin: 0 auto ;
 		padding: 0 2%;
@@ -2593,7 +2593,7 @@ ALT HOMEPAGE STYLES
 		border-bottom: 0;
 	}
 
-	.intro-copy-box .post-content {
+	.intro-copy-box .post-content{
 		color: #fff;
 		font-size: 18px;
 		font-size: 1.8rem;
@@ -2602,22 +2602,22 @@ ALT HOMEPAGE STYLES
 		margin-bottom: 0;
 	}
 
-	.intro-copy-box .post-content a {
+	.intro-copy-box .post-content a{
 		color: #fff !important;
 		text-decoration: underline;
 	}
 
-	.intro-copy-box .post-content p:last-child {
+	.intro-copy-box .post-content p:last-child{
 		margin-bottom: 0;
 	}
 
-.inner-title-wrap {
+.inner-title-wrap{
 	padding: 50px 0 2px 0;
 	text-align: left;
 	margin-bottom: 20px;
     margin-top: 142px;
-}
-	.inner-title-wrap .inner-title-box {
+}
+	.inner-title-wrap .inner-title-box{
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 2%;
@@ -2628,23 +2628,23 @@ ALT HOMEPAGE STYLES
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-		.inner-title-wrap .inner-title-box a {
+		.inner-title-wrap .inner-title-box a{
 			color: #fff !important;
 		}
 
 
-	.inner-title-box .entry-header {
+	.inner-title-box .entry-header{
 		margin-bottom: 0;
 		margin-right: 33%;
 		word-wrap: break-word;
 	}
-		.inner-title-box.tprof .entry-header {
+		.inner-title-box.tprof .entry-header{
 			margin-right: 0;
 			margin-left: 36.67%;
 		}
 
 		.profile-thumb,
-		.profile-thumb-mobile {
+		.profile-thumb-mobile{
 			background-image: url(library/images/profile-default.png);
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -2653,20 +2653,20 @@ ALT HOMEPAGE STYLES
 			margin-top: -80px;
 
 		}
-			.profile-thumb-mobile {
+			.profile-thumb-mobile{
 				margin-top: 0;
 				margin-bottom: 24px;
 				display: none;
 			}
 
 			.profile-thumb.pdefault,
-			.profile-thumb-mobile.pdefault {
+			.profile-thumb-mobile.pdefault{
 				min-height: 300px;
 			}
 
 
 		.profile-thumb img,
-		.profile-thumb-mobile img {
+		.profile-thumb-mobile img{
 			width: auto;
 			max-width: 100%;
 			height: auto;
@@ -2674,45 +2674,45 @@ ALT HOMEPAGE STYLES
 			margin-bottom: -6px;
 		}
 
-		.post-divider {
+		.post-divider{
 			background-color: #ecf0f1;
 			height: 3px;
 			margin: 40px 0;
 		}
-			.post-divider.navi {
+			.post-divider.navi{
 				margin: 24px 0;
 			}
 
-	.inner-title-box .entry-title {
+	.inner-title-box .entry-title{
 		color: #fff;
 		margin-bottom: 12px;
 	}
 
-	.inner-title-box .page-title {
+	.inner-title-box .page-title{
 		color: #fff;
 		margin-bottom: 24px;
 	}
 
 	.inner-title-box .entry-meta,
-	.inner-title-box .category-archive-meta {
+	.inner-title-box .category-archive-meta{
 		margin-bottom: 16px;
 		color: #fff;
 	}
 
-	.inner-title-box .entry-meta a {
+	.inner-title-box .entry-meta a{
 		color: #fff !important;
 	}
 
-	.inner-title-box .meta-by {
+	.inner-title-box .meta-by{
 		background-image: url(library/images/meta-author-w.png);
 		margin-left: 15px;
 	}
 
-	.inner-title-box .meta-on {
+	.inner-title-box .meta-on{
 		background-image: url(library/images/meta-date-w.png);
 	}
 
-.latest-title {
+.latest-title{
 	font-size: 36px; /* for ie8 & below */
 	font-size: 3.6rem;
 	margin-top: 35px; /* for ie8 & below */
@@ -2720,40 +2720,40 @@ ALT HOMEPAGE STYLES
 	margin-bottom: 20px;
 }
 
-article[id*=post-].alt-home-list {
+article[id*=post-].alt-home-list{
 	padding: 35px 30px 20px 0; /* for ie8 & below */
 	padding: 3.5rem 3.0rem 2rem 0;
 }
 
-	article[id*=post-].alt-home-list .entry-header {
+	article[id*=post-].alt-home-list .entry-header{
 		margin-bottom: 10px;
 	}
 		.format-aside.alt-home-list .entry-header,
 		.format-quote.alt-home-list .entry-header,
-		.format-status.alt-home-list .entry-header {
+		.format-status.alt-home-list .entry-header{
 			display: block;
 		}
 
-	article[id*=post-].alt-home-list .entry-title {
+	article[id*=post-].alt-home-list .entry-title{
 		font-size: 24px; /* for ie8 & below */
 		font-size: 2.4rem;
 		line-height: 1.2;
 	}
-		article[id*=post-].alt-home-list .entry-title a {
+		article[id*=post-].alt-home-list .entry-title a{
 			color: #95a5a6;
 		}
 
-	article[id*=post-].alt-home-list .post-content {
+	article[id*=post-].alt-home-list .post-content{
 		font-size: 14px; /* for ie8 & below */
 		font-size: 1.4rem;
 		margin-bottom: 0;
 	}
 
-#alt-sidebar-wrap {
+#alt-sidebar-wrap{
 	background-color: #f9f9f9;
 }
 
-#alt-sidebar {
+#alt-sidebar{
 	width: 96%;
 	margin: 0 auto ;
 	padding: 0 2%;
@@ -2761,7 +2761,7 @@ article[id*=post-].alt-home-list {
 	max-width: 104.4rem;
 }
 
-  #alt-sidebar .widget {
+  #alt-sidebar .widget{
 	background-color: transparent;
 	position: relative;
 	display: inline-block;
@@ -2777,42 +2777,42 @@ article[id*=post-].alt-home-list {
 	padding: 0;
   }
 
-  #alt-sidebar .widget .alt-img-wrap {
+  #alt-sidebar .widget .alt-img-wrap{
 	position: relative;
 	height: 150px;
 	overflow: hidden;
 	margin-bottom: 24px;
   }
 
-  #alt-sidebar .widget-title {
+  #alt-sidebar .widget-title{
 	  font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	  font-size: 24px;
 	  margin-bottom: 24px;
   }
 
-  #alt-sidebar .widget li {
+  #alt-sidebar .widget li{
 		line-height: 24px; /* for ie8 & below */
 		line-height: 2.4rem;
 		margin-bottom: 12px; /* for ie8 & below */
 		margin-bottom: 1.2rem;
 	}
 
-  #alt-sidebar .widget li a {
+  #alt-sidebar .widget li a{
 	color: #222;
   }
 
-  #alt-sidebar .widget img {
+  #alt-sidebar .widget img{
 	min-width: 100%;
 	height: auto;
 	margin-bottom: 16px;
   }
 
-.people-job {
+.people-job{
 	margin-bottom: 8px;
 	font-size: 20px;
 }
 
-.people-phone {
+.people-phone{
 	margin-bottom: 24px;
 	font-size: 24px;
 }
@@ -2821,10 +2821,10 @@ article[id*=post-].alt-home-list {
 SOCIAL MEDIA BUTTONS STYLES
 ******************************************************************/
 
-#social-media {
+#social-media{
 
 }
-	#social-media a {
+	#social-media a{
 		background-color: #bdc3c7;
 		width: 32px;
 		height: 32px;
@@ -2838,34 +2838,34 @@ SOCIAL MEDIA BUTTONS STYLES
 		overflow: hidden;
 	}
 
-	#social-media a.social-fb {
+	#social-media a.social-fb{
 		background-image: url(library/images/icon-fb.png);
 	}
 
-	#social-media a.social-tw {
+	#social-media a.social-tw{
 		background-image: url(library/images/icon-tw.png);
 	}
 
-	#social-media a.social-li {
+	#social-media a.social-li{
 		background-image: url(library/images/icon-li.png);
 	}
 
-	#social-media a.social-gp {
+	#social-media a.social-gp{
 		background-image: url(library/images/icon-gp.png);
 	}
 
-	#social-media a.social-av {
+	#social-media a.social-av{
 		background-image: url(library/images/icon-av.png);
 	}
 
-	#social-media a.social-em {
+	#social-media a.social-em{
 		background-image: url(library/images/icon-email.png);
 	}
 
 /******************************************************************
 jQuery SLIDER STYLES
 ******************************************************************/
-#load-cycle {
+#load-cycle{
 	background: url(library/images/loading.gif) no-repeat center center;
 	width: 100%;
 	height: auto;
@@ -2873,13 +2873,13 @@ jQuery SLIDER STYLES
     display:none;
 }
 
-#slide-wrap {
+#slide-wrap{
 	border-top: 0;
     height: 682;
     margin-bottom: -180px;
 }
 .main_title_separator{  z-index: 3000;  position: relative;    }
-.cycle-slideshow {
+.cycle-slideshow{
 	position: absolute;
 	height: 715px;
 	width: 100%;
@@ -2888,12 +2888,12 @@ jQuery SLIDER STYLES
     top: 0;
 }
 
-.slides {
+.slides{
 	height: 715px;
 	width: 100%;
 	overflow: hidden;
 }
-	.slides .slide-thumb {
+	.slides .slide-thumb{
 		position: relative;
 		width: 100%;
 		height: 715px;
@@ -2901,7 +2901,7 @@ jQuery SLIDER STYLES
 		white-space: nowrap;
 	}
 
-	.slides .slide-thumb img {
+	.slides .slide-thumb img{
 		position: absolute;
 		left: 50%;
 		top: 50%;
@@ -2916,12 +2916,12 @@ jQuery SLIDER STYLES
 		min-height: 500px;
 	}
 
-		html.no-csstransforms .slides .slide-thumb img {
+		html.no-csstransforms .slides .slide-thumb img{
 			left: 0;
 			top: 0;
 		}
 
-	.slides .slide-noimg {
+	.slides .slide-noimg{
 		position: relative;
 		width: 100%;
 		height: 500px;
@@ -2935,14 +2935,14 @@ jQuery SLIDER STYLES
 		color: #d0d0d0;
 		text-align: center;
 	}
-		.slides .slide-noimg p {
+		.slides .slide-noimg p{
 			position: absolute;
 			width: 100%;
 			left: 0;
 			top: 42%;
 		}
 
-	.slide-title {
+	.slide-title{
 		font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 		font-size: 30px; /* for ie8 & below */
 		font-size: 3rem;
@@ -2951,27 +2951,27 @@ jQuery SLIDER STYLES
 		margin-bottom: 15px;
 	}
 		.slide-title a,
-		.slide-title a:visited {
+		.slide-title a:visited{
 
 		}
 
-	.slide-copy-wrap {
+	.slide-copy-wrap{
 		position: absolute;
 		bottom: 60px;
 		z-index: 100;
 		color: #fff;
 	}
 
-		.slide-copy-wrap a {
+		.slide-copy-wrap a{
 			color: #fff !important;
 		}
 
-		html.no-csstransforms .slide-copy-wrap {
+		html.no-csstransforms .slide-copy-wrap{
 			left: 60px;
 			right: 60px;
 		}
 
-		.slide-copy {
+		.slide-copy{
 			padding: 25px;
 			background-image: url(library/images/trans.png);
 			margin-right: 30%;
@@ -2980,7 +2980,7 @@ jQuery SLIDER STYLES
 
 
 #sliderprev,
-#slidernext {
+#slidernext{
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -2999,22 +2999,22 @@ jQuery SLIDER STYLES
 	display: none;
 }
 
-	#sliderprev {
+	#sliderprev{
 		background: url(library/images/slider-nav.png)  no-repeat 0 -13px;
 		left: 10px;
 	}
 
-	#slidernext {
+	#slidernext{
 		background: url(library/images/slider-nav.png)  no-repeat -128px -11px;
 		right: 20px;
 	}
 
 	.cycle-slideshow:hover #sliderprev,
-	.cycle-slideshow:hover #slidernext {
+	.cycle-slideshow:hover #slidernext{
 		display: block;
 	}
 
-.cycle-paused:after {
+.cycle-paused:after{
 	content: 'Paused';
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-size: 12px; /* for ie8 & below */
@@ -3028,7 +3028,7 @@ jQuery SLIDER STYLES
 }
 
 /* pager */
-.cycle-pager {
+.cycle-pager{
     text-align: center;
 	width: 100%;
 	z-index: 500;
@@ -3037,7 +3037,7 @@ jQuery SLIDER STYLES
 	overflow: hidden;
 }
 
-.cycle-pager span {
+.cycle-pager span{
     font-family: Arial, Helvetica, sans-serif;
 	font-size: 50px;
 	line-height: .6;
@@ -3050,10 +3050,10 @@ jQuery SLIDER STYLES
 	overflow: hidden;
 }
 
-.cycle-pager span.cycle-pager-active { color: #efefef; }
-.cycle-pager > * { cursor: pointer;}
+.cycle-pager span.cycle-pager-active{ color: #efefef; }
+.cycle-pager > *{ cursor: pointer;}
 
-.no-slide-image {
+.no-slide-image{
 	position: absolute;
 	width: 100%;
 	top: 40%;
@@ -3069,7 +3069,7 @@ jQuery SLIDER STYLES
 /******************************************************************
 GRID BOX STYLES
 ******************************************************************/
-#grid-wrap {
+#grid-wrap{
 	position: relative;
 	width: 106%;
 	margin-top: 30px;
@@ -3078,7 +3078,7 @@ GRID BOX STYLES
 	margin-bottom: 20px;
 }
 
-.grid-box {
+.grid-box{
 	position: relative;
 	display: inline-block;
 	float: left;
@@ -3095,30 +3095,30 @@ GRID BOX STYLES
 	overflow: hidden;
 }
 
-	.grid-box article {
+	.grid-box article{
 		padding: 15px;
 		margin: 0;
 	}
 
-.grid-box .entry-meta {
+.grid-box .entry-meta{
 
 }
 
 .grid-box .entry-title a,
-.grid-box .entry-title a:hover {
+.grid-box .entry-title a:hover{
 
 }
 
-.grid-box .entry-header {
+.grid-box .entry-header{
 	margin-bottom: 20px; /* for ie8 & below */
 	margin-bottom: 2rem;
 }
-	.grid-box .entry-header.people-title {
+	.grid-box .entry-header.people-title{
 		margin-bottom: 0;
 	}
 
 .grid-box .entry-title,
-body.page .grid-box .entry-title {
+body.page .grid-box .entry-title{
 	font-size: 24px; /* for ie8 & below */
 	font-size: 2.4rem;
 	line-height: 1.2;
@@ -3127,26 +3127,26 @@ body.page .grid-box .entry-title {
 	margin-bottom: 12px;
 }
 
-.grid-box .entry-content {
+.grid-box .entry-content{
 	margin-bottom: 20px; /* for ie8 & below */
 	margin-bottom: 2rem;
 }
 
-	.grid-box .entry-content p:last-child {
+	.grid-box .entry-content p:last-child{
 		margin-bottom: 0;
 	}
 
-	.grid-box .entry-content.people-info {
+	.grid-box .entry-content.people-info{
 		margin-bottom: 0;
 	}
 
 	.grid-box .format-aside .entry-content,
-	.grid-box .format-status .entry-content {
+	.grid-box .format-status .entry-content{
 		font-style: italic;
 		margin: 0 0 24px;
 	}
 
-	.grid-box .vid-wrapper {
+	.grid-box .vid-wrapper{
 		background-color: #000;
 		position: relative;
 		padding-bottom: 56.25%; /* 16:9 */
@@ -3157,7 +3157,7 @@ body.page .grid-box .entry-title {
 	.grid-box .vid-wrapper video,
 	.grid-box .vid-wrapper object,
 	.grid-box .vid-wrapper embed,
-	.grid-box .vid-wrapper iframe {
+	.grid-box .vid-wrapper iframe{
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -3165,18 +3165,18 @@ body.page .grid-box .entry-title {
 		height: 100%;
 	}
 
-	.grid-box.format-video .imgthumb {
+	.grid-box.format-video .imgthumb{
 		display: none;
 	}
 
 	.grid-box .post-content video,
 	.grid-box .post-content object,
 	.grid-box .post-content embed,
-	.grid-box .post-content iframe {
+	.grid-box .post-content iframe{
 
 	}
 
-	.grid-box .post-content blockquote {
+	.grid-box .post-content blockquote{
 		font-style: italic;
 		line-height: 26px; /* for ie8 & below */
 		line-height: 2.6rem;
@@ -3184,7 +3184,7 @@ body.page .grid-box .entry-title {
 		margin: 1rem 0 0.5rem 3.5rem;
 	}
 
-	.grid-box .post-content blockquote:before {
+	.grid-box .post-content blockquote:before{
 		font-size: 50px; /* for ie8 & below */
 		font-size: 5.0rem;
 		text-indent: -35px; /* for ie8 & below */
@@ -3195,26 +3195,26 @@ body.page .grid-box .entry-title {
 		opacity: 0.2;
 	}
 
-	.grid-box article[id*=post-] footer.entry-meta {
+	.grid-box article[id*=post-] footer.entry-meta{
 		margin: 0;
 		overflow: hidden;
 	}
-		.grid-box article[id*=post-] footer.entry-meta a {
+		.grid-box article[id*=post-] footer.entry-meta a{
 
 		}
 
-	.grid-box .format-aside footer.entry-meta {
+	.grid-box .format-aside footer.entry-meta{
 		text-align: left;
 	}
 
-.grid-box .imgthumb {
+.grid-box .imgthumb{
 	margin: 0;
 	overflow: hidden;
 	height: 100%;
 }
 
 
-.grid-box-noimg {
+.grid-box-noimg{
 	background-color: #eee;
 	position: relative;
 	text-align: center;
@@ -3222,7 +3222,7 @@ body.page .grid-box .entry-title {
 	outline: none;
 	margin: 0 0 15px 0;
 }
-	.grid-box-noimg p {
+	.grid-box-noimg p{
 		width: 100%;
 		position: absolute;
 		left: 50%;
@@ -3234,12 +3234,12 @@ body.page .grid-box .entry-title {
 		transform: translate(-50%, -50%);
 	}
 
-		html.no-borderradius .grid-box-noimg p {
+		html.no-borderradius .grid-box-noimg p{
 			left: 0;
 			top: 45%;
 		}
 
-.grid-box .page-link {
+.grid-box .page-link{
 	margin: 0;
 }
 
@@ -3248,32 +3248,32 @@ body.page .grid-box .entry-title {
 /************************************
 Author Bio
 ************************************/
-.author-bio {
+.author-bio{
 	background-color: #f7f7f7;
 	padding: 25px 30px;
 	border-radius: 3px;
 	margin-bottom: 60px;
 }
 
-.author-bio h2 {
+.author-bio h2{
 	margin-bottom: 16px;
 }
 
 .author-bio h3,
 .author-bio h4,
-.author-bio p {
+.author-bio p{
 	margin-bottom: 12px;
 }
 
-p.author-description {
+p.author-description{
 	font-size: 13px;
 }
 
-.author-info {
+.author-info{
 	overflow: hidden;
 }
 
-.author-thumb {
+.author-thumb{
 	float: left;
 	margin-right: 30px; /* for ie8 & below */
 	margin-right: 3rem;
@@ -3283,100 +3283,100 @@ p.author-description {
 	margin-top: 0.5rem;
 }
 
-	.author-thumb img {
+	.author-thumb img{
 		border-radius: 3px;
 	}
 
-.author-bio #social-media {
+.author-bio #social-media{
 	padding-top: 6px;
 }
-
+#panel_container_wrapper{    padding: 50px 0;    position: relative;    overflow: hidden;    clear: both;    top:20%;}		.slides .slide-thumb img{			max-width: 100%;			min-height: 100%;		}		.slides .slide-noimg{			height: 568px;		}    .cover{        height: 668px !important;    }	.grid-box{		width: 44.4%;	}	.slide-title{		font-size: 24px; /* for ie8 & below */		font-size: 2.4rem;		line-height: 1.1;	}	.slide-copy-wrap{		font-size: 14px; /* for ie8 & below */		font-size: 1.4rem;		line-height: 1.4;	}	.cycle-slideshow:hover #sliderprev,	.cycle-slideshow:hover #slidernext{		display: none;	}	.inner-title-box .entry-header{		margin-right: 0;	}	article[id*="post-"]{		padding-right: 0;	}	.commentlist{		margin-right: 0;	}		.commentlist .comment-meta{			line-height: 30px;			font-size: 13px;		}	#respond{		margin-right: 0;	}	#image-navigation,	#comment-nav-below,	#comment-nav-above,	#nav-above, #nav-below{		margin-right: 0;	}	.profile-thumb.pdefault{		min-height: 230px;	}	article.alt-home-list[id*="post-"]{		padding-right: 0;	}	#alt-sidebar .widget-title{		font-size: 18px;	}	.latest-title{		font-size: 30px;		margin-top: 20px;		margin-bottom: 20px;	}}
 /******************************************************************
 MEDIA QUERIES & DEVICE STYLES
 Developed by: Andy Clarke & the 320 & Up Extension
 URL: http://stuffandnonsense.co.uk/projects/320andup/
 ******************************************************************/
-@media only screen and (max-width: 2560px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 2560px){
+	.slide-copy-wrap{
 		left: 758px;
 		right: 758px;
 		padding: 0 2%;
 	}
 }
 
-@media only screen and (max-width: 2048px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 2048px){
+	.slide-copy-wrap{
 		left: 502px;
 		right: 502px;
 		padding: 0 2%;
 	}
 }
 
-@media only screen and (max-width: 1920px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 1920px){
+	.slide-copy-wrap{
 		left: 428px;
 		right: 428px;
 		padding: 0 2.5%;
 	}
 }
 
-@media only screen and (max-width: 1600px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 1600px){
+	.slide-copy-wrap{
 		left: 278px;
 		right: 278px;
 		padding: 0 2%;
 	}
 }
 
-@media only screen and (max-width: 1440px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 1440px){
+	.slide-copy-wrap{
 		left: 198px;
 		right: 198px;
 		padding: 0 1.6%;
 	}
 }
 
-@media only screen and (max-width: 1366px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 1366px){
+	.slide-copy-wrap{
 		left: 161px;
 		right: 161px;
 		padding: 0 2%;
 	}
 }
 
-@media only screen and (max-width: 1280px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 1280px){
+	.slide-copy-wrap{
 		left: 118px;
 		right: 118px;
 		padding: 0 2%;
 	}
 
-	.cycle-slideshow {
+	.cycle-slideshow{
 		height: 665px;
 	}
 
-	.slides {
+	.slides{
 		height: 665px;
 	}
-		.slides .slide-thumb {
+		.slides .slide-thumb{
 			height: 665px;
 		}
 
-		.slides .slide-thumb img {
+		.slides .slide-thumb img{
 			min-height: 665px;
 		}
 
 
-		.slides .slide-noimg {
+		.slides .slide-noimg{
 			height: 665px;
 		}
-        nav[role=navigation] .menu ul li a, nav[role=navigation] .menu #menu-icon {
+        nav[role=navigation] .menu ul li a, nav[role=navigation] .menu #menu-icon{
             padding: 1rem !important;
         }
         #site-heading{
             margin-left: 10px !important;
         }
-        #book-now-button {
+        #book-now-button{
             margin-right: 6px !important;
         }
         .cover{
@@ -3385,56 +3385,56 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 }
 
-@media only screen and (max-width: 1152px) {
-	.slide-copy-wrap {
+@media only screen and (max-width: 1152px){
+	.slide-copy-wrap{
 		left: 54px;
 		right: 54px;
 		padding: 0 2%;
 	}
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px){
 
-	#inner-header {
+	#inner-header{
 		width: 96%;
 	}
 
-	.slide-copy-wrap {
+	.slide-copy-wrap{
 		left: 40px;
 		right: 40px;
 		bottom: 40px;
 		padding: 0;
 	}
 
-	.cycle-slideshow {
+	.cycle-slideshow{
 		height: 640px;
 	}
     .cover{
         height: 640px !important;
     }
 
-	.slides {
+	.slides{
 		height: 640px;
 	}
-		.slides .slide-thumb {
+		.slides .slide-thumb{
 			height: 640px;
 		}
 
-		.slides .slide-thumb img {
+		.slides .slide-thumb img{
 			min-height: 640px;
 		}
 
 
-		.slides .slide-noimg {
+		.slides .slide-noimg{
 			height: 640px;
 		}
 
 		#sliderprev,
-		#slidernext {
+		#slidernext{
 			opacity: 0.65;
 		}
 
-	   .inner-title-wrap .inner-title-box {
+	   .inner-title-wrap .inner-title-box{
 		  width: 96%;
 		  padding: 0 2%;
 	   }
@@ -3445,44 +3445,44 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px){
     #form-div{
     width: 100% !important;
     }
 
-	.cycle-slideshow {
+	.cycle-slideshow{
 		height: 600px;
 	}
 
-	.slides {
+	.slides{
 		height: 600px;
 	}
-		.slides .slide-thumb {
+		.slides .slide-thumb{
 			height: 600px;
 		}
         #panel_container_wrapper{
             top: 15% !important;
         }
-		.cover {
+		.cover{
             height: 600px !important;
         }
-		.slides .slide-thumb img {
+		.slides .slide-thumb img{
 			min-height: 600px;
 		}
 
 
-		.slides .slide-noimg {
+		.slides .slide-noimg{
 			height: 600px;
 		}
 
-	.slide-copy {
+	.slide-copy{
 		margin-right: 0;
 	}
 
 	.commentlist li.comment article[id*=comment-] video, .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe{
 		min-height: 300px; /* for ie8 & below */
 		min-height: 30rem;
 	}
@@ -3490,34 +3490,34 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.full-width-content .post-content video,
 	.full-width-content .post-content object,
 	.full-width-content .post-content embed,
-	.full-width-content .post-content iframe {
+	.full-width-content .post-content iframe{
 		min-height: 490px; /* for ie8 & below */
 		min-height: 49rem;
 	}
 
-	#alt-sidebar .widget-title {
+	#alt-sidebar .widget-title{
 		font-size: 21px;
 	}
 
 }
 
-@media only screen and (max-width: 824px) {
+@media only screen and (max-width: 824px){
     #form-div{
     width: 100% !important;
     }
     .cost-detials table{
     width: 100% !important;
     }
-	#site-title {
+	#site-title{
 		margin-right: 0;
 	}
 
-	#site-description {
+	#site-description{
 		margin-right: 0;
 	}
 
 
-	header[role=banner] #searchform  {
+	header[role=banner] #searchform{
 		top: 6px; /* for ie8 & below */
 		top: 0.6rem;
 		right: 10px; /* for ie8 & below */
@@ -3525,7 +3525,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		width: 40%;
 	}
 
-	header[role=banner] #s {
+	header[role=banner] #s{
 		font-size: 90%;
 		background: url(library/images/icon-search.png) no-repeat 5px 4px #fff;
 		padding: 4px 5px 4px 28px; /* for ie8 & below */
@@ -3534,19 +3534,19 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		max-width: 100%;
 	}
 
-	#site-heading {
+	#site-heading{
 		width: 64%;
 	}
 
-	nav[role=navigation] {
+	nav[role=navigation]{
 		width: 35%;
 	}
-	.menu.nav-mobile ul li {
+	.menu.nav-mobile ul li{
 		list-style-type: none;
 		float: none;
 	}
 
-	nav[role=navigation] div.menu > ul {
+	nav[role=navigation] div.menu > ul{
 		background: #fcfcfc;
 		position: absolute;
 		z-index: 9999;
@@ -3557,22 +3557,22 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		overflow: visible;
 		right: 0;
 	}
-		nav[role=navigation] div.menu > ul > li {
+		nav[role=navigation] div.menu > ul > li{
 			position: relative;
 		}
 
-	nav[role=navigation] .menu.nav-mobile #menu-icon {
+	nav[role=navigation] .menu.nav-mobile #menu-icon{
 		display: inline-block;
 	}
 
 	nav[role=navigation] .menu.nav-mobile ul li,
 	nav[role=navigation] .menu.nav-mobile ul.sub-menu li,
-	nav[role=navigation] .menu.nav-mobile ul.children li {
+	nav[role=navigation] .menu.nav-mobile ul.children li{
 		border-bottom: 1px solid #f0f0f0;
 		min-width: 100%;
 	}
 
-	nav[role=navigation] .menu.nav-mobile ul li a  {
+	nav[role=navigation] .menu.nav-mobile ul li a{
 		display: block;
 		min-height: 38px; /* for ie8 & below */
 		min-height: 3.8rem;
@@ -3588,32 +3588,32 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		box-sizing: border-box;
 	}
 
-		nav[role=navigation] .menu.nav-mobile ul li a {
+		nav[role=navigation] .menu.nav-mobile ul li a{
 
 		}
-			nav[role=navigation] .menu.nav-mobile ul li:first-child > a {
+			nav[role=navigation] .menu.nav-mobile ul li:first-child > a{
 
 			}
 
-			nav[role=navigation] .menu.nav-mobile ul li ul li:first-child > a {
+			nav[role=navigation] .menu.nav-mobile ul li ul li:first-child > a{
 
 			}
 
 	nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a,
-	nav[role=navigation] .menu.nav-mobile ul li.current_page_item a {
+	nav[role=navigation] .menu.nav-mobile ul li.current_page_item a{
 		background: #f5f5f5;
 	}
 
 	nav[role=navigation] .menu.nav-mobile ul li a:hover,
 	nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a:hover,
-	nav[role=navigation] .menu.nav-mobile ul li.current_page_item a:hover {
+	nav[role=navigation] .menu.nav-mobile ul li.current_page_item a:hover{
 		background: #f2f2f2;
 	}
 
 	nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu,
 	nav[role=navigation] .menu.nav-mobile ul li ul.children,
 	nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul,
-	nav[role=navigation] .menu.nav-mobile ul li ul.children li ul {
+	nav[role=navigation] .menu.nav-mobile ul li ul.children li ul{
 		display: block;
 		position: relative;
 		z-index: 9999;
@@ -3624,36 +3624,36 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		width: 25rem;
 	}
 
-		nav[role=navigation] .menu.nav-mobile ul li ul li a {
+		nav[role=navigation] .menu.nav-mobile ul li ul li a{
 
 		}
 
 		nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li,
-		nav[role=navigation] .menu.nav-mobile ul li ul.children li {
+		nav[role=navigation] .menu.nav-mobile ul li ul.children li{
 			border: 0;
 			border-top: 1px solid #f0f0f0;
 			text-indent: 20px;
 		}
 
 			nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul li,
-			nav[role=navigation] .menu.nav-mobile ul li ul.children li ul li {
+			nav[role=navigation] .menu.nav-mobile ul li ul.children li ul li{
 				text-indent: 40px;
 			}
 
 				nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul li ul li,
-				nav[role=navigation] .menu.nav-mobile ul li ul.children li ul li ul li {
+				nav[role=navigation] .menu.nav-mobile ul li ul.children li ul li ul li{
 					text-indent: 60px;
 				}
 
 
-	#main.col620 {
+	#main.col620{
 		width: 100%;
 	}
-		#main.col620.pcont {
+		#main.col620.pcont{
 			width: 64.667%;
 		}
 
-	#sidebar.col300 {
+	#sidebar.col300{
 		float: none;
 		display: block;
 		width: 100%;
@@ -3661,7 +3661,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		margin: 0;
 	}
 
-	.widget {
+	.widget{
 		margin: 35px 0; /* for ie8 & below */
 		margin: 3.5rem 0;
 	}
@@ -3669,124 +3669,39 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 400px; /* for ie8 & below */
 		min-height: 40rem;
 	}
 
-	.cycle-slideshow {
+	.cycle-slideshow{
 		height: 568px;
 	}
 
-	.slides {
+	.slides{
 		height: 568px;
 	}
-		.slides .slide-thumb {
+		.slides .slide-thumb{
 			height: 568px;
 		}
         #panel_container_wrapper{
-            top: 14% !important;
+            top: 14% !important;            padding: 0px 0;    }
         }
-
-		.slides .slide-thumb img {
-			max-width: 960px;
-			min-height: 568px;
-		}
-
-
-		.slides .slide-noimg {
-			height: 568px;
-		}
-    .cover {
-        height: 568px !important;
-    }
-
-	.grid-box {
-		width: 44.4%;
-	}
-
-	.slide-title {
-		font-size: 24px; /* for ie8 & below */
-		font-size: 2.4rem;
-		line-height: 1.1;
-	}
-
-	.slide-copy-wrap {
-		font-size: 14px; /* for ie8 & below */
-		font-size: 1.4rem;
-		line-height: 1.4;
-	}
-
-	.cycle-slideshow:hover #sliderprev,
-	.cycle-slideshow:hover #slidernext {
-		display: none;
-	}
-
-
-
-	.inner-title-box .entry-header {
-		margin-right: 0;
-	}
-
-	article[id*="post-"] {
-		padding-right: 0;
-	}
-
-	.commentlist {
-		margin-right: 0;
-	}
-
-		.commentlist .comment-meta {
-			line-height: 30px;
-			font-size: 13px;
-		}
-
-	#respond {
-		margin-right: 0;
-	}
-
-	#image-navigation,
-	#comment-nav-below,
-	#comment-nav-above,
-	#nav-above, #nav-below {
-		margin-right: 0;
-	}
-
-	.profile-thumb.pdefault {
-		min-height: 230px;
-	}
-
-	article.alt-home-list[id*="post-"] {
-		padding-right: 0;
-	}
-
-	#alt-sidebar .widget-title {
-		font-size: 18px;
-	}
-
-	.latest-title {
-		font-size: 30px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-}
-
-
-@media only screen and (max-width: 1024px) {
-    nav[role=navigation] .menu #menu-icon {
+@media only screen and (max-width: 1024px){
+    nav[role=navigation] .menu #menu-icon{
         display: block !important;
         font-size: 30px;
         padding: 0px;
         color: #fff;
     }
-    nav[role=navigation] {
+    nav[role=navigation]{
         display: inline-block;
         padding-top: 0.5rem;
         width: 50px;
         float: right;
         margin-right: 10px;
     }
-    nav[role=navigation] div.menu > ul {
+    nav[role=navigation] div.menu > ul{
         background: #fcfcfc;
         position: absolute;
         z-index: 9999;
@@ -3797,7 +3712,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         overflow: visible;
         right: 0;
     }
-    nav[role=navigation] div.menu > ul {
+    nav[role=navigation] div.menu > ul{
         background: #fcfcfc;
         position: absolute;
         z-index: 9999;
@@ -3808,25 +3723,25 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         overflow: visible;
         right: 0;
     }
-    div.menu ul li {
+    div.menu ul li{
         width: 100%;
         text-align: center;
     }
-    nav[role=navigation] .menu.nav-mobile ul li:first-child > a {
+    nav[role=navigation] .menu.nav-mobile ul li:first-child > a{
 
     }
-    nav[role=navigation] .menu.nav-mobile ul li, nav[role=navigation] .menu.nav-mobile ul.sub-menu li, nav[role=navigation] .menu.nav-mobile ul.children li {
+    nav[role=navigation] .menu.nav-mobile ul li, nav[role=navigation] .menu.nav-mobile ul.sub-menu li, nav[role=navigation] .menu.nav-mobile ul.children li{
         border-bottom: 1px solid #f0f0f0;
         min-width: 100%;
     }
-    nav[role=navigation] .menu.nav-mobile ul li a:hover, nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a:hover, nav[role=navigation] .menu.nav-mobile ul li.current_page_item a:hover {
+    nav[role=navigation] .menu.nav-mobile ul li a:hover, nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a:hover, nav[role=navigation] .menu.nav-mobile ul li.current_page_item a:hover{
         background: #f2f2f2;
     }
 
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
 	#form-div{
     width: 100% !important;
     }
@@ -3836,46 +3751,46 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     .contact-us-section{
         width:100% !important;
     }
-	.slide-copy-wrap {
+	.slide-copy-wrap{
 		left: 30px;
 		right: 30px;
 		bottom: 30px;
 		padding: 0;
 	}
 
-	.cycle-slideshow {
+	.cycle-slideshow{
 		height: 560px;
 	}
 
-	.slides {
-		height: 560px;
+	.slides{
+		height: 600px;
 	}
-		.slides .slide-thumb {
-			height: 560px;
+		.slides .slide-thumb{
+			height: 600px;
 		}
-        .grid-box {
+        .grid-box{
             width: 40% !important;
             margin: 2.5% 4% !important;
         }
         #panel_container_wrapper{
             top: 13% !important;
         }
-		.slides .slide-thumb img {
+		.slides .slide-thumb img{
 			max-width: 900px;
 			min-height: 560px;
 		}
-	    .cover {
-            height: 560px !important;
+	    .cover{
+            height: 550px !important;
         }
 
-		.slides .slide-noimg {
+		.slides .slide-noimg{
 			height: 560px;
 		}
 
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 375px; /* for ie8 & below */
 		min-height: 37.5rem;
 	}
@@ -3884,7 +3799,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px){
     #form-div{
     width: 100% !important;
     }
@@ -3892,48 +3807,48 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         padding: 5px !important;
     }
 
-	.cycle-slideshow {
-		height: auto;
+	.cycle-slideshow{
+		height: 450px;
 		background-color: #222;
 	}
 
-	.slides {
-		height: auto;
+	.slides{
+		height: 450px;
 	}
-		.slides .slide-thumb {
-			height: 500px;
+		.slides .slide-thumb{
+			height: 450px;
 		}
 
-		.slides .slide-thumb img {
-			max-width: 800px;
-			min-height: 500px;
+		.slides .slide-thumb img{
+			max-width: 100%;
+			min-height: 100%;
 		}
-	    .cover {
-            height: 500px !important;
+	    .cover{
+            height: 450px !important;
         }
-		.slides .slide-noimg {
+		.slides .slide-noimg{
 			height: 500px;
 		}
         #book-now-button{
             display: none !important;
 
         }
-		.slide-copy {
+		.slide-copy{
 			background-image: none;
 			background-color: #222;
 			padding: 24px;
 		}
 
-		.slide-title {
+		.slide-title{
 			font-size: 24px; /* for ie8 & below */
 			font-size: 2.4rem;
 			line-height: 1.1;
 		}
-        #sliderprev, #slidernext {
+        #sliderprev, #slidernext{
             display: none !important;
         }
 
-		.slide-copy-wrap {
+		.slide-copy-wrap{
 			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
 			line-height: 1.4;
@@ -3959,7 +3874,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         #site-heading{
             margin-left:13px !important;
         }
-        nav[role=navigation] {
+        nav[role=navigation]{
             margin:0px auto !important;
             width: 40px;
         }
@@ -3967,25 +3882,25 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 325px; /* for ie8 & below */
 		min-height: 32.5rem;
 	}
 
-	.gallery img {
+	.gallery img{
 		max-width: 98%;
 	}
 
-	.commentlist li[class*=depth-] {
+	.commentlist li[class*=depth-]{
 		margin-left: 25px; /* for ie8 & below */
 		margin-left: 2.5rem;
 	}
 
-	.commentlist li.depth-1 {
+	.commentlist li.depth-1{
 		margin-left: 0;
 	}
 
-	#respond label {
+	#respond label{
 		margin-left: 0;
 	}
 
@@ -3993,37 +3908,37 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	#respond #author,
 	#respond #email,
 	#respond #url,
-	#respond #comment {
+	#respond #comment{
 		width: 70%;
 	}
 
-	body.page .intro-copy-box .entry-title {
+	body.page .intro-copy-box .entry-title{
 		font-size: 40px; /* for ie8 & below */
 		font-size: 4rem;
 	}
 
-	.intro-copy-box .post-content {
+	.intro-copy-box .post-content{
 		font-size: 17px; /* for ie8 & below */
 		font-size: 1.7rem;
 		line-height: 1.5;
 	}
 
-	.profile-thumb.pdefault {
+	.profile-thumb.pdefault{
 		min-height: 180px;
 	}
 
-	.pcont article[id*="post-"] {
+	.pcont article[id*="post-"]{
 		padding-left: 20px;
 		padding-top: 10px;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
 
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 300px; /* for ie8 & below */
 		min-height: 30rem;
 	}
@@ -4035,60 +3950,50 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px){
 	.contact-us-section i{
 	   width: 25px !important;
 	   height: 25px !important;
        line-height: 25px !important;
        font-size: 25px !important;
     }
-    .contact-us-section .about-us-contact-icon-text, .contact-us-section .about-us-email-icon-text, .contact-us-section .about-us-location-icon-text {
+    .contact-us-section .about-us-contact-icon-text, .contact-us-section .about-us-email-icon-text, .contact-us-section .about-us-location-icon-text{
         margin-left: 55px !important;
     }
     .contact-wraper-content{
         padding: 10px !important;
     }
-	#site-title {
+	#site-title{
 		font-size: 26px; /* for ie8 & below */
 		font-size: 2.6rem;
 	}
     #class-booking-page{
         padding: 5px !important;
     }
-        .grid-box {
+        .grid-box{
             width: 78% !important;
             margin: 2.5% 12% !important;
-        }
-		.slides .slide-thumb {
-			height: 128px;
-		}
-
-		.slides .slide-thumb img {
-			max-width: 640px;
-			min-height: 128px;
-		}
-
-		.slides .slide-noimg {
-			height: 128px;
-		}
-        .cover {
-        height: 685px !important;
+        }	.cycle-slideshow{		height: 180px;	}    .slides {        height: 180px;    }
+    .slides .slide-thumb{        height: 180px;    }
+    .slides .slide-noimg{        height: 180px;    }
+        .cover{
+        height: 620px !important;
         }
         #panel_container_wrapper{
             top:10% !important;
         }
-        nav[role=navigation] {
+        nav[role=navigation]{
             margin:0px auto !important;
             width: 40px !important;
         }
 
-	#grid-wrap {
+	#grid-wrap{
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-	.grid-box {
+	.grid-box{
 		width: 95%;
 		margin-bottom: 5%;
 	}
@@ -4096,65 +4001,65 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	body.page .entry-title,
 	body.single .entry-title, .not-found .entry-title,
 	.inner-title-box .page-title,
-	article.alt-home-list[id*="post-"] .entry-title {
+	article.alt-home-list[id*="post-"] .entry-title{
 		font-size: 30px; /* for ie8 & below */
 		font-size: 3rem;
 		line-height: 1.2;
 	}
 
-	body.page .intro-copy-box .entry-title {
+	body.page .intro-copy-box .entry-title{
 		font-size: 34px; /* for ie8 & below */
 		font-size: 3.4rem;
 	}
 
-	.intro-copy-box {
+	.intro-copy-box{
 		padding-top: 30px;
 		padding-bottom: 35px;
 	}
 
-	.intro-copy-box .post-content {
+	.intro-copy-box .post-content{
 		padding-top: 15px;
 		font-size: 16px; /* for ie8 & below */
 		font-size: 1.6rem;
 		line-height: 1.5;
 	}
 
-	#main.col620.pcont {
+	#main.col620.pcont{
 		width: 100%;
 	}
 
-	.inner-title-box.tprof .entry-header {
+	.inner-title-box.tprof .entry-header{
 		margin-right: 0px;
 		margin-left: 0;
 	}
 
-	.people-job {
+	.people-job{
 		font-size: 16px;
 	}
 
-	.people-phone {
+	.people-phone{
 		font-size: 18px;
 	}
 
-	.pcont article[id*="post-"] {
+	.pcont article[id*="post-"]{
 		padding-left: 0;
 		padding-right: 0;
 		padding-top: 20px;
 	}
 
-	.pcont #nav-below {
+	.pcont #nav-below{
 		margin-left: 0;
 	}
 
-	.profile-thumb {
+	.profile-thumb{
 		display: none;
 	}
 
-	.profile-thumb-mobile {
+	.profile-thumb-mobile{
 		display: block;
 	}
 
-	.entry-meta, .category-archive-meta {
+	.entry-meta, .category-archive-meta{
 		font-size: 13px; /* for ie8 & below */
 		font-size: 1.3rem;
 	}
@@ -4162,57 +4067,57 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 260px; /* for ie8 & below */
 		min-height: 26rem;
 	}
-		.commentlist .vcard {
+		.commentlist .vcard{
 			float: none;
 		}
 
 		.commentlist .vcard,
-		.commentlist li.comment .comment-content {
+		.commentlist li.comment .comment-content{
 			margin-left: 80px; /* for ie8 & below */
 			margin-left: 8.0rem;
 		}
 
-		.commentlist .vcard time, .comment-meta {
+		.commentlist .vcard time, .comment-meta{
 			float: none;
 			margin-left: 80px; /* for ie8 & below */
 			margin-left: 8.0rem;
 		}
 
 		.author-thumb img,
-		.commentlist .vcard img.avatar {
+		.commentlist .vcard img.avatar{
 			width: 55px;
 			height: 55px;
 		}
 
-		.commentlist li.comment .comment-content {
+		.commentlist li.comment .comment-content{
 			font-size: 13px; /* for ie8 & below */
 			font-size: 1.3rem;
 		}
 
 
-	.gallery img {
+	.gallery img{
 		max-width: 85%;
 	}
 
-	.gallery .gallery-caption {
+	.gallery .gallery-caption{
 		font-size: 11px; /* for ie8 & below */
 		font-size: 1.1rem;
 	}
 
-	#comment-nav-below a {
+	#comment-nav-below a{
 		font-size: 13px;
 	}
 
-	.commentlist li[class*=depth-] {
+	.commentlist li[class*=depth-]{
 		margin-left: 20px; /* for ie8 & below */
 		margin-left: 2.0rem;
 	}
 
-	.commentlist li.depth-1 {
+	.commentlist li.depth-1{
 		margin-left: 0;
 	}
 
@@ -4220,20 +4125,20 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	#respond #author,
 	#respond #email,
 	#respond #url,
-	#respond #comment {
+	#respond #comment{
 		width: 100%;
 	}
 
-	#respond #cancel-comment-reply-link {
+	#respond #cancel-comment-reply-link{
 		float: none;
 		display: block;
 	}
 
-	.profile-thumb.pdefault {
+	.profile-thumb.pdefault{
 		min-height: 130px;
 	}
 
-	#alt-sidebar .widget {
+	#alt-sidebar .widget{
 		display: block;
 		float: none;
 		width: 95%;
@@ -4244,53 +4149,40 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     }
 
 }
+@media only screen and (max-width: 400px){	.cycle-slideshow{		height: 128px;	}    .slides {        height: 128px;    }    .slides .slide-thumb{        height: 128px;    }    .slides .slide-noimg{        height: 128px;    }}
 
+@media only screen and (max-width: 320px){
 
-@media only screen and (max-width: 320px) {
-
-	#site-title {
+	#site-title{
 		font-size: 24px; /* for ie8 & below */
 		font-size: 2.4rem;
 	}
     #class-booking-page{
         padding: 5px !important;
     }
-	.cycle-slideshow {
-		height: auto;
-		background-color: #222;
-	}
+	.cycle-slideshow{		height: 128px;		background-color: #222;	}
+	.slides{		height: 128px;	}
+    .slides .slide-thumb{        height: 128px;    }
+    .slides .slide-thumb img{        max-width: 480px;        min-height: 175px;    }
+    .cover{        height: 700px !important;    }
 
-	.slides {
-
-		height: auto;
-	}
-		.slides .slide-thumb {
+		.slides .slide-noimg{
 			height: 175px;
 		}
 
-		.slides .slide-thumb img {
-			max-width: 480px;
-			min-height: 175px;
-		}
-
-
-		.slides .slide-noimg {
-			height: 175px;
-		}
-
-		.slide-copy {
+		.slide-copy{
 			background-image: none;
 			background-color: #222;
 			padding: 18px;
 		}
 
-		.slide-title {
+		.slide-title{
 			font-size: 17px; /* for ie8 & below */
 			font-size: 1.7rem;
 			line-height: 1.1;
 		}
 
-		.slide-copy-wrap {
+		.slide-copy-wrap{
 			font-size: 12px; /* for ie8 & below */
 			font-size: 1.2rem;
 			line-height: 1.4;
@@ -4299,21 +4191,21 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 			z-index: 0;
 		}
 
-	.grid-box {
+	.grid-box{
 		font-size: 13px;
 	}
 
-	.grid-box article {
+	.grid-box article{
 		padding: 20px;
 	}
 
 	.grid-box .entry-title,
-	body.page .grid-box .entry-title {
+	body.page .grid-box .entry-title{
 		font-size: 21px; /* for ie8 & below */
 		font-size: 2.1rem;
 	}
 
-	.grid-box .entry-content {
+	.grid-box .entry-content{
 		margin-bottom: 16px; /* for ie8 & below */
 		margin-bottom: 1.6rem;
 	}
@@ -4321,61 +4213,61 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	body.page .entry-title,
 	body.single .entry-title, .not-found .entry-title,
 	.inner-title-box .page-title,
-	article.alt-home-list[id*="post-"] .entry-title {
+	article.alt-home-list[id*="post-"] .entry-title{
 		font-size: 24px; /* for ie8 & below */
 		font-size: 2.4rem;
 		line-height: 1.2;
 	}
 
-	.author-thumb {
+	.author-thumb{
 		display: none;
 	}
 
 	.commentlist .vcard,
-	.commentlist li.comment .comment-content {
+	.commentlist li.comment .comment-content{
 		margin-left: 0;
 	}
 
-	.commentlist .vcard time, .comment-meta {
+	.commentlist .vcard time, .comment-meta{
 		margin-left: 0;
 	}
 
 	.author-thumb img,
-	.commentlist .vcard img.avatar {
+	.commentlist .vcard img.avatar{
 		display: none;
 	}
 
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 170px; /* for ie8 & below */
 		min-height: 17rem;
 	}
 
-	.gallery img {
+	.gallery img{
 		max-width: 82%;
 	}
 
-	.gallery .gallery-caption {
+	.gallery .gallery-caption{
 		font-size: 10px; /* for ie8 & below */
 		font-size: 1rem;
 	}
 
-	.commentlist li[class*=depth-] {
+	.commentlist li[class*=depth-]{
 		margin-left: 12px; /* for ie8 & below */
 		margin-left: 1.2rem;
 	}
 
-	.commentlist li.depth-1 {
+	.commentlist li.depth-1{
 		margin-left: 0;
 	}
 
-	#respond {
+	#respond{
 		padding: 25px;
 	}
 
-	#reply-title {
+	#reply-title{
 		font-size: 24px;
 	}
 
@@ -4383,62 +4275,62 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 
 
-	body.page .intro-copy-box .entry-title {
+	body.page .intro-copy-box .entry-title{
 		font-size: 30px; /* for ie8 & below */
 		font-size: 3.0rem;
 	}
 
-	.intro-copy-box .post-content {
+	.intro-copy-box .post-content{
 		font-size: 14px; /* for ie8 & below */
 		font-size: 1.4rem;
 		line-height: 1.5;
 	}
 
-	.altthumb {
+	.altthumb{
 		display: none;
 	}
 
 }
-@media only screen and (max-width: 240px) {
-	#site-title {
+@media only screen and (max-width: 240px){
+	#site-title{
 		font-size: 21px; /* for ie8 & below */
 		font-size: 2.1rem;
 	}
     #class-booking-page{
         padding: 5px !important;
     }
-	.cycle-slideshow {
+	.cycle-slideshow{
 		height: auto;
 	}
 
-	.slides {
+	.slides{
 		height: auto;
 	}
-		.slides .slide-thumb {
+		.slides .slide-thumb{
 			height: 150px;
 		}
 
-		.slides .slide-thumb img {
+		.slides .slide-thumb img{
 			max-width: 360px;
 			min-height: 150px;
 		}
 
 
-		.slides .slide-noimg {
+		.slides .slide-noimg{
 			height: 200px;
 		}
 
-		.slide-copy {
+		.slide-copy{
 			padding: 18px;
 		}
 
-	.slide-title {
+	.slide-title{
 		font-size: 16px; /* for ie8 & below */
 		font-size: 1.6rem;
 		line-height: 1.1;
 	}
 
-	.slide-copy-wrap {
+	.slide-copy-wrap{
 		font-size: 12px; /* for ie8 & below */
 		font-size: 1.2rem;
 		line-height: 1.4;
@@ -4450,31 +4342,31 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	body.page .entry-title,
 	body.single .entry-title, .not-found .entry-title,
 	.inner-title-box .page-title,
-	article.alt-home-list[id*="post-"] .entry-title {
+	article.alt-home-list[id*="post-"] .entry-title{
 		font-size: 21px; /* for ie8 & below */
 		font-size: 2.1rem;
 		line-height: 1.2;
 	}
 
-	.inner-title-box .byline {
+	.inner-title-box .byline{
 		display: block;
 		padding-top: 6px;
 		clear: left;
 	}
-		.inner-title-box .meta-by {
+		.inner-title-box .meta-by{
 			margin-left: 0;
 		}
 
-	.grid-box article {
+	.grid-box article{
 		padding: 18px;
 	}
 
-	.grid-box .entry-meta {
+	.grid-box .entry-meta{
 		font-size: 13px;
 	}
 
 	.grid-box .entry-title,
-	body.page .grid-box .entry-title {
+	body.page .grid-box .entry-title{
 		font-size: 16px; /* for ie8 & below */
 		font-size: 1.6rem;
 	}
@@ -4482,59 +4374,59 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe{
 		min-height: 130px; /* for ie8 & below */
 		min-height: 13rem;
 	}
 
-	.gallery img {
+	.gallery img{
 		max-width: 78%;
 	}
 
-	.gallery .gallery-caption {
+	.gallery .gallery-caption{
 		font-size: 9px; /* for ie8 & below */
 		font-size: 0.9rem;
 	}
 
-	.commentlist li[class*=depth-] {
+	.commentlist li[class*=depth-]{
 		margin-left: 10px; /* for ie8 & below */
 		margin-left: 1.0rem;
 	}
 
-	.commentlist li.depth-1 {
+	.commentlist li.depth-1{
 		margin-left: 0;
 	}
 
-	#respond {
+	#respond{
 		padding: 20px;
 	}
 
 
-	body.page .intro-copy-box .entry-title {
+	body.page .intro-copy-box .entry-title{
 		font-size: 26px; /* for ie8 & below */
 		font-size: 2.6rem;
 	}
 
-	.intro-copy-box .post-content {
+	.intro-copy-box .post-content{
 		font-size: 13px; /* for ie8 & below */
 		font-size: 1.3rem;
 		line-height: 1.4;
 	}
 
-	.profile-thumb.pdefault {
+	.profile-thumb.pdefault{
 		min-height: 65px;
 	}
 
-	.pcont article[id*="post-"] {
+	.pcont article[id*="post-"]{
 		padding-left: 0;
 		padding-top: 0;
 	}
 
-	.people-job {
+	.people-job{
 		font-size: 14px;
 	}
 
-	.people-phone {
+	.people-phone{
 		font-size: 16px;
 	}
 }
@@ -4545,51 +4437,51 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 PRINT STYLES
 ******************************************************************/
 
-@media print {
+@media print{
 
-	* {
+	*{
 		background: transparent !important;
 		color: #222 !important;
 		text-shadow: none !important;
 	}
 
-	a, a:visited {
+	a, a:visited{
 		color: #222 !important;
 		text-decoration: underline;
 	}
 
-	a:after {
+	a:after{
 		content: " (" attr(href) ")";
 	}
 
-	abbr:after {
+	abbr:after{
 		content: " (" attr(title) ")";
 	}
 
-	.ir a:after {
+	.ir a:after{
 		content: "";
 	}
 
 	pre,
-	blockquote {
+	blockquote{
 		border: 1px solid #999;
 		page-break-inside: avoid;
 	}
 
-	thead {
+	thead{
 		display: table-header-group;
 	}
 
 	tr,
-	img {
+	img{
 		page-break-inside: avoid;
 	}
 
-	@page {
+	@page{
 		margin: 0.5cm;
 	}
 
-	p, h2, h3 {
+	p, h2, h3{
 		orphans: 3;
 		widows: 3;
 	}
@@ -4622,17 +4514,17 @@ Book Now Button STYLES
 .staff-booking-page-section{
    float:left
 }
-.post-divider {
+.post-divider{
   clear:both;
 }
 
 .staff-social-buttons{
     margin: 25px auto;
 }
-.staff-social-buttons a:link {
+.staff-social-buttons a:link{
 text-decoration: none;
 }
-.staff-social-buttons a:visited {
+.staff-social-buttons a:visited{
 text-decoration: none;
 }
 .linkedin-button> a:hover .fa-linkedin{
@@ -4671,7 +4563,7 @@ text-decoration: none;
   border: 1px solid #bb0000;
   border-radius: 100%;
 }
-.staff-social-buttons a:active {
+.staff-social-buttons a:active{
 color: #000;
 text-decoration: none;
 }
@@ -4680,14 +4572,14 @@ ul.staff-pricing-section{
   margin: 0 !important;
 }
 
-.staff-pricing-section li {
+.staff-pricing-section li{
   border-bottom: 0px solid #ddd;
   list-style: none outside none;
   padding: 6px 0px !important;
   overflow: hidden;
   display: block;
 }
-.staff-pricing-section li span {
+.staff-pricing-section li span{
   color: #1abc9c;
   float: left;
   text-align: left;
@@ -4706,14 +4598,8 @@ ul.staff-pricing-section{
   height: 716px;
  background: rgba(220,220,220,0.5);
 }
-#panel_container_wrapper{
-    padding: 50px 0;
-    position: relative;
-    overflow: hidden;
-    clear: both;
-    top:20%;
-}
-#panel_container_wrapper #content {
+
+#panel_container_wrapper #content{
  opacity: 1;
   padding: 0px 30px!important;
   margin: 0px auto;
@@ -4798,7 +4684,7 @@ ul.staff-pricing-section{
   border: 2px solid #fff;
   border-radius: 4px;
 }
-.sticky-header {
+.sticky-header{
 	position:fixed;
 	margin-top:-100px;
 	z-index:99;
@@ -4806,12 +4692,12 @@ ul.staff-pricing-section{
 	transition:all 1s ease;
 }
 
-.sticky {
+.sticky{
 	margin-top:0;
     background: url(library/images/black-overlay.png) no-repeat center center;
     background-size: cover;
 }
-#slide-wrap:hover #slidernext, #slide-wrap:hover #sliderprev {
+#slide-wrap:hover #slidernext, #slide-wrap:hover #sliderprev{
     display: block;
 }
 .main-page-post .grid-box:hover{
@@ -4873,7 +4759,7 @@ ul.staff-pricing-section{
     background-color: #fff;
     color: #bb0000;
 }
-.about-us-team-title h1:before {
+.about-us-team-title h1:before{
   background: none repeat scroll 0 0;
   content: "";
   height: 2px;
@@ -4887,24 +4773,24 @@ ul.staff-pricing-section{
   margin-top: 46px;
 }
 
-table.two td {
+table.two td{
 	text-align: center;
 	width: 10em;
 	padding: 0.7em;
 }
-table.two th {
+table.two th{
 	text-align: center;
 	padding: 1em;
 	background-color: #27c3bb;
 	color: white;
 }
-table.two tr {
+table.two tr{
 	height: 1em;
 }
-table.two tr:nth-child(even) {
+table.two tr:nth-child(even){
     background-color: #eee;
 }
-table.two tr:nth-child(odd) {
+table.two tr:nth-child(odd){
 	background-color:#fff;
 }
 .business-days{
@@ -4928,7 +4814,7 @@ table.two tr:nth-child(odd) {
     background-color: rgb(229, 227, 223);
 
 }
-.about-us-location-icon i {
+.about-us-location-icon i{
   background-color: #1abc9c;
   color: #fff;
   border: 1px solid #1abc9c;
@@ -5011,7 +4897,7 @@ table.two tr:nth-child(odd) {
     position: relative;
 }
 
-#form-div {
+#form-div{
   background: url(library/images/black-overlay.png) no-repeat center center;
   background-size: cover;
   padding-left: 35px;
@@ -5026,7 +4912,7 @@ table.two tr:nth-child(odd) {
   -webkit-border-radius: 7px;
 }
 
-.feedback-input {
+.feedback-input{
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
@@ -5100,7 +4986,7 @@ table.two tr:nth-child(odd) {
 	background-repeat: no-repeat;
 }
 
-textarea {
+textarea{
     width: 100%;
     height: 150px;
     line-height: 150%;
@@ -5108,7 +4994,7 @@ textarea {
 }
 
 input:hover, textarea:hover,
-input:focus, textarea:focus {
+input:focus, textarea:focus{
 	background-color:white;
 }
 
@@ -5135,11 +5021,11 @@ input:focus, textarea:focus {
 	color: #0493bd;
 }
 
-.buttons:hover {
+.buttons:hover{
 	color: #3498db;
 }
 
-.ease {
+.ease{
 	width: 0px;
 	height: 74px;
 	background-color: #fbfbfb;
@@ -5155,7 +5041,7 @@ input:focus, textarea:focus {
   background-color:white;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px){
 	#form-div{
 		margin-right: 3%;
 		width: 100%;
@@ -5232,7 +5118,7 @@ input:focus, textarea:focus {
     font-size: 38px;
 }
 
-.contact-us-section .about-us-contact-icon-text, .contact-us-section .about-us-email-icon-text, .contact-us-section .about-us-location-icon-text {
+.contact-us-section .about-us-contact-icon-text, .contact-us-section .about-us-email-icon-text, .contact-us-section .about-us-location-icon-text{
   margin-left: 90px;
 }
 .contact-us-section li{
@@ -5268,12 +5154,12 @@ input:focus, textarea:focus {
 
 
 
-input[type=checkbox] {
+input[type=checkbox]{
 	visibility: hidden;
 }
 
 /* ROUNDED TWO */
-.sendCopy {
+.sendCopy{
     float: left;
 	width: 28px;
 	height: 28px;
@@ -5297,7 +5183,7 @@ input[type=checkbox] {
 	position: relative;
 }
 
-.sendCopy label {
+.sendCopy label{
 	cursor: pointer;
 	position: absolute;
 	width: 20px;
@@ -5321,7 +5207,7 @@ input[type=checkbox] {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
 }
 
-.sendCopy label:after {
+.sendCopy label:after{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;
@@ -5343,13 +5229,13 @@ input[type=checkbox] {
 	transform: rotate(-45deg);
 }
 
-.sendCopy label:hover::after {
+.sendCopy label:hover::after{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 	filter: alpha(opacity=30);
 	opacity: 0.3;
 }
 
-.sendCopy input[type=checkbox]:checked + label:after {
+.sendCopy input[type=checkbox]:checked + label:after{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 	opacity: 1;
@@ -5368,7 +5254,7 @@ input[type=checkbox] {
       overflow: hidden;
       margin-bottom: 15px;
 }
-.contact-us-map {
+.contact-us-map{
         position: relative;
         padding-bottom: 100%;
         height: 0;
@@ -5381,26 +5267,26 @@ input[type=checkbox] {
         overflow: hidden;
     }
 
-.contact-us-map iframe {
+.contact-us-map iframe{
         position: absolute;
         top: 0;
         left: 0;
         width: 100% !important;
         height: 100% !important;
 }
-.map-wraper-content-map iframe {
+.map-wraper-content-map iframe{
         position: absolute;
         top: 0;
         left: 0;
         width: 100% !important;
         height: 100% !important;
 }
-@media screen and (max-width:340px) {
+@media screen and (max-width:450px){
     .panel-button{
-        padding: 0.6em 1em !important;
-        font-size: 1em;
+        padding: 1em 1em !important;
+        font-size: 1.1em;
     }
-}
+}@media screen and (max-width:300px){    .panel-button{        padding: 1em 1em !important;        font-size: 0.8em;    }}@media screen and (max-width:185px){    .panel-button{        padding: 1em 1em !important;        font-size: 0.4em;    }}
 body.custom-background{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5430,12 +5316,12 @@ body.custom-background{
 }
 
 /*Move to Top button*/
-.crunchify-top:hover {
+.crunchify-top:hover{
 	background-color: #fff;
 	text-decoration: none;
 }
 
-.crunchify-top {
+.crunchify-top{
 	display: none;
     position: fixed;
     bottom: 10rem;
@@ -5472,7 +5358,7 @@ footer .crunchify-top:visited{
 #customize-control-monday_start{
     width:50%;
 }
-#site-logo>a>img {
+#site-logo>a>img{
 	margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -5482,7 +5368,7 @@ footer .crunchify-top:visited{
     height: 60px;
     width: 60px;
 }
-div#contact-us-info {
+div#contact-us-info{
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
