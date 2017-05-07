@@ -18,8 +18,8 @@ html, body, div, span, object, embed, ruby, output, iframe, h1, h2, h3, h4, h5, 
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, 
-menu, nav, section, summary, time, mark, audio, video { 
+article, aside, canvas, details, figcaption, figure,  footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,279 +28,279 @@ menu, nav, section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 	background: transparent;
 }
-     
-html { 
+
+html {
 	font-size: 62.5%;
 	overflow-y: scroll;
 }
 
-/* html 5 reset */             
-article, 
-aside, 
-details, 
-figcaption, 
-figure, 
-footer, 
-header, 
-hgroup, 
-menu, 
-nav, 
-section { 
-	display: block; 
+/* html 5 reset */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
 }
 
 /* ul & li resets */
-ol, ul { 
-	list-style: none; 
+ol, ul {
+	list-style: none;
 }
 
 /* blockquote reset */
-blockquote, q { 
-	quotes: none; 
+blockquote, q {
+	quotes: none;
 }
 
-blockquote:before, 
-blockquote:after, 
-q:before, 
-q:after { 
-	content: ''; 
-	content: none; 
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
 }
 
 /* link style resets */
-a { 
-	margin: 0; 
-	padding: 0; 
-	font-size: 100%; 
-	vertical-align: baseline; 
-	background: transparent; 
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 a:hover,
-a:active { 
-	outline: none; 
+a:active {
+	outline: none;
 }
 
 /* table resets */
-table { 
-	border-collapse: collapse; 
-	border-spacing: 0; 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-td, 
-td img { 
-	vertical-align: top; 
-} 
+td,
+td img {
+	vertical-align: top;
+}
 
 /* type & header styles */
 body {
-	font-size: 16px; /* for ie8 & below */ 
-	font-size: 1.6rem; 
-	line-height: 1.6; 
+	font-size: 16px; /* for ie8 & below */
+	font-size: 1.6rem;
+	line-height: 1.6;
 	font-family: "Noto Sans", Tahoma, Geneva, sans-serif;
 }
 
-p { 
+p {
 	hyphenate: auto;
-	hyphenate-before: 2; 
-	hyphenate-after: 3; 
-	hyphenate-lines: 3; 
-	orphans: 4; 
+	hyphenate-before: 2;
+	hyphenate-after: 3;
+	hyphenate-lines: 3;
+	orphans: 4;
 }
 
-select, 
-input, 
-textarea, 
-button { 
+select,
+input,
+textarea,
+button {
 	font: 99% sans-serif;
 	border-radius: 0;
 }
 	select {
 		max-width: 100%;
 	}
-	
+
 	input[type=search] {
 	  -webkit-appearance: none;
 	}
 
-body, 
-select, 
-input, 
-textarea {   
+body,
+select,
+input,
+textarea {
 	color: #222;
 }
 
-small, 
-.small { 
-	font-size: 12px; /* for ie8 & below */ 
-	font-size: 1.2rem; 
+small,
+.small {
+	font-size: 12px; /* for ie8 & below */
+	font-size: 1.2rem;
 	letter-spacing: 2px; /* for ie8 & below */
-	letter-spacing: 0.2rem; 
+	letter-spacing: 0.2rem;
 	font-style: italic;
-	line-height: 26px; 
+	line-height: 26px;
 	line-height: 2.6rem;
 }
 
-strong, 
-th, 
-.strong { 
+strong,
+th,
+.strong {
 	font-weight: bold;
 }
 
-em, 
-.em { 
+em,
+.em {
 	font-style: italic;
 }
 
-ins, 
-.ins { 
-	color: #000; 
-	text-decoration: underline; 
+ins,
+.ins {
+	color: #000;
+	text-decoration: underline;
 }
 
-mark, 
-.mark { 
-	background-color: #ff9; 
-	color: #000; 
-	font-style: italic; 
-	font-weight: bold; 
+mark,
+.mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
 }
 
-del, 
-.del { 
-	text-decoration: line-through; 
+del,
+.del {
+	text-decoration: line-through;
 }
 
-abbr[title], 
-dfn[title] { 
-	border-bottom: 1px dotted; 
-	cursor:help; 
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor:help;
 }
 
-sub { 
-	vertical-align: sub; 
-	font-size: smaller; 
+sub {
+	vertical-align: sub;
+	font-size: smaller;
 }
 
-sup { 
-	vertical-align: super; 
-	font-size: smaller; 
+sup {
+	vertical-align: super;
+	font-size: smaller;
 }
 
 /* code & pre box resets */
-pre {  
-	padding: 15px;  
-	white-space: pre;  
-	white-space: pre-wrap;  
-	white-space: pre-line;  
-	word-wrap: break-word; 
+pre {
+	padding: 15px;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
 }
 
 /* form & input resets */
-pre, 
-code, 
-kbd, 
-samp { 
+pre,
+code,
+kbd,
+samp {
 	font-family: monospace, sans-serif;
-	margin: 24px; /* for ie8 & below */ 
-	margin: 2.4rem; 
+	margin: 24px; /* for ie8 & below */
+	margin: 2.4rem;
 }
 
-input, 
-select { 
-	vertical-align:middle; 
+input,
+select {
+	vertical-align:middle;
 }
 
-textarea { 
-	overflow: auto; 
-} 
-
-.ie6 legend, 
-.ie7 legend { 
-	margin-left: -7px; 
-} 
-
-input[type="radio"] { 
-	vertical-align: text-bottom; 
+textarea {
+	overflow: auto;
 }
 
-input[type="checkbox"] { 
-	vertical-align: bottom; 
+.ie6 legend,
+.ie7 legend {
+	margin-left: -7px;
 }
 
-.ie7 input[type="checkbox"] { 
-	vertical-align: baseline; 
+input[type="radio"] {
+	vertical-align: text-bottom;
 }
 
-.ie6 input { 
-	vertical-align: text-bottom; 
+input[type="checkbox"] {
+	vertical-align: bottom;
 }
 
-label, 
-input[type=button], 
-input[type=submit], 
-button { 
-	cursor: pointer; 
+.ie7 input[type="checkbox"] {
+	vertical-align: baseline;
 }
 
-button, 
-input, 
-select, 
-textarea { 
-	margin: 0; 
+.ie6 input {
+	vertical-align: text-bottom;
+}
+
+label,
+input[type=button],
+input[type=submit],
+button {
+	cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+	margin: 0;
 }
 
 /* vaidation */
-input:valid, 
+input:valid,
 textarea:valid {  }
-input:invalid, 
-textarea:invalid { 
-	border-radius: 1px;  
+input:invalid,
+textarea:invalid {
+	border-radius: 1px;
 
 
 
 }
 
-.no-boxshadow input:invalid, 
-.no-boxshadow textarea:invalid { 
-	background-color: #f0dddd; 
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+	background-color: #f0dddd;
 }
 
-button { 
-	width: auto; 
-	overflow: visible; 
+button {
+	width: auto;
+	overflow: visible;
 }
 
 /* image resets */
-.ie7 img, 
-.irem7 img { 
-	-ms-interpolation-mode: bicubic; 
+.ie7 img,
+.irem7 img {
+	-ms-interpolation-mode: bicubic;
 }
 
 /* hidden elements */
-.hidden { 
-	display: none; 
-	visibility: hidden; 
-} 
+.hidden {
+	display: none;
+	visibility: hidden;
+}
 
-.visuallyhidden { 
-	position: absolute !important; 
-	clip: rect(1px 1px 1px 1px);  
-	clip: rect(1px, 1px, 1px, 1px); 
+.visuallyhidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* added from 320&Up Project */
 
-input, 
-textarea  { 
-	-webkit-box-sizing : border-box; 
-	-moz-box-sizing : border-box; 
-	-o-box-sizing : border-box; 
-	box-sizing : border-box; 
+input,
+textarea  {
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing : border-box;
+	-o-box-sizing : border-box;
+	box-sizing : border-box;
 }
 
 /* clearfixes */
-.clearfix:after, 
+.clearfix:after,
 .menu ul:after {
 	content: ".";
 	display: block;
@@ -309,12 +309,12 @@ textarea  {
 	visibility: hidden;
 }
 
-.clearfix { 
+.clearfix {
 	zoom: 1;
 }
 
-.clearfix:after { 
-	clear: both; 
+.clearfix:after {
+	clear: both;
 }
 
 /******************************************************************
@@ -322,68 +322,68 @@ COMMON & REUSABLE STYLES
 ******************************************************************/
 
 /* floats */
-.left { 
-	float: left; 
+.left {
+	float: left;
 }
 
-.right { 
-	float: right; 
+.right {
+	float: right;
 }
 
 /* text alignment */
-.text-left { 
-	text-align: left; 
+.text-left {
+	text-align: left;
 }
 
-.text-center { 
-	text-align: center; 
+.text-center {
+	text-align: center;
 }
 
-.text-right { 
-	text-align: right; 
+.text-right {
+	text-align: right;
 }
 
 /* highlighting search term on search page */
-mark, 
-.search-term { 
+mark,
+.search-term {
 	background: #EBE16F;
 }
 
 /* alerts & notices */
-.help, 
-.info, 
-.error, 
-.success { 
-	margin: 10px; 
-	padding: 10px; 
-	border: 1px solid #cecece; 
+.help,
+.info,
+.error,
+.success {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #cecece;
 }
 
-.help { 
-	border-color: #E0C618; 
-	background: #EBE16F; 
+.help {
+	border-color: #E0C618;
+	background: #EBE16F;
 }
 
-.info { 
-	border-color: #92cae4; 
-	background: #d5edf8; 
+.info {
+	border-color: #92cae4;
+	background: #d5edf8;
 }
 
-.error { 
-	border-color: #fbc2c4; 
-	background: #fbe3e4; 
+.error {
+	border-color: #fbc2c4;
+	background: #fbe3e4;
 }
 
-.success { 
-	border-color: #c6d880; 
-	background: #e6efc2; 
-} 
+.success {
+	border-color: #c6d880;
+	background: #e6efc2;
+}
 
 /******************************************************************
 GENERAL STYLES
 ******************************************************************/
 
-body { 
+body {
 	-webkit-text-size-adjust : 100%; /* font size on apple devices */
 	-ms-text-size-adjust : 100%;  /* font size on windows devices */
 }
@@ -392,49 +392,49 @@ body {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1 a, .h1 a, 
-h2 a, .h2 a, 
-h3 a, .h3 a, 
-h4 a, .h4 a, 
-h5 a, .h5 a { 
-	text-decoration: none; 
+h1 a, .h1 a,
+h2 a, .h2 a,
+h3 a, .h3 a,
+h4 a, .h4 a,
+h5 a, .h5 a {
+	text-decoration: none;
 }
 
 h1, .h1 {
-	font-size: 35px; /* for ie8 & below */ 
+	font-size: 35px; /* for ie8 & below */
 	font-size: 3.5rem;
-	line-height: 32px; /* for ie8 & below */ 
-	line-height: 3.2rem; 
+	line-height: 32px; /* for ie8 & below */
+	line-height: 3.2rem;
 }
 
 h2, .h2 {
-	font-size: 24px; /* for ie8 & below */ 
+	font-size: 24px; /* for ie8 & below */
 	font-size: 2.4rem;
-	line-height: 30px; /* for ie8 & below */ 
-	line-height: 3.0rem; 
+	line-height: 30px; /* for ie8 & below */
+	line-height: 3.0rem;
 }
 
 h3, .h3 {
-	font-size: 19px; /* for ie8 & below */ 
+	font-size: 19px; /* for ie8 & below */
 	font-size: 1.9rem;
 	line-height: 24px; /* for ie8 & below */
 	line-height: 2.4rem;
 }
 
 h4, .h4 {
-	font-size: 16px; /* for ie8 & below */ 
+	font-size: 16px; /* for ie8 & below */
 	font-size: 1.6rem;
 	line-height: 18px; /* for ie8 & below */
 	line-height: 1.8rem;
 }
 
 h5, .h5 {
-	font-size: 12px; /* for ie8 & below */ 
+	font-size: 12px; /* for ie8 & below */
 	font-size: 1.2rem;
-	line-height: 40px; /* for ie8 & below */ 
-	line-height: 4.0rem; 
-	text-transform: uppercase; 
-	letter-spacing: 2px; 
+	line-height: 40px; /* for ie8 & below */
+	line-height: 4.0rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 /******************************************************************
@@ -452,108 +452,108 @@ html, body {
 	margin: 0 auto -70px;
 }
 
-#container { 
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box; 
-	-o-box-sizing: border-box; 
+#container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
      background: url(library/images/content-background-image.png) no-repeat center center;
-   
+
     z-index: 2500;
     background-size: cover;
 }
-	
+
 	/* layout options ( all have margins right & left of 1%) */
-	
-	.col60 { 
-		width: 6.333%; 
+
+	.col60 {
+		width: 6.333%;
 	} /* width 60px / grid_1 */
-	
-	.col140 { 
-		width: 14.667%; 
+
+	.col140 {
+		width: 14.667%;
 	} /* width 140px / grid_2 */
-	
-	.col220 { 
-		width: 23.0%; 
+
+	.col220 {
+		width: 23.0%;
 	} /* width 220px / grid_3 */
-	
-	.col300 { 
-		width: 31.333%; 
+
+	.col300 {
+		width: 31.333%;
 	} /* width 300px / grid_4 */
-	
-	.col380 { 
-		width: 39.667%; 
+
+	.col380 {
+		width: 39.667%;
 	} /* width 380px / grid_5 */
-	
-	.col480 { 
-		width: 48.0%; 
+
+	.col480 {
+		width: 48.0%;
 	} /* width 480px / grid_6 */
-	
-	.col540 { 
-		width: 56.333%; 
+
+	.col540 {
+		width: 56.333%;
 	} /* width 540px / grid_7 */
-	
-	.col620 { 
-		width: 64.667%; 
+
+	.col620 {
+		width: 64.667%;
 	} /* width 620px / grid_8 */
-	
-	.col700 { 
-		width: 73.0%; 
+
+	.col700 {
+		width: 73.0%;
 	} /* width 700px / grid_9 */
-	
-	.col780 { 
-		width: 81.333%; 
+
+	.col780 {
+		width: 81.333%;
 	} /* width 780px / grid_10 */
-	
-	.col860 { 
-		width: 89.667%; 
+
+	.col860 {
+		width: 89.667%;
 	} /* width 860px / grid_11 */
-	
-	.col940 { 
-		width: 98.0%; 
+
+	.col940 {
+		width: 98.0%;
 	} /* width 940px / grid_12 */
-	
+
 	/* layout & column defaults */
-	.col60, 
-	.col140, 
-	.col220, 
-	.col300, 
-	.col380, 
-	.col480, 
-	.col540, 
-	.col620, 
-	.col700, 
-	.col780, 
-	.col860, 
-	.col940 { 
-		display: inline; 
+	.col60,
+	.col140,
+	.col220,
+	.col300,
+	.col380,
+	.col480,
+	.col540,
+	.col620,
+	.col700,
+	.col780,
+	.col860,
+	.col940 {
+		display: inline;
 		float: left;
-		margin-left: 1%; 
-		margin-right: 1%; 
+		margin-left: 1%;
+		margin-right: 1%;
 		position: relative;
 	}
-	
+
 	/* default styles & fixes */
-	#main { 
-		margin-left: 0; 
+	#main {
+		margin-left: 0;
 	} /* fixes alignment (defaulted at col620) */
-	
-	#sidebar { 
-		margin-right: 0; 
+
+	#sidebar {
+		margin-right: 0;
 	} /* fixes alignment (defaulted at col300) */
-	
+
 /******************************************************************
 LINK STYLES
 ******************************************************************/
 
-a, a:visited { 
-	text-decoration: underline; 
+a, a:visited {
+	text-decoration: underline;
 }
 a:hover {
-	text-decoration: none; 
+	text-decoration: none;
 }
 a:active {} /* on click */
-a:link { 
+a:link {
 	-webkit-tap-highlight-color : rgba(0,0,0,0); /* this highlights links on Iphones / iPads */
 }
 
@@ -562,24 +562,24 @@ TEXT SELECTION STYLES
 ******************************************************************/
 
 /* Safari, Chrome, iPhones, iPads */
-::-webkit-selection { 
-	background: #000; 
-	color: #fff; 
-	text-shadow : none; 
+::-webkit-selection {
+	background: #000;
+	color: #fff;
+	text-shadow : none;
 }
 
 /* Firefox */
-::-moz-selection { 
-	background: #000; 
-	color: #fff; 
-	text-shadow : none; 
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow : none;
 }
 
 /* The Rest */
-::selection { 
-	background: #000; 
-	color: #fff; 
-	text-shadow : none; 
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow : none;
 }
 
 
@@ -590,7 +590,7 @@ want to style a page via body class? go ahead
 
 body.rtl {}
 body.home {} /* home page */
-body.blog {} 
+body.blog {}
 body.archive {} /* archive page */
 body.date {} /* date archive page */
 	body.date-paged-1 {} /* replace the number to the corresponding page number */
@@ -623,7 +623,7 @@ body.page-template {} /* custom page template page */
 body.logged-in {} /* if user is logged in */
 body.paged {} /* paged items like search results or archives */
 	body.paged-1 {} /* individual paged (i.e. body.paged-3) */
-	
+
 /* new browser classes */
 body.browser-lynx {} /* lynx browsers */
 body.browser-gecko {} /* firefox browsers */
@@ -666,12 +666,12 @@ header[role=banner] {
 }
 	header[role=banner],
 	header[role=banner] div {
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box; 
-		-o-box-sizing: border-box; 
-		box-sizing: border-box; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
 	}
-	
+
 	#inner-header {
 		width: 100%;
 		margin: 0 auto;
@@ -680,22 +680,22 @@ header[role=banner] {
 		max-width: 125.4rem;
         padding:5px;
 	}
-	
+
 	#site-logo img {
 		max-width: 100%;
 	}
 
-	#site-heading { 
+	#site-heading {
 		float: left;
 		width: 35%;
 		min-height: 60px; /* for ie8 & below */
 		min-height: 6rem;
-		padding-top: 20px; 
+		padding-top: 20px;
 		padding-top: 2rem; /* for ie8 & below */
 		margin-bottom: 10px; /* for ie8 & below */
 		margin-bottom: 1rem;
 	}
-	
+
 	#site-title {
 		margin-bottom: 8px; /* for ie8 & below */
 		margin-bottom: 0.8rem;
@@ -705,13 +705,13 @@ header[role=banner] {
 		font-weight: 400;
 		line-height: 40px; /* for ie8 & below */
 		line-height: 4.0rem;
-		word-wrap: break-word; 
+		word-wrap: break-word;
 	}
-	
-	#site-title a { 
+
+	#site-title a {
 		text-decoration: none;
 	}
-	
+
 	#site-description {
 		font-size: 14px; /* for ie8 & below */
 		font-size: 1.4rem;
@@ -724,12 +724,12 @@ header[role=banner] #searchform {
 		top: 25px; /* for ie8 & below */
 		top: 2.5rem;
 	}
-	
+
 	#searchform label,
 	#searchform input[type=submit] {
 		display: none;
 	}
-	
+
 	#s {
 		font-size: 20px; /* for ie8 & below */
 		font-size: 2.0rem;
@@ -746,7 +746,7 @@ header[role=banner] #searchform {
 			min-width: 270px; /* for ie8 & below */
 			min-width: 27rem;
 		}
-		
+
 		.post-content #s,
 		.widget #s {
 			font-size: 14px; /* for ie8 & below */
@@ -759,13 +759,13 @@ header[role=banner] #searchform {
 			.widget #s {
 				min-width: 100%;
 			}
-	
-	#headerimg { 
+
+	#headerimg {
 		width: 100%;
 		margin-bottom: 20px; /* for ie8 & below */
 		margin-bottom: 2rem;
 	}
-	
+
 	#headerimg img {
 		width: 100%;
 		height: auto;
@@ -774,16 +774,16 @@ header[role=banner] #searchform {
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
-.entry-header { 
+
+.entry-header {
 	margin-bottom: 24px; /* for ie8 & below */
 	margin-bottom: 2.4rem;
 }
 
 .entry-title {
-	font-size: 24px; /* for ie8 & below */ 
+	font-size: 24px; /* for ie8 & below */
 	font-size: 2.4rem;
-	line-height: 26px; /* for ie8 & below */ 
+	line-height: 26px; /* for ie8 & below */
 	line-height: 2.6rem;
 }
 	.entry-title a {
@@ -793,16 +793,16 @@ header[role=banner] #searchform {
 			color: #95a5a6;
 			text-decoration: underline;
 		}
-	body.page .entry-title, 
-	body.single .entry-title, 
+	body.page .entry-title,
+	body.single .entry-title,
 	.error404 .entry-title {
 		font-size: 35px; /* for ie8 & below */
 		font-size: 3.5rem;
-		line-height: 38px; /* for ie8 & below */ 
+		line-height: 38px; /* for ie8 & below */
 		line-height: 3.8rem;
 	}
-	
-.page-header { 
+
+.page-header {
 	margin: 20px 30px 0 30px; /* for ie8 & below */
 	margin: 2.0rem 3.0rem 0 3.0rem;
 }
@@ -813,10 +813,10 @@ NAVIGATION STYLES
 ******************************************************************/
 div.menu {
 	font-size: 14px; /* for ie8 & below */
-	font-size: 1.4rem; 
+	font-size: 1.4rem;        font-weight: bold
 }
 	div.menu > ul { }
-		div.menu ul li { 
+		div.menu ul li {
 			list-style-type: none;
 			float: left;
 		}
@@ -826,97 +826,97 @@ div.menu {
 				padding-left: 7px;
 				padding-right: 7px;
 			}
-			
+
 			div.footer-menu ul.sub-menu,
 			div.footer-menu ul.children {
 				display: none;
 			}
-			
-			div.menu ul li a { 
+
+			div.menu ul li a {
 				display: block;
 				text-decoration: none;
 			}
 				div.menu ul li:last-child a {}
 				div.menu ul li a:hover {}
-		div.menu ul li.current-menu-item a, 
+		div.menu ul li.current-menu-item a,
 		div.menu ul li.current_page_item a {}
-		div.menu ul li ul.sub-menu, 
-		div.menu ul li ul.children { 
-			position: absolute; 
-			z-index: 9999; 
+		div.menu ul li ul.sub-menu,
+		div.menu ul li ul.children {
+			position: absolute;
+			z-index: 9999;
 			width: 200px; /* for ie8 & below */
-			width: 20rem; 
+			width: 20rem;
 			word-wrap: break-word;
 			display: none;
 		}
 			div.menu ul li ul li a {}
 				div.menu ul li ul li a:hover {}
 			div.menu ul li ul li:last-child a {}
-			div.menu ul li:hover > ul { 
+			div.menu ul li:hover > ul {
 				display: inline;
 			}
-				div.menu ul li ul li ul.sub-menu, 
-				div.menu ul li ul li ul.children { 
+				div.menu ul li ul li ul.sub-menu,
+				div.menu ul li ul li ul.children {
 					right: -199px; /* for ie8 & below */
-					right: -19.9rem; 
-					position: absolute;  
-					top: auto; 
+					right: -19.9rem;
+					position: absolute;
+					top: auto;
 					display: none;
 				}
-					div.menu ul li ul li:hover > ul.sub-menu, 
-					div.menu ul li ul li:hover > ul.children { 
+					div.menu ul li ul li:hover > ul.sub-menu,
+					div.menu ul li ul li:hover > ul.children {
 						display: inline;
 					}
-					
-		.widget_nav_menu ul li { 
-			float:none 
+
+		.widget_nav_menu ul li {
+			float:none
 		}
 
-		.widget_nav_menu ul li ul.sub-menu, 
+		.widget_nav_menu ul li ul.sub-menu,
 		.widget_nav_menu ul li ul.children,
-		.widget_pages ul li ul.sub-menu, 
-		.widget_pages ul li ul.children { 
+		.widget_pages ul li ul.sub-menu,
+		.widget_pages ul li ul.children {
 			position: relative;
 			left: auto;
-			z-index: 9999; 
+			z-index: 9999;
 			width: auto;
 			word-wrap: break-word;
-			margin-left: 16px; /* for ie8 & below */ 
+			margin-left: 16px; /* for ie8 & below */
 			margin-left: 1.6rem;
 			margin-top: 8px; /* for ie8 & below */
 			margin-top: 0.8rem;
 		}
-			.widget_nav_menu ul li ul.sub-menu a, 
+			.widget_nav_menu ul li ul.sub-menu a,
 			.widget_nav_menu ul li ul.children a {}
-			
-			.widget_nav_menu ul li ul li ul.sub-menu, 
-			.widget_nav_menu ul li ul li ul.children { 
-				left: auto; 
+
+			.widget_nav_menu ul li ul li ul.sub-menu,
+			.widget_nav_menu ul li ul li ul.children {
+				left: auto;
 				position: relative;
-				margin-left: 16px; /* for ie8 & below */ 
+				margin-left: 16px; /* for ie8 & below */
 				margin-left: 1.6rem;
 				margin-top: 8px; /* for ie8 & below */
 				margin-top: 0.8rem;
-				top: auto; 
-				word-wrap: break-word; 
+				top: auto;
+				word-wrap: break-word;
 			}
 
 nav[role=navigation] {
 	display: inline-block;
-	padding-top: 20px; 
+	padding-top: 20px;
 	padding-top: 2rem; /* for ie8 & below */
 	width: 50%;
     float:right;
 }
-	nav[role=navigation] div.menu { 
+	nav[role=navigation] div.menu {
 		margin-right: -30px;
 		float: left;
-		
+
 	}
-	
+
 		nav[role=navigation] .menu ul li {}
-			nav[role=navigation] .menu ul li a, 
-			nav[role=navigation] .menu #menu-icon { 
+			nav[role=navigation] .menu ul li a,
+			nav[role=navigation] .menu #menu-icon {
 				padding: 10px 20px; /* for ie8 & below */
 				padding: 1rem 2rem;
 				-webkit-box-sizing: border-box;
@@ -925,65 +925,65 @@ nav[role=navigation] {
 				box-sizing: border-box;
 				text-transform: uppercase;
 			}
-			
+
 			nav[role=navigation] .menu #menu-icon {
 				cursor: pointer;
 				display: none;
 			}
-			
+
 				nav[role=navigation] .menu ul li a:hover {
-					
+
 				}
-				
+
 				nav[role=navigation] .menu ul li:first-child a {
 
 				}
-				
-		nav[role=navigation] .menu ul li.current-menu-item a, 
-		.nav ul li.current_page_item a, 
+
+		nav[role=navigation] .menu ul li.current-menu-item a,
+		.nav ul li.current_page_item a,
 		nav[role=navigation] .menu ul li.current_page_item a {
-			
+
 		}
-		
-			nav[role=navigation] .menu ul.sub-menu li.current-menu-item a, 
-			.nav ul.sub-menu li.current_page_item a, 
+
+			nav[role=navigation] .menu ul.sub-menu li.current-menu-item a,
+			.nav ul.sub-menu li.current_page_item a,
 			nav[role=navigation] .menu ul.sub-menu li.current_page_item a,
 			nav[role=navigation] .menu ul li.current-page-parent ul.sub-menu li a,
 			nav[role=navigation] .menu ul li.current-menu-item ul.sub-menu li a,
 			nav[role=navigation] .menu ul li.current_page_parent ul.children li a,
-			nav[role=navigation] .menu ul li.current_page_item ul.children li a,  
-			.nav ul li.current_page_item ul.sub-menu li a, 
+			nav[role=navigation] .menu ul li.current_page_item ul.children li a,
+			.nav ul li.current_page_item ul.sub-menu li a,
 			nav[role=navigation] .menu ul li.current_page_item ul.sub-menu li a {
 				background: none;
 			}
-				
-				nav[role=navigation] .menu ul.sub-menu li.current-menu-item a:hover, 
-				.nav ul.sub-menu li.current_page_item a:hover, 
+
+				nav[role=navigation] .menu ul.sub-menu li.current-menu-item a:hover,
+				.nav ul.sub-menu li.current_page_item a:hover,
 				nav[role=navigation] .menu ul.sub-menu li.current_page_item a:hover,
 				nav[role=navigation] .menu ul li.current-page-parent ul.sub-menu li a:hover,
 				nav[role=navigation] .menu ul li.current-menu-item ul.sub-menu li a:hover,
 				nav[role=navigation] .menu ul li.current_page_parent ul.children li a:hover,
-				nav[role=navigation] .menu ul li.current_page_item ul.children li a:hover,  
-				.nav ul li.current_page_item ul.sub-menu li a:hover, 
+				nav[role=navigation] .menu ul li.current_page_item ul.children li a:hover,
+				.nav ul li.current_page_item ul.sub-menu li a:hover,
 				nav[role=navigation] .menu ul li.current_page_item ul.sub-menu li a:hover {
 					background: #f2f2f2;
-					
+
 				}
-		
-		
-		nav[role=navigation] .menu ul li ul.sub-menu, 
+
+
+		nav[role=navigation] .menu ul li ul.sub-menu,
 		nav[role=navigation] .menu ul li ul.children {
 			background: #fcfcfc;
 		}
-		
-		nav[role=navigation] .menu ul li ul.sub-menu li, 
+
+		nav[role=navigation] .menu ul li ul.sub-menu li,
 		nav[role=navigation] .menu ul li ul.children li {
 			border-bottom: 1px solid #f0f0f0;
 			width: 200px; /* for ie8 & below */
-			width: 20rem; 
+			width: 20rem;
 		}
-		
-		nav[role=navigation] .menu ul li ul.sub-menu li a, 
+
+		nav[role=navigation] .menu ul li ul.sub-menu li a,
 		nav[role=navigation] .menu ul li ul.children li a {
 			display: block;
 			min-height: 38px; /* for ie8 & below */
@@ -998,42 +998,42 @@ nav[role=navigation] {
 			-o-box-sizing: border-box;
 			box-sizing: border-box;
 		}
-		
-		nav[role=navigation] .menu ul li ul.sub-menu li:first-child, 
+
+		nav[role=navigation] .menu ul li ul.sub-menu li:first-child,
 		nav[role=navigation] .menu ul li ul.children li:first-child {
-			
+
 		}
-		
-		nav[role=navigation] .menu ul li ul.sub-menu li:first-child a, 
+
+		nav[role=navigation] .menu ul li ul.sub-menu li:first-child a,
 		nav[role=navigation] .menu ul li ul.children li:first-child a {
 
 		}
-			nav[role=navigation] .menu ul li ul li a { 
-				color: #555; 
-				text-shadow: 0px 0px; 
+			nav[role=navigation] .menu ul li ul li a {
+				color: #555;
+				text-shadow: 0px 0px;
 
 			}
-				nav[role=navigation] .menu ul li ul li a:hover { 
-					background: #f5f5f5; 
-					color: #555; 
+				nav[role=navigation] .menu ul li ul li a:hover {
+					background: #f5f5f5;
+					color: #555;
 				}
-				
-				nav[role=navigation] .menu ul li ul li ul li:first-child > a { 
+
+				nav[role=navigation] .menu ul li ul li ul li:first-child > a {
 
 				}
-				
+
 			nav[role=navigation] .menu ul li ul li:last-child a {}
 			nav[role=navigation] .menu ul li:hover ul {}
-				nav[role=navigation] .menu ul li ul li ul.sub-menu, 
+				nav[role=navigation] .menu ul li ul li ul.sub-menu,
 				nav[role=navigation] .menu ul li ul li ul.children {
 					margin-top: -38px; /* for ie8 & below */
 					margin-top: -3.8rem;
 				}
 					nav[role=navigation] .menu ul li ul li:hover ul.sub-menu,
 					nav[role=navigation] .menu ul li ul li:hover ul.children {
-						
+
 					}
-					
+
 /******************************************************************
 THEME DEFAULT COLOR
 ******************************************************************/
@@ -1079,17 +1079,17 @@ POSTS & CONTENT STYLES
 }
 	#content,
 	#content div {
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box; 
-		-o-box-sizing: border-box; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
+
 	#content.alt-home-cont {
 		padding-top: 25px;
 	}
 
-	#main { 
+	#main {
 		 /* adds bg to post area */
 		overflow: hidden;
 	}
@@ -1097,43 +1097,43 @@ POSTS & CONTENT STYLES
 			margin-bottom: 35px; /* for ie8 & below */
 			margin-bottom: 3.5rem;
 		}
-	
+
 	body.page-template-full-width-php #main,
 	body.page-template-full-width-page-php #main {}
 	body.attachment #main {}
-	
+
 		article[id*=post-] {
 			padding: 35px 30px; /* for ie8 & below */
-			padding: 3.5rem 3.0rem; 
+			padding: 3.5rem 3.0rem;
 			word-wrap: break-word;
 		}
 			.sbfix article[id*=post-] {
 				padding-left: 0;
 			}
-			
+
 			.single article[id*=post-] {
 				padding-bottom: 0;
 			}
-			
+
 			.single article[id*=post-].people {
 				padding-top: 15px;
 			}
-			
+
 			.full-width-content article[id*=post-] {
 				padding: 35px 0; /* for ie8 & below */
 				padding: 3.5rem 0;
 				padding-bottom: 0;
 			}
-		
+
 		/* archive title */
-		.archive_title { 
+		.archive_title {
 			padding: 0 20px;
 			margin: 20px 0 12px; /* for ie8 & below */
-			margin: 2.0rem 0 1.2rem; 
+			margin: 2.0rem 0 1.2rem;
 		}
-		
+
 		article[id=post-not-found] h1 {}
-	
+
 		/* want to style individual post classes? Booya! */
 		.post-id {} /* post by id (i.e. post-3) */
 		.post {} /* general post style */
@@ -1143,19 +1143,19 @@ POSTS & CONTENT STYLES
 		.hentry {} /* hentry class */
 		.category-slug {} /* style by category (i.e. category-videos) */
 		.tag-slug {} /* style by tag (i.e. tag-news) */
-	
+
 		/* post meta */
-		.entry-meta, 
+		.entry-meta,
 		.category-archive-meta {
-			font-size: 14px; /* for ie8 & below */ 
+			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
-			line-height: 1.2; 
+			line-height: 1.2;
 			color: #95a5a6;
-			margin: 0 0 24px 0; /* for ie8 & below */ 
+			margin: 0 0 24px 0; /* for ie8 & below */
 			margin: 0 0 2.4rem 0;
 		}
-		
-		.entry-summary { 
+
+		.entry-summary {
 			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
 		}
@@ -1166,9 +1166,9 @@ POSTS & CONTENT STYLES
 				.entry-meta a:hover {
 					text-decoration: underline;
 				}
-		
+
 			.meta time {}
-			
+
 			.meta-by,
 			.meta-on,
 			.meta-com,
@@ -1184,60 +1184,60 @@ POSTS & CONTENT STYLES
 				background-repeat: no-repeat;
 				margin-right: 2px;
 			}
-			
+
 				.meta-by {
 					background-image: url(library/images/meta-author-g.png);
 					margin-left: 15px;
-					
+
 				}
 					.grid-box .byline {
 						display: none;
 						margin-top: 7px;
 					}
-					
+
 					.grid-box .meta-by {
 						margin-left: 0;
 					}
-				
+
 				.meta-on {
 					background-image: url(library/images/meta-date-g.png);
-					
+
 				}
-				
+
 				.meta-com {
 					background-image: url(library/images/meta-comment.png);
 				}
-				
+
 				.meta-cat {
 					background-image: url(library/images/meta-cat.png);
-					
+
 				}
-				
+
 				.meta-tag {
 					background-image: url(library/images/meta-tag.png);
 					width: 16px;
 					margin-left: 20px;
 				}
 
-			
+
 		/* post content */
-		.post-content { 
+		.post-content {
 			word-wrap: break-word;
-			margin-bottom: 40px; /* for ie8 & below */ 
+			margin-bottom: 40px; /* for ie8 & below */
 			margin-bottom: 4.0rem;
 			overflow: hidden;
 		}
 			.commentlist li.comment article[id*=comment-] p,
 			.post-content p {
 				margin: 0 0 24px 0; /* for ie8 & below */
-				margin: 0 0 2.4rem 0; 
+				margin: 0 0 2.4rem 0;
 			}
-			
+
 			.commentlist li.comment article[id*=comment-] p:last-child,
-			.post-content p:last-child { 
+			.post-content p:last-child {
 
 			}
-			
+
 			.post-content h1, .commentlist li.comment article[id*=comment-] h1,
 			.post-content h2, .commentlist li.comment article[id*=comment-] h2,
 			.post-content h3, .commentlist li.comment article[id*=comment-] h3,
@@ -1246,57 +1246,57 @@ POSTS & CONTENT STYLES
 			.post-content h6, .commentlist li.comment article[id*=comment-] h6,
 			.post-content address, .commentlist li.comment article[id*=comment-] address {
 				margin: 0 0 24px 0; /* for ie8 & below */
-				margin: 0 0 2.4rem 0; 
+				margin: 0 0 2.4rem 0;
 			}
-			
-			.commentlist li.comment article[id*=comment-] ul, .post-content ul, 
-			.commentlist li.comment article[id*=comment-] ol, .post-content ol, 
-			.commentlist li.comment article[id*=comment-] table, .post-content table, 
-			.commentlist li.comment article[id*=comment-] dl, .post-content dl { 
+
+			.commentlist li.comment article[id*=comment-] ul, .post-content ul,
+			.commentlist li.comment article[id*=comment-] ol, .post-content ol,
+			.commentlist li.comment article[id*=comment-] table, .post-content table,
+			.commentlist li.comment article[id*=comment-] dl, .post-content dl {
 				margin: 24px 0; /* for ie8 & below */
-				margin: 2.4rem 0; 
+				margin: 2.4rem 0;
 			}
-				.commentlist li.comment article[id*=comment-] dl.wp-caption, 
-				.post-content dl.wp-caption { 
+				.commentlist li.comment article[id*=comment-] dl.wp-caption,
+				.post-content dl.wp-caption {
 					max-width: 100%;
 					margin: 0 auto;
 				}
-			
+
 			.commentlist li.comment article[id*=comment-] table,
-			.post-content table { 
-				width: 100%; 
+			.post-content table {
+				width: 100%;
 			}
-			
+
 				.commentlist li.comment article[id*=comment-] table th,
-				.post-content table th { 
-					border-bottom: 2px solid #848484; 
-					text-align: left; 
+				.post-content table th {
+					border-bottom: 2px solid #848484;
+					text-align: left;
 				}
-				
+
 				.commentlist li.comment article[id*=comment-] table td,
-				.post-content table td { 
-					border-bottom: 1px solid #d0d0d0; 
-					padding: 5px; /* for ie8 & below */ 
+				.post-content table td {
+					border-bottom: 1px solid #d0d0d0;
+					padding: 5px; /* for ie8 & below */
 					padding: 0.5rem;
 				}
-			
-			.commentlist li.comment article[id*=comment-] ul, .post-content ul, 
-			.commentlist li.comment article[id*=comment-] ol, .post-content ol { 
-				list-style-position: outside; 
+
+			.commentlist li.comment article[id*=comment-] ul, .post-content ul,
+			.commentlist li.comment article[id*=comment-] ol, .post-content ol {
+				list-style-position: outside;
 				line-height: 1.5;
-				margin-left: 20px; /* for ie8 & below */ 
+				margin-left: 20px; /* for ie8 & below */
 				margin-left: 2rem;
-				margin-right: 20px; /* for ie8 & below */ 
-				margin-right: 2rem; 
+				margin-right: 20px; /* for ie8 & below */
+				margin-right: 2rem;
 			}
-			
-			.commentlist li.comment article[id*=comment-] li, 
+
+			.commentlist li.comment article[id*=comment-] li,
 			.post-content li {
-				margin-bottom: 12px; /* for ie8 & below */ 
-				margin-bottom: 1.2rem; 
+				margin-bottom: 12px; /* for ie8 & below */
+				margin-bottom: 1.2rem;
 			}
-			
-			
+
+
 			.post-content ol {
 				list-style: none; /* Remove default numbering */
 				*list-style: decimal; /* Keep using default numbering for IE6/7 */
@@ -1305,14 +1305,14 @@ POSTS & CONTENT STYLES
 				.commentlist li.comment article[id*=comment-] ol {
 					list-style: decimal;
 				}
-				
+
 				.post-content ol > li {
 					list-style-type: none;
 					position: relative;
 					padding-left: 22px; /* for ie8 & below */
 					padding-left: 2.2rem;
 				}
-				
+
 				.post-content ol > li:before {
 					content: counter(my-counter);
 					counter-increment: my-counter;
@@ -1323,14 +1323,14 @@ POSTS & CONTENT STYLES
 					color: #fff;
 					font-family: Arial, Helvetica, sans-serif;
 					font-weight: bold;
-					font-size: 10px; /* for ie8 & below */ 
+					font-size: 10px; /* for ie8 & below */
 					font-size: 1.0rem;
 					text-align: center;
 					width: 14px;
 					height: 14px;
 				}
 
-			
+
 			.post-content ul > li {
 				list-style: none;
 				position: relative;
@@ -1340,7 +1340,7 @@ POSTS & CONTENT STYLES
 				.commentlist li.comment article[id*=comment-] ul li {
 					list-style: disc;
 				}
-				
+
 				.post-content ul > li:before {
 					content: "";
 					position: absolute;
@@ -1360,72 +1360,72 @@ POSTS & CONTENT STYLES
 					width: 14px;
 					height: 14px;
 				}
-			
-			.commentlist li.comment article[id*=comment-] blockquote, 
-			.post-content blockquote { 
+
+			.commentlist li.comment article[id*=comment-] blockquote,
+			.post-content blockquote {
 				font-style: italic;
-				line-height: 26px; /* for ie8 & below */ 
+				line-height: 26px; /* for ie8 & below */
 				line-height: 2.6rem;
 				margin: 24px 35px 24px 56px; /* for ie8 & below */
-				margin: 2.4rem 3.5rem 2.4rem 5.6rem; 
+				margin: 2.4rem 3.5rem 2.4rem 5.6rem;
 			}
-			
-			.commentlist li.comment article[id*=comment-] blockquote:before, 
-			.post-content blockquote:before { 
+
+			.commentlist li.comment article[id*=comment-] blockquote:before,
+			.post-content blockquote:before {
 				font-family: Georgia, serif;
 				font-weight: 700;
 				content: "“";
-				font-size: 80px; /* for ie8 & below */ 
+				font-size: 80px; /* for ie8 & below */
 				font-size: 8.0rem;
 				text-indent: -60px; /* for ie8 & below */
 				text-indent: -6.0rem;
-				margin-top: 12px; /* for ie8 & below */ 
-				margin-top: 1.2rem; 
+				margin-top: 12px; /* for ie8 & below */
+				margin-top: 1.2rem;
 				float: left;
-				opacity: 0.2; 
+				opacity: 0.2;
 			}
 
-			
-			.commentlist li.comment article[id*=comment-] dl, 
+
+			.commentlist li.comment article[id*=comment-] dl,
 			.post-content dl {
-				margin: 26px 0 26px; /* for ie8 & below */ 
-				margin: 2.6rem 0 2.6rem; 
+				margin: 26px 0 26px; /* for ie8 & below */
+				margin: 2.6rem 0 2.6rem;
 			}
-			
-			.commentlist li.comment article[id*=comment-] dt, 
-			.post-content dt { 
+
+			.commentlist li.comment article[id*=comment-] dt,
+			.post-content dt {
 				font-style: italic;
 				margin-top: 19px; /* for ie8 & below */
 				margin-top: 1.9rem;
-				font-size: 17px; /* for ie8 & below */ 
-				font-size: 1.7rem; 
-				font-weight: 700; 
-				border-bottom: 1px solid #999; 
+				font-size: 17px; /* for ie8 & below */
+				font-size: 1.7rem;
+				font-weight: 700;
+				border-bottom: 1px solid #999;
 			}
-				.commentlist li.comment article[id*=comment-] dt.wp-caption-dt, 
+				.commentlist li.comment article[id*=comment-] dt.wp-caption-dt,
 				.post-content dt.wp-caption-dt {
 					border: 0;
 					margin: 0 auto;
 				}
-			
-			.commentlist li.comment article[id*=comment-] dd, 
-			.post-content dd { 
+
+			.commentlist li.comment article[id*=comment-] dd,
+			.post-content dd {
 				font-style: italic;
-				font-size: 13px; /* for ie8 & below */ 
+				font-size: 13px; /* for ie8 & below */
 				font-size: 1.3rem;
-				margin-top: 16px; /* for ie8 & below */ 
+				margin-top: 16px; /* for ie8 & below */
 				margin-top: 1.6rem;
-				line-height: 26px; /* for ie8 & below */ 
-				line-height: 2.6rem; 
+				line-height: 26px; /* for ie8 & below */
+				line-height: 2.6rem;
 			}
-			
+
 			.commentlist li.comment article[id*=comment-] video, .post-content video,
 			.commentlist li.comment article[id*=comment-] object, .post-content object,
 			.commentlist li.comment article[id*=comment-] embed, .post-content embed,
-			.commentlist li.comment article[id*=comment-] iframe, .post-content iframe { 
+			.commentlist li.comment article[id*=comment-] iframe, .post-content iframe {
 				display: block;
-				margin: 0 0 24px 0; /* for ie8 & below */ 
-				margin: 0 0 2.4rem 0; 
+				margin: 0 0 24px 0; /* for ie8 & below */
+				margin: 0 0 2.4rem 0;
 				max-width: 100%;
 				min-width: 100%;
 				height: auto;
@@ -1435,53 +1435,53 @@ POSTS & CONTENT STYLES
 				.full-width-content .commentlist li.comment article[id*=comment-] video, .full-width-content .post-content video,
 				.full-width-content .commentlist li.comment article[id*=comment-] object, .full-width-content .post-content object,
 				.full-width-content .commentlist li.comment article[id*=comment-] embed, .full-width-content .post-content embed,
-				.full-width-content .commentlist li.comment article[id*=comment-] iframe, .full-width-content .post-content iframe { 
-					min-height: 520px; /* for ie8 & below */ 
+				.full-width-content .commentlist li.comment article[id*=comment-] iframe, .full-width-content .post-content iframe {
+					min-height: 520px; /* for ie8 & below */
 					min-height: 52rem;
 				}
-			
-		
+
+
 			.commentlist li.comment article[id*=comment-] pre,
-			.post-content pre { 
+			.post-content pre {
 				overflow: auto;
 				background: #f5f5f5;
 				border: 1px solid #f0f0f0;
 				border-left: 3px solid #e0e0e0;
-				padding-left: 25px; /* for ie8 & below */ 
+				padding-left: 25px; /* for ie8 & below */
 				padding-left: 2.5rem;
 			}
-			
-			.commentlist li.comment article[id*=comment-] img, 
+
+			.commentlist li.comment article[id*=comment-] img,
 			.post-content img {
 				margin: 0 0 24px 0; /* for ie8 & below */
-				margin: 0 0 2.4rem 0; 
-				max-width: 100%; 
-				height: auto; 
+				margin: 0 0 2.4rem 0;
+				max-width: 100%;
+				height: auto;
 			}
 
 		article[id*=post-] footer {
 			clear: both;
-			margin: 24px 0 0; /* for ie8 & below */ 
+			margin: 24px 0 0; /* for ie8 & below */
 			margin: 2.4rem 0 0;
 		}
-		
+
 		article[id*=post-] footer a {}
-		
+
 		.more-link {
-			
+
 		}
-		
+
 		.edit-link {
 			background: url(library/images/meta-edit.png) no-repeat left center;
 			padding-left: 20px;
 			margin-left: 20px;
 		}
-		
+
 /******************************************************************
 GALLERY STYLES
 ******************************************************************/
-.gallery { 
-	margin: 0 auto 18px; /* for ie8 & below */ 
+.gallery {
+	margin: 0 auto 18px; /* for ie8 & below */
 	margin: 0 auto 1.8rem;
 }
 .gallery .gallery-item {
@@ -1494,42 +1494,42 @@ GALLERY STYLES
 	width: 33%;
 }
 
-.gallery-columns-2 .gallery-item { 
-	width: 50%; 
+.gallery-columns-2 .gallery-item {
+	width: 50%;
 }
 
-.gallery-columns-4 .gallery-item { 
-	width: 23%; 
+.gallery-columns-4 .gallery-item {
+	width: 23%;
 	margin-right: 2%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-5 .gallery-item { 
-	width: 18%; 
+.gallery-columns-5 .gallery-item {
+	width: 18%;
 	margin-right: 2%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-6 .gallery-item { 
-	width: 14.5%; 
+.gallery-columns-6 .gallery-item {
+	width: 14.5%;
 	margin-right: 2.1%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-7 .gallery-item { 
-	width: 12%; 
+.gallery-columns-7 .gallery-item {
+	width: 12%;
 	margin-right: 2.2%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-8 .gallery-item { 
-	width: 10%; 
+.gallery-columns-8 .gallery-item {
+	width: 10%;
 	margin-right: 2.5%;
 	margin-bottom: 0;
 }
 
-.gallery-columns-9 .gallery-item { 
-	width: 9%; 
+.gallery-columns-9 .gallery-item {
+	width: 9%;
 	margin-right: 2.1%;
 	margin-bottom: 0;
 }
@@ -1573,17 +1573,17 @@ GALLERY STYLES
 	margin: -15px 4px 12px; /* for ie8 & below */
 	margin: -1.5rem 0.4rem 1.2rem;
 }
-.gallery dl, 
+.gallery dl,
 .gallery dt,
-.gallery-icon { 
-	margin: 0; 
-	border-bottom: 0; 
+.gallery-icon {
+	margin: 0;
+	border-bottom: 0;
 	padding: 0;
 }
 /* Pick the second line break if two
 line breaks are adjacent */
-.gallery br+br { 
-	display: none; 
+.gallery br+br {
+	display: none;
 }
 
 
@@ -1610,7 +1610,7 @@ POST FORMAT STYLES
 .format-status .entry-content {
 	padding-top: 0;
 	font-style: italic;
-	line-height: 26px; /* for ie8 & below */ 
+	line-height: 26px; /* for ie8 & below */
 	line-height: 2.6rem;
 	margin: 24px 35px 40px 0; /* for ie8 & below */
 	margin: 2.4rem 3.5rem 4.0rem 0;
@@ -1638,7 +1638,7 @@ POST FORMAT STYLES
 .single .format-image .entry-summary {
 	padding-top: 0;
 }
-	
+
 /******************************************************************
 PAGE NAVI STYLES
 (Special Feature)
@@ -1655,7 +1655,7 @@ PAGE NAVI STYLES
 	margin: auto;
 	text-align: center;
 }
-	 
+
 .pagination a.page-numbers,
 .pagination span.page-numbers.current {
 	display: inline-block;
@@ -1668,8 +1668,8 @@ PAGE NAVI STYLES
 	color: #000;
 	background-color: #e5e5e5;
 }
-	 
-	 
+
+
 .pagination a.page-numbers:hover,
 .pagination span.page-numbers.current {
 	padding: 6px 9px 5px 9px; /* for ie8 & below */
@@ -1682,7 +1682,7 @@ PAGE NAVI STYLES
 	.wp-prev-next ul {}
 		.wp-prev-next .prev-link {}
 		.wp-prev-next .next-link {}
-			
+
 /******************************************************************
 PAGE LINK STYLES
 ******************************************************************/
@@ -1712,44 +1712,44 @@ PAGE LINK STYLES
 	margin-right: 0.6rem;
 }
 
-.wp-prev-next .prev-link, 
-.nav-previous, 
-.previous-image { 
-	float: left; 
+.wp-prev-next .prev-link,
+.nav-previous,
+.previous-image {
+	float: left;
 }
 
-.wp-prev-next .next-link, 
-.nav-next, 
-.next-image { 
-	float: right; 
+.wp-prev-next .next-link,
+.nav-next,
+.next-image {
+	float: right;
 }
-		
-#image-navigation, 
-#comment-nav-below, 
-#comment-nav-above, 
-#nav-above, 
-#nav-below { 
-	display: block; 
-	overflow: hidden; 
+
+#image-navigation,
+#comment-nav-below,
+#comment-nav-above,
+#nav-above,
+#nav-below {
+	display: block;
+	overflow: hidden;
 	margin: 0 30px 50px 0; /* for ie8 & below */
 	margin: 0 3rem 5rem 0;
 }
-	.pcont #nav-below { 
+	.pcont #nav-below {
 		margin-left: 30px;
 	}
-	
+
 	#image-navigation {
 		margin: 0 0 30px 0; /* for ie8 & below */
 		margin: 0 0 3rem 0;
 	}
 
-#comment-nav-above a, 
-#comment-nav-below a, 
-#nav-above a, 
-#nav-below a, 
+#comment-nav-above a,
+#comment-nav-below a,
+#nav-above a,
+#nav-below a,
 #image-navigation a {}
 
-#nav-above a, 
+#nav-above a,
 #nav-below a,
 #image-navigation a {
 	display: block;
@@ -1759,93 +1759,93 @@ PAGE LINK STYLES
 	border-radius: 20px;
 }
 
-	#nav-above .nav-next a, 
+	#nav-above .nav-next a,
 	#nav-below .nav-next a,
 	#image-navigation .next-image a {
 		background: url(library/images/arrow-r.png) no-repeat center center;
 	}
-	
-	#nav-above .nav-previous a, 
+
+	#nav-above .nav-previous a,
 	#nav-below .nav-previous a,
 	#image-navigation .previous-image a {
 		background: url(library/images/arrow-l.png) no-repeat center center;
 	}
 
-	#comment-nav-above a:hover, 
-	#comment-nav-below a:hover, 
-	#nav-above a:hover, 
-	#nav-below a:hover, 
+	#comment-nav-above a:hover,
+	#comment-nav-below a:hover,
+	#nav-above a:hover,
+	#nav-below a:hover,
 	#image-navigation a:hover {}
-	
-	
-	
+
+
+
 /******************************************************************
 SIDEBARS & ASIDES
 ******************************************************************/
 
 #sidebar {
 	float: right;
-	margin-top: 35px; /* for ie8 & below */ 
+	margin-top: 35px; /* for ie8 & below */
 	margin-top: 3.5rem;
 }
 	.sbfix #sidebar {
-		margin-top: -100px;	
+		margin-top: -100px;
 	}
-	
+
 	.sbfix.pgsb #sidebar {
-		margin-top: -74px;	
+		margin-top: -74px;
 	}
-	
+
 	#sidebar .widget {
 		background-color: transparent;
 		margin: 0 0 50px 0; /* for ie8 & below */
 		margin: 0 0 5rem 0;
 		padding: 28px 32px; /* for ie8 & below */
 		padding: 2.8rem 3.2rem;
-		word-wrap: break-word; 
+		word-wrap: break-word;
 		font-size: 14px;
 	}
 		#sidebar .widget a {}
-		
+
 		#sidebar .widget a:hover {}
-		
+
 		#sidebar .widget li,
-		.widget_nav_menu li, 
+		.widget_nav_menu li,
 		#meta.widget aside a {
 			line-height: 24px; /* for ie8 & below */
 			line-height: 2.4rem;
-			margin-bottom: 12px; /* for ie8 & below */ 
+			margin-bottom: 12px; /* for ie8 & below */
 			margin-bottom: 1.2rem;
 		}
-		
+
 			#sidebar .widget ul.sub-menu li:last-child,
 			#sidebar .widget ul.children li:last-child {
-				
+
 			}
-		
+
 		#sidebar .widget  a {
 			color: #222;
 			text-decoration: none;
 		}
-		
+
 		#sidebar .widget a:hover {
 			text-decoration: underline;
 		}
-		
+
 		#sidebar .widget-title {
 			font-size: 18px; /* for ie8 & below */
 			font-size: 1.8rem;
 			line-height: 1;
 			margin-bottom: 20px; /* for ie8 & below */
-			margin-bottom: 2rem; 
+			margin-bottom: 2rem;
 			padding-bottom: 20px;
 			border-bottom: 1px solid #dedede;
 			text-transform: uppercase;
 		}
 			#sidebar .widget-title a {
-				
+
 			}
-		
+
 			.post-content .widget-title {}
 
 /* links widget */
@@ -1871,7 +1871,7 @@ SIDEBARS & ASIDES
 .widget_recent_entries ul {}
 .widget_recent_entries ul li {}
 .widget_recent_entries ul li a {}
-.widget_recent_entries .post-date { 
+.widget_recent_entries .post-date {
 	margin-left: 10px;
 	font-style: italic;
 	opacity: 0.5;
@@ -1880,7 +1880,7 @@ SIDEBARS & ASIDES
 /* archives widget */
 .widget_archive {}
 .widget_archive ul {}
-.widget_archive ul li {} 
+.widget_archive ul li {}
 .widget_archive ul li a {}
 .widget_archive select {}
 .widget_archive option {}
@@ -1890,12 +1890,12 @@ SIDEBARS & ASIDES
 .widget_links li:after {}
 .widget_links li:before {}
 .widget_tag_cloud {}
-.widget_tag_cloud a { 
+.widget_tag_cloud a {
 	padding: 3px; /* for ie8 & below */
 	padding: 0.3rem;
 }
-.widget_tag_cloud a:after { 
-	content: ","; 
+.widget_tag_cloud a:after {
+	content: ",";
 }
 .widget_tag_cloud a:before {}
 .tagcloud {}
@@ -1908,7 +1908,7 @@ SIDEBARS & ASIDES
 	margin: auto;
 }
 
-#calendar_wrap { 
+#calendar_wrap {
 	padding: 0;
 }
 
@@ -1923,10 +1923,10 @@ SIDEBARS & ASIDES
 	padding-bottom: 5px;
 }
 #wp-calendar tr td {}
-#wp-calendar caption { 
+#wp-calendar caption {
 	font-size: 18px; /* for ie8 & below */
 	font-size: 1.8rem;
-	font-weight: bold; 
+	font-weight: bold;
 	margin-bottom: 12px; /* for ie8 & below */
 	margin-bottom: 1.2rem;
 	text-transform: uppercase;
@@ -1944,7 +1944,7 @@ SIDEBARS & ASIDES
 /* category widget */
 .widget_categories {}
 .widget_categories ul {}
-.widget_categories ul li {} 
+.widget_categories ul li {}
 .widget_categories ul ul.children {}
 .widget_categories a {}
 .widget_categories select{}
@@ -1966,8 +1966,8 @@ SIDEBARS & ASIDES
 /* search widget */
 #searchform {}
 .widget_search {}
-.widget_search #s { 
-	width: 60%; 
+.widget_search #s {
+	width: 60%;
 }
 .screen-reader-text {}
 
@@ -1975,7 +1975,7 @@ SIDEBARS & ASIDES
 .textwidget {}
 .widget_text {}
 .textwidget p {}
-			
+
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
@@ -1993,30 +1993,30 @@ COMMENT STYLES
 .comment-nav {}
 	.comment-nav ul {}
 		.comment-nav ul li {}
-		
+
 .commentlist {
-	margin: 0 30px 0 0; 
+	margin: 0 30px 0 0;
 }
 	.full-width-content .commentlist {
 		margin-right: 0;
-	
+
 	}
 
 body.page-template-full-width-php .commentlist {}
 
-	.commentlist li.comment { 
-		position: relative; 
+	.commentlist li.comment {
+		position: relative;
 		margin: 0;
-		padding: 0 0 1px 0; 
-		clear: both; 
-		overflow: hidden; 
+		padding: 0 0 1px 0;
+		clear: both;
+		overflow: hidden;
 	}
-	
+
 		.commentlist footer.comment-head {
-		  
+
 	  	}
-	
-	.commentlist li.pingback { 
+
+	.commentlist li.pingback {
 		background-color: #fefefe;
 		padding: 24px; /* for ie8 & below */
 		padding: 2.4rem;
@@ -2025,7 +2025,7 @@ body.page-template-full-width-php .commentlist {}
 		border: 1px solid #e4e9ea;
 		border-radius: 3px;
 	}
-	
+
 	.commentlist li.comment article[id*=comment-] {
 		background-color: #fefefe;
 		padding: 24px; /* for ie8 & below */
@@ -2035,7 +2035,7 @@ body.page-template-full-width-php .commentlist {}
 		border: 1px solid #e4e9ea;
 		border-radius: 3px;
 	}
-	
+
 	.commentlist #respond {
 		margin-left: 0;
 		margin-right: 0;
@@ -2043,21 +2043,21 @@ body.page-template-full-width-php .commentlist {}
 		.commentlist #respond label {
 			margin-left: 0;
 		}
-		
-		.commentlist #respond #author, 
-		.commentlist #respond #email, 
-		.commentlist #respond #url, 
+
+		.commentlist #respond #author,
+		.commentlist #respond #email,
+		.commentlist #respond #url,
 		.commentlist #respond #comment {
-			
+
 		}
-	
+
 		.commentlist li[class*=depth-] {
-			margin-left: 35px; /* for ie8 & below */ 
+			margin-left: 35px; /* for ie8 & below */
 			margin-left: 3.5rem;
 		}
-			.commentlist li.depth-1 { 
-				margin-left: 0; 
-				margin-top: 0; 
+			.commentlist li.depth-1 {
+				margin-left: 0;
+				margin-top: 0;
 			}
 			.commentlist li.depth-2 {}
 			.commentlist li.depth-3 {}
@@ -2083,59 +2083,59 @@ body.page-template-full-width-php .commentlist {}
 			.commentlist .bypostauthor {}
 			.commentlist .comment-author {}
 			.commentlist .comment-author-admin {}
-			
-				.commentlist .bypostauthor > article > footer > .vcard cite.fn:after { 
+
+				.commentlist .bypostauthor > article > footer > .vcard cite.fn:after {
 					content: " (Author)";
 					font-size: 12px; /* for ie8 & below */
 					font-size: 1.2rem;
 					font-weight: normal;
 					font-style: italic;
 				}
-				
+
 			.commentlist .thread-alt {}
 			.commentlist .thread-odd {}
-			.commentlist .thread-even {}	
-			.commentlist .vcard { 
+			.commentlist .thread-even {}
+			.commentlist .vcard {
 				margin-left: 95px; /* for ie8 & below */
-				margin-left: 9.5rem; 
-				float: left; 
+				margin-left: 9.5rem;
+				float: left;
 			}
 				.commentlist .vcard cite.fn {
 					font-size: 18px;
-					font-weight: 400; 
-					font-style: normal; 
+					font-weight: 400;
+					font-style: normal;
 				}
-				
+
 				.commentlist .vcard cite.fn a {
 					text-decoration: none;
 				}
 					.commentlist .vcard cite.fn a:hover {
 						text-decoration: underline;
 					}
-				
-				.commentlist .vcard time, 
-				.comment-meta { 
-					float: right; 
+
+				.commentlist .vcard time,
+				.comment-meta {
+					float: right;
 				}
-					.commentlist .vcard time a { 
-						text-decoration: none; 
-						color: #999; 
+					.commentlist .vcard time a {
+						text-decoration: none;
+						color: #999;
 					}
-						.commentlist .vcard time a:hover { 
+						.commentlist .vcard time a:hover {
 							text-decoration: underline;
 						}
-						
+
 				.commentlist .vcard img.photo {}
-				.commentlist .vcard img.avatar { 
-					position: absolute; 
-					left: 26px; 
+				.commentlist .vcard img.avatar {
+					position: absolute;
+					left: 26px;
 					top: 26px;
 				}
 				.commentlist .vcard cite.fn a.url {}
 			.commentlist .comment-meta {
 				line-height: 30px;
 				font-size: 14px;
-			} 
+			}
 				.commentlist .comment-meta a {
 					color: #95a5a6;
 					text-decoration: none;
@@ -2143,10 +2143,10 @@ body.page-template-full-width-php .commentlist {}
 					.commentlist .comment-meta a:hover {
 						text-decoration: underline;
 					}
-					
+
 			.commentlist .commentmetadata {}
 				.commentlist .commentmetadata a {}
-			.commentlist li.comment .comment-content { 
+			.commentlist li.comment .comment-content {
 				margin-left: 95px; /* for ie8 & below */
 				margin-left: 9.5rem;
 				padding-top: 20px; /* for ie8 & below */
@@ -2154,29 +2154,29 @@ body.page-template-full-width-php .commentlist {}
 				padding-bottom: 30px; /* for ie8 & below */
 				padding-bottom: 3rem;
 				font-size: 14px; /* for ie8 & below */
-				font-size: 1.4rem; 
+				font-size: 1.4rem;
 			}
-				.commentlist li.comment .comment-content p { 
+				.commentlist li.comment .comment-content p {
 					line-height: 24px; /* for ie8 & below */
 					line-height: 2.4rem;
-					margin: 12px 0 24px; /* for ie8 & below */ 
-					margin: 1.2rem 0 2.4rem; 
+					margin: 12px 0 24px; /* for ie8 & below */
+					margin: 1.2rem 0 2.4rem;
 				}
 					.commentlist li.comment .comment-content p:last-child {
 						margin: 0;
 					}
-				.commentlist li.comment ul { 
+				.commentlist li.comment ul {
 
 				}
-				
+
 				.commentlist .comment-reply-link,
-				.commentlist .comment-reply-login { 
-					text-decoration: none; 
+				.commentlist .comment-reply-login {
+					text-decoration: none;
 					float: right;
-					font-size: 11px; /* for ie8 & below */ 
+					font-size: 11px; /* for ie8 & below */
 					font-size: 1.1rem;
 					font-weight: 700;
-					line-height: 1.2; 
+					line-height: 1.2;
 					padding: 5px 10px; /* for ie8 & below */
 					padding: 0.5rem 1rem;
 					color: #fff;
@@ -2185,13 +2185,13 @@ body.page-template-full-width-php .commentlist {}
 					margin-right: -5px;
 					border-radius: 3px;
 				}
-				
+
 					.commentlist a.comment-reply-link:hover {}
-					
-					.nocomments { 
+
+					.nocomments {
 						padding: 15px; /* for ie8 & below */
 						padding: 1.5rem;
-						text-align: center; 
+						text-align: center;
 					}
 
 /******************************************************************
@@ -2236,7 +2236,7 @@ body.page-template-full-width-php #respond-form {}
 		min-width: 100px; /* for ie8 & below */
 		min-width: 10rem;
 	}
-	
+
 #respond p {
 	margin-bottom: 16px; /* for ie8 & below */
 	margin-bottom: 1.6rem;
@@ -2269,69 +2269,69 @@ body.page-template-full-width-php #respond-form {}
 	margin-bottom: 30px;
 }
 	#respond #comment-form-title {
-		margin: 0 0 18px; /* for ie8 & below */ 
-		margin: 0 0 1.8rem; 
+		margin: 0 0 18px; /* for ie8 & below */
+		margin: 0 0 1.8rem;
 	}
-		#respond #cancel-comment-reply-link { 
-			float: right; 
+		#respond #cancel-comment-reply-link {
+			float: right;
 		}
 			#respond #cancel-comment-reply-link a {}
 	#respond #commentform {}
 		#respond .comments-logged-in-as {}
 		#respond #comment-form-elements {
-			margin: 12px 0; /* for ie8 & below */ 
-			margin: 1.2rem 0; 
+			margin: 12px 0; /* for ie8 & below */
+			margin: 1.2rem 0;
 		}
-			#respond #comment-form-elements li { 
-				overflow: hidden; 
-				margin-bottom: 12px; /* for ie8 & below */ 
-				margin-bottom: 1.2rem; 
+			#respond #comment-form-elements li {
+				overflow: hidden;
+				margin-bottom: 12px; /* for ie8 & below */
+				margin-bottom: 1.2rem;
 			}
-				#respond #comment-form-elements label { 
-					display: none; 
+				#respond #comment-form-elements label {
+					display: none;
 				}
-				#respond #comment-form-elements small { 
-					display: none; 
+				#respond #comment-form-elements small {
+					display: none;
 				}
-				
+
 				#respond input[type=text],
-				#respond #author, 
-				#respond #email, 
-				#respond #url { 
-					padding: 5px 7px; 
-					width: 65%; 
+				#respond #author,
+				#respond #email,
+				#respond #url {
+					padding: 5px 7px;
+					width: 65%;
 				}
-				
-				#respond #comment { 
-					resize: none; 
+
+				#respond #comment {
+					resize: none;
 					padding: 5px 7px; /* for ie8 & below */
 					padding: 0.5rem 0.7rem;
-					width: 65%; 
+					width: 65%;
 					height: 150px; /* for ie8 & below */
 					height: 15rem;
-					vertical-align: top; 
+					vertical-align: top;
 				}
-				
+
 				#respond input[type=text],
-				#respond #author, 
-				#respond #email, 
-				#respond #url, 
+				#respond #author,
+				#respond #email,
+				#respond #url,
 				#respond #comment {
 					background: #fff;
 					border: 1px solid #e4e9ea;
-					font-size: 16px; /* for ie8 & below */ 
+					font-size: 16px; /* for ie8 & below */
 					font-size: 1.6rem;
 					border-radius: 3px;
 				}
 					#respond input[type=text]:focus,
 					#respond input[type=checkbox]:focus,
-					#respond #author:focus, 
-					#respond #email:focus, 
-					#respond #url:focus, 
+					#respond #author:focus,
+					#respond #email:focus,
+					#respond #url:focus,
 					#respond #comment:focus {
 						outline: none;
 					}
-					
+
 					#respond input[type=checkbox] {
 						vertical-align: middle;
 						margin-bottom: 2px;
@@ -2347,38 +2347,38 @@ body.page-template-full-width-php #respond-form {}
 					color: #fff;
 					border-radius: 3px;
 				}
-				
+
 		/* form validation */
-		#commentform input:invalid, 
-		#commentform textarea:invalid { 
-			border-color: red; 
-			outline: none; 
+		#commentform input:invalid,
+		#commentform textarea:invalid {
+			border-color: red;
+			outline: none;
 
 
 
-			background-color: #f6e7eb; 
+			background-color: #f6e7eb;
 		}
-		
+
 		#commentform input:valid {}
-		
+
 		/* no comments */
-		.nocomments { 
+		.nocomments {
 			margin: 0 20px 20px; /* for ie8 & below */
 			margin: 0 2rem 2rem;
 		}
 
 
-	
+
 /******************************************************************
 IMAGE STYLES
 ******************************************************************/
 .post-content img {
-	margin-top: 12px; /* for ie8 & below */ 
+	margin-top: 12px; /* for ie8 & below */
 	margin-top: 1.2rem;
 }
 
-.left img, 
-img.left, 
+.left img,
+img.left,
 .alignleft,
 img.alignleft,
 img[align=left] {
@@ -2388,11 +2388,11 @@ img[align=left] {
 	margin-bottom: 1.6rem;
 	margin-top: 12px; /* for ie8 & below */
 	margin-top: 1.2rem;
-	display: inline-block; 
+	display: inline-block;
 	float: left;
 }
 
-.right img, 
+.right img,
 img.right,
 .alignright,
 img.alignright,
@@ -2403,17 +2403,17 @@ img[align=right] {
 	margin-bottom: 1.6rem;
 	margin-top: 12px; /* for ie8 & below */
 	margin-top: 1.2rem;
-	display: inline-block; 
+	display: inline-block;
 	float: right;
 }
 
-.aligncenter, 
-img.aligncenter, 
-img[align=center] { 
-	margin-right: auto; 
-	margin-left: auto; 
-	display: block; 
-	clear: both; 
+.aligncenter,
+img.aligncenter,
+img[align=center] {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
 }
 
 img.size-auto,
@@ -2467,37 +2467,37 @@ img.size-medium,
 	}
 
 /* wp caption styles */
-			
+
 .wp-caption {
-	margin-bottom: 24px; /* for ie8 & below */ 
-	margin-bottom: 2.4rem; 
-	text-align: center; 
+	margin-bottom: 24px; /* for ie8 & below */
+	margin-bottom: 2.4rem;
+	text-align: center;
 	padding-top: 5px; /* for ie8 & below */
 	padding-top: 0.5rem;
-	max-width: 100%; 
+	max-width: 100%;
 }
 
-.wp-caption img { 
-	border: 0 none; 
-	padding: 0; 
-	margin: 0; 
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
 }
 
 .wp-caption p.wp-caption-text,
 .entry-caption {
-	font-size: 12px; /* for ie8 & below */ 
-	font-size: 1.2rem; 
+	font-size: 12px; /* for ie8 & below */
+	font-size: 1.2rem;
 	font-style: italic;
 	margin: 10px 0 -4px; /* for ie8 & below */
-	margin: 1rem 0 -0.4rem; 
+	margin: 1rem 0 -0.4rem;
 }
 
 /* misc styles */
 
-.wp-smiley { 
+.wp-smiley {
 	margin: 0 !important;
 	max-height: 16px; /* for ie8 & below */
-	max-height: 1.6rem; 
+	max-height: 1.6rem;
 }
 
 /******************************************************************
@@ -2512,24 +2512,24 @@ footer[role=contentinfo] {
 	.push {
 		height: 70px;
 	}
-	
+
     footer[role=contentinfo], .push {
 		clear: both;
 	}
-	
+
 	footer[role=contentinfo] div {
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box; 
-		-o-box-sizing: border-box; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
-			
+
 	.attribution {
 		float: none;
 		text-align: center;
 	}
-	
+
 	#site-generator {
 		font-size: 15px; /* for ie8 & below */
 		font-size: 15px;
@@ -2538,15 +2538,15 @@ footer[role=contentinfo] {
         overflow: hidden;
         color: #fff;
 	}
-	
+
 	#site-generator a {
 		text-decoration: none;
 	}
-	
+
 	#site-generator a:hover {
 		text-decoration: underline;
 	}
-	
+
 	#site-generator .sep {
 		padding: 0 10px; /* for ie8 & below */
 		padding: 0 1rem;
@@ -2569,11 +2569,11 @@ ALT HOMEPAGE STYLES
 	text-align: center;
     margin-top: 137px;
 }
-	
+
 	body.page .intro-copy-box .entry-header {
 		margin-bottom: 0;
 	}
-	
+
 	body.page .intro-copy-box .entry-title {
 		color: #fff;
 		font-size: 48px; /* for ie8 & below */
@@ -2586,13 +2586,13 @@ ALT HOMEPAGE STYLES
 		padding: 0 2%;
 		max-width: 1044px; /* for ie8 & below */
 		max-width: 104.4rem;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box; 
-		-o-box-sizing: border-box; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
 		box-sizing: border-box;
 		border-bottom: 0;
 	}
-	
+
 	.intro-copy-box .post-content {
 		color: #fff;
 		font-size: 18px;
@@ -2601,16 +2601,16 @@ ALT HOMEPAGE STYLES
 		padding-top: 30px;
 		margin-bottom: 0;
 	}
-	
+
 	.intro-copy-box .post-content a {
 		color: #fff !important;
 		text-decoration: underline;
 	}
-	
+
 	.intro-copy-box .post-content p:last-child {
 		margin-bottom: 0;
 	}
-	
+
 .inner-title-wrap {
 	padding: 50px 0 2px 0;
 	text-align: left;
@@ -2623,16 +2623,16 @@ ALT HOMEPAGE STYLES
 		padding: 0 2%;
 		max-width: 1044px; /* for ie8 & below */
 		max-width: 104.4rem;
-		-webkit-box-sizing: border-box; 
-		-moz-box-sizing: border-box; 
-		-o-box-sizing: border-box; 
-		box-sizing: border-box;	
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 		.inner-title-wrap .inner-title-box a {
 			color: #fff !important;
 		}
-		
-	
+
+
 	.inner-title-box .entry-header {
 		margin-bottom: 0;
 		margin-right: 33%;
@@ -2642,7 +2642,7 @@ ALT HOMEPAGE STYLES
 			margin-right: 0;
 			margin-left: 36.67%;
 		}
-		
+
 		.profile-thumb,
 		.profile-thumb-mobile {
 			background-image: url(library/images/profile-default.png);
@@ -2651,29 +2651,29 @@ ALT HOMEPAGE STYLES
 			background-size: contain;
 			background-color: #efefef;
 			margin-top: -80px;
-			
+
 		}
 			.profile-thumb-mobile {
 				margin-top: 0;
 				margin-bottom: 24px;
 				display: none;
 			}
-			
+
 			.profile-thumb.pdefault,
 			.profile-thumb-mobile.pdefault {
 				min-height: 300px;
 			}
 
-		
+
 		.profile-thumb img,
 		.profile-thumb-mobile img {
 			width: auto;
 			max-width: 100%;
-			height: auto;	
+			height: auto;
 			border: 1px solid #e4e9ea;
 			margin-bottom: -6px;
 		}
-		
+
 		.post-divider {
 			background-color: #ecf0f1;
 			height: 3px;
@@ -2682,47 +2682,47 @@ ALT HOMEPAGE STYLES
 			.post-divider.navi {
 				margin: 24px 0;
 			}
-		
+
 	.inner-title-box .entry-title {
 		color: #fff;
 		margin-bottom: 12px;
 	}
-	
+
 	.inner-title-box .page-title {
 		color: #fff;
 		margin-bottom: 24px;
 	}
-	
+
 	.inner-title-box .entry-meta,
 	.inner-title-box .category-archive-meta {
 		margin-bottom: 16px;
 		color: #fff;
 	}
-	
+
 	.inner-title-box .entry-meta a {
 		color: #fff !important;
 	}
-	
+
 	.inner-title-box .meta-by {
 		background-image: url(library/images/meta-author-w.png);
 		margin-left: 15px;
 	}
-				
+
 	.inner-title-box .meta-on {
 		background-image: url(library/images/meta-date-w.png);
 	}
-	
+
 .latest-title {
 	font-size: 36px; /* for ie8 & below */
 	font-size: 3.6rem;
-	margin-top: 35px; /* for ie8 & below */ 
+	margin-top: 35px; /* for ie8 & below */
 	margin-top: 3.5rem;
 	margin-bottom: 20px;
 }
 
 article[id*=post-].alt-home-list {
 	padding: 35px 30px 20px 0; /* for ie8 & below */
-	padding: 3.5rem 3.0rem 2rem 0; 
+	padding: 3.5rem 3.0rem 2rem 0;
 }
 
 	article[id*=post-].alt-home-list .entry-header {
@@ -2733,7 +2733,7 @@ article[id*=post-].alt-home-list {
 		.format-status.alt-home-list .entry-header {
 			display: block;
 		}
-	
+
 	article[id*=post-].alt-home-list .entry-title {
 		font-size: 24px; /* for ie8 & below */
 		font-size: 2.4rem;
@@ -2742,13 +2742,13 @@ article[id*=post-].alt-home-list {
 		article[id*=post-].alt-home-list .entry-title a {
 			color: #95a5a6;
 		}
-	
+
 	article[id*=post-].alt-home-list .post-content {
 		font-size: 14px; /* for ie8 & below */
 		font-size: 1.4rem;
 		margin-bottom: 0;
 	}
-	
+
 #alt-sidebar-wrap {
 	background-color: #f9f9f9;
 }
@@ -2776,31 +2776,31 @@ article[id*=post-].alt-home-list {
 	overflow: hidden;
 	padding: 0;
   }
-  
+
   #alt-sidebar .widget .alt-img-wrap {
 	position: relative;
 	height: 150px;
 	overflow: hidden;
 	margin-bottom: 24px;
   }
-  
+
   #alt-sidebar .widget-title {
 	  font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	  font-size: 24px;
 	  margin-bottom: 24px;
   }
-  
+
   #alt-sidebar .widget li {
 		line-height: 24px; /* for ie8 & below */
 		line-height: 2.4rem;
-		margin-bottom: 12px; /* for ie8 & below */ 
+		margin-bottom: 12px; /* for ie8 & below */
 		margin-bottom: 1.2rem;
 	}
-  
+
   #alt-sidebar .widget li a {
-	color: #222;  
+	color: #222;
   }
-  
+
   #alt-sidebar .widget img {
 	min-width: 100%;
 	height: auto;
@@ -2837,27 +2837,27 @@ SOCIAL MEDIA BUTTONS STYLES
 		background-position: center center;
 		overflow: hidden;
 	}
-	
+
 	#social-media a.social-fb {
 		background-image: url(library/images/icon-fb.png);
 	}
-	
+
 	#social-media a.social-tw {
 		background-image: url(library/images/icon-tw.png);
 	}
-	
+
 	#social-media a.social-li {
 		background-image: url(library/images/icon-li.png);
 	}
-	
+
 	#social-media a.social-gp {
 		background-image: url(library/images/icon-gp.png);
 	}
-	
+
 	#social-media a.social-av {
 		background-image: url(library/images/icon-av.png);
 	}
-		
+
 	#social-media a.social-em {
 		background-image: url(library/images/icon-email.png);
 	}
@@ -2876,11 +2876,11 @@ jQuery SLIDER STYLES
 #slide-wrap {
 	border-top: 0;
     height: 682;
-    margin-bottom: 30px;
+    margin-bottom: -180px;
 }
-
+.main_title_separator{  z-index: 3000;  position: relative;    }
 .cycle-slideshow {
-	position: absolute; 
+	position: absolute;
 	height: 715px;
 	width: 100%;
 	display: block;
@@ -2900,7 +2900,7 @@ jQuery SLIDER STYLES
 		overflow: hidden;
 		white-space: nowrap;
 	}
-	
+
 	.slides .slide-thumb img {
 		position: absolute;
 		left: 50%;
@@ -2915,12 +2915,12 @@ jQuery SLIDER STYLES
 		height: auto;
 		min-height: 500px;
 	}
-	
+
 		html.no-csstransforms .slides .slide-thumb img {
 			left: 0;
 			top: 0;
 		}
-	
+
 	.slides .slide-noimg {
 		position: relative;
 		width: 100%;
@@ -2941,7 +2941,7 @@ jQuery SLIDER STYLES
 			left: 0;
 			top: 42%;
 		}
-	
+
 	.slide-title {
 		font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 		font-size: 30px; /* for ie8 & below */
@@ -2952,25 +2952,25 @@ jQuery SLIDER STYLES
 	}
 		.slide-title a,
 		.slide-title a:visited {
-			
+
 		}
-		
+
 	.slide-copy-wrap {
 		position: absolute;
 		bottom: 60px;
 		z-index: 100;
 		color: #fff;
 	}
-	
+
 		.slide-copy-wrap a {
 			color: #fff !important;
 		}
-		
+
 		html.no-csstransforms .slide-copy-wrap {
 			left: 60px;
 			right: 60px;
 		}
-		
+
 		.slide-copy {
 			padding: 25px;
 			background-image: url(library/images/trans.png);
@@ -2978,7 +2978,7 @@ jQuery SLIDER STYLES
 			border-radius: 3px;
 		}
 
-	
+
 #sliderprev,
 #slidernext {
 	text-align: center;
@@ -3003,48 +3003,48 @@ jQuery SLIDER STYLES
 		background: url(library/images/slider-nav.png)  no-repeat 0 -13px;
 		left: 10px;
 	}
-	
+
 	#slidernext {
 		background: url(library/images/slider-nav.png)  no-repeat -128px -11px;
 		right: 20px;
 	}
-	
+
 	.cycle-slideshow:hover #sliderprev,
 	.cycle-slideshow:hover #slidernext {
 		display: block;
 	}
 
 .cycle-paused:after {
-	content: 'Paused'; 
+	content: 'Paused';
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 	font-size: 12px; /* for ie8 & below */
 	font-size: 0.75rem;
 	text-transform: uppercase;
-	color: white; 
-	background: black; 
+	color: white;
+	background: black;
 	padding: 5px 15px;
 	z-index: 500; position: absolute; top: 10px; right: 10px;
 	opacity: .5; filter: alpha(opacity=50);
 }
 
 /* pager */
-.cycle-pager { 
-    text-align: center; 
-	width: 100%; 
-	z-index: 500; 
-	position: absolute; 
-	bottom: 10px; 
+.cycle-pager {
+    text-align: center;
+	width: 100%;
+	z-index: 500;
+	position: absolute;
+	bottom: 10px;
 	overflow: hidden;
 }
 
-.cycle-pager span { 
-    font-family: Arial, Helvetica, sans-serif; 
-	font-size: 50px; 
+.cycle-pager span {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
 	line-height: .6;
-	width: 18px; 
-	height: 22px; 
-    display: inline-block; 
-	color: #f7f7f7; 
+	width: 18px;
+	height: 22px;
+    display: inline-block;
+	color: #f7f7f7;
 	cursor: pointer;
 	text-shadow: -1px -1px #bcbcbc;
 	overflow: hidden;
@@ -3094,19 +3094,19 @@ GRID BOX STYLES
 	font-size: 1.4rem;
 	overflow: hidden;
 }
-	
+
 	.grid-box article {
 		padding: 15px;
 		margin: 0;
 	}
 
 .grid-box .entry-meta {
-	
+
 }
 
 .grid-box .entry-title a,
 .grid-box .entry-title a:hover {
-	
+
 }
 
 .grid-box .entry-header {
@@ -3135,17 +3135,17 @@ body.page .grid-box .entry-title {
 	.grid-box .entry-content p:last-child {
 		margin-bottom: 0;
 	}
-	
+
 	.grid-box .entry-content.people-info {
 		margin-bottom: 0;
 	}
-	
+
 	.grid-box .format-aside .entry-content,
 	.grid-box .format-status .entry-content {
 		font-style: italic;
 		margin: 0 0 24px;
 	}
-	
+
 	.grid-box .vid-wrapper {
 		background-color: #000;
 		position: relative;
@@ -3153,7 +3153,7 @@ body.page .grid-box .entry-title {
 		padding-top: 25px;
 		height: 0;
 	}
-	
+
 	.grid-box .vid-wrapper video,
 	.grid-box .vid-wrapper object,
 	.grid-box .vid-wrapper embed,
@@ -3164,35 +3164,35 @@ body.page .grid-box .entry-title {
 		width: 100%;
 		height: 100%;
 	}
-	
+
 	.grid-box.format-video .imgthumb {
 		display: none;
 	}
-	
-	.grid-box .post-content video, 
+
+	.grid-box .post-content video,
 	.grid-box .post-content object,
 	.grid-box .post-content embed,
 	.grid-box .post-content iframe {
-		
+
 	}
-	
-	.grid-box .post-content blockquote { 
+
+	.grid-box .post-content blockquote {
 		font-style: italic;
-		line-height: 26px; /* for ie8 & below */ 
+		line-height: 26px; /* for ie8 & below */
 		line-height: 2.6rem;
 		margin: 10px 0 5px 35px; /* for ie8 & below */
-		margin: 1rem 0 0.5rem 3.5rem; 
+		margin: 1rem 0 0.5rem 3.5rem;
 	}
-	
-	.grid-box .post-content blockquote:before { 
-		font-size: 50px; /* for ie8 & below */ 
+
+	.grid-box .post-content blockquote:before {
+		font-size: 50px; /* for ie8 & below */
 		font-size: 5.0rem;
 		text-indent: -35px; /* for ie8 & below */
 		text-indent: -3.5rem;
-		margin-top: 12px; /* for ie8 & below */ 
-		margin-top: 1.2rem; 
+		margin-top: 12px; /* for ie8 & below */
+		margin-top: 1.2rem;
 		float: left;
-		opacity: 0.2; 
+		opacity: 0.2;
 	}
 
 	.grid-box article[id*=post-] footer.entry-meta {
@@ -3200,13 +3200,13 @@ body.page .grid-box .entry-title {
 		overflow: hidden;
 	}
 		.grid-box article[id*=post-] footer.entry-meta a {
-			
+
 		}
-	
+
 	.grid-box .format-aside footer.entry-meta {
 		text-align: left;
 	}
-	
+
 .grid-box .imgthumb {
 	margin: 0;
 	overflow: hidden;
@@ -3214,7 +3214,7 @@ body.page .grid-box .entry-title {
 }
 
 
-.grid-box-noimg { 
+.grid-box-noimg {
 	background-color: #eee;
 	position: relative;
 	text-align: center;
@@ -3233,10 +3233,10 @@ body.page .grid-box .entry-title {
 		-o-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 	}
-	
+
 		html.no-borderradius .grid-box-noimg p {
 			left: 0;
-			top: 45%;	
+			top: 45%;
 		}
 
 .grid-box .page-link {
@@ -3262,7 +3262,7 @@ Author Bio
 .author-bio h3,
 .author-bio h4,
 .author-bio p {
-	margin-bottom: 12px;	
+	margin-bottom: 12px;
 }
 
 p.author-description {
@@ -3286,11 +3286,11 @@ p.author-description {
 	.author-thumb img {
 		border-radius: 3px;
 	}
-	
+
 .author-bio #social-media {
 	padding-top: 6px;
 }
-	
+
 /******************************************************************
 MEDIA QUERIES & DEVICE STYLES
 Developed by: Andy Clarke & the 320 & Up Extension
@@ -3350,23 +3350,23 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		right: 118px;
 		padding: 0 2%;
 	}
-	
+
 	.cycle-slideshow {
 		height: 665px;
 	}
-	
+
 	.slides {
 		height: 665px;
 	}
 		.slides .slide-thumb {
 			height: 665px;
 		}
-		
+
 		.slides .slide-thumb img {
 			min-height: 665px;
 		}
-	
-		
+
+
 		.slides .slide-noimg {
 			height: 665px;
 		}
@@ -3394,46 +3394,46 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 1024px) {
-	
+
 	#inner-header {
 		width: 96%;
 	}
-	
+
 	.slide-copy-wrap {
 		left: 40px;
 		right: 40px;
 		bottom: 40px;
 		padding: 0;
 	}
-	
+
 	.cycle-slideshow {
 		height: 640px;
 	}
     .cover{
         height: 640px !important;
     }
-	
+
 	.slides {
 		height: 640px;
 	}
 		.slides .slide-thumb {
 			height: 640px;
 		}
-		
+
 		.slides .slide-thumb img {
 			min-height: 640px;
 		}
-	
-		
+
+
 		.slides .slide-noimg {
 			height: 640px;
 		}
-		
+
 		#sliderprev,
 		#slidernext {
 			opacity: 0.65;
 		}
-		
+
 	   .inner-title-wrap .inner-title-box {
 		  width: 96%;
 		  padding: 0 2%;
@@ -3442,18 +3442,18 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
             width: 28% !important;
             margin: 2.5% 2% !important;
         }
-    
+
 }
 
 @media only screen and (max-width: 960px) {
     #form-div{
     width: 100% !important;
     }
-	
+
 	.cycle-slideshow {
 		height: 600px;
 	}
-	
+
 	.slides {
 		height: 600px;
 	}
@@ -3469,24 +3469,24 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.slides .slide-thumb img {
 			min-height: 600px;
 		}
-	
-		
+
+
 		.slides .slide-noimg {
 			height: 600px;
 		}
-		
+
 	.slide-copy {
 		margin-right: 0;
 	}
-	
-	.commentlist li.comment article[id*=comment-] video, .post-content video, 
+
+	.commentlist li.comment article[id*=comment-] video, .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe {
 		min-height: 300px; /* for ie8 & below */
 		min-height: 30rem;
 	}
-	
+
 	.full-width-content .post-content video,
 	.full-width-content .post-content object,
 	.full-width-content .post-content embed,
@@ -3494,11 +3494,11 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		min-height: 490px; /* for ie8 & below */
 		min-height: 49rem;
 	}
-	
+
 	#alt-sidebar .widget-title {
 		font-size: 21px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 824px) {
@@ -3516,15 +3516,15 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		margin-right: 0;
 	}
 
-	
-	header[role=banner] #searchform  { 
+
+	header[role=banner] #searchform  {
 		top: 6px; /* for ie8 & below */
 		top: 0.6rem;
 		right: 10px; /* for ie8 & below */
 		right: 1rem;
 		width: 40%;
 	}
-		
+
 	header[role=banner] #s {
 		font-size: 90%;
 		background: url(library/images/icon-search.png) no-repeat 5px 4px #fff;
@@ -3533,19 +3533,19 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		min-width: 100%;
 		max-width: 100%;
 	}
-	
-	#site-heading { 
+
+	#site-heading {
 		width: 64%;
 	}
-	
+
 	nav[role=navigation] {
 		width: 35%;
 	}
-	.menu.nav-mobile ul li { 
-		list-style-type: none; 
-		float: none; 
+	.menu.nav-mobile ul li {
+		list-style-type: none;
+		float: none;
 	}
-	
+
 	nav[role=navigation] div.menu > ul {
 		background: #fcfcfc;
 		position: absolute;
@@ -3560,19 +3560,19 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		nav[role=navigation] div.menu > ul > li {
 			position: relative;
 		}
-	
-	nav[role=navigation] .menu.nav-mobile #menu-icon { 
+
+	nav[role=navigation] .menu.nav-mobile #menu-icon {
 		display: inline-block;
 	}
-	
+
 	nav[role=navigation] .menu.nav-mobile ul li,
-	nav[role=navigation] .menu.nav-mobile ul.sub-menu li, 
+	nav[role=navigation] .menu.nav-mobile ul.sub-menu li,
 	nav[role=navigation] .menu.nav-mobile ul.children li {
 		border-bottom: 1px solid #f0f0f0;
 		min-width: 100%;
 	}
-	
-	nav[role=navigation] .menu.nav-mobile ul li a  { 
+
+	nav[role=navigation] .menu.nav-mobile ul li a  {
 		display: block;
 		min-height: 38px; /* for ie8 & below */
 		min-height: 3.8rem;
@@ -3587,72 +3587,72 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		-o-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	
+
 		nav[role=navigation] .menu.nav-mobile ul li a {
 
 		}
 			nav[role=navigation] .menu.nav-mobile ul li:first-child > a {
 
 			}
-		
-			nav[role=navigation] .menu.nav-mobile ul li ul li:first-child > a { 
+
+			nav[role=navigation] .menu.nav-mobile ul li ul li:first-child > a {
 
 			}
-	
-	nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a, 
+
+	nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a,
 	nav[role=navigation] .menu.nav-mobile ul li.current_page_item a {
 		background: #f5f5f5;
 	}
-	
+
 	nav[role=navigation] .menu.nav-mobile ul li a:hover,
-	nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a:hover, 
+	nav[role=navigation] .menu.nav-mobile ul li.current-menu-item a:hover,
 	nav[role=navigation] .menu.nav-mobile ul li.current_page_item a:hover {
 		background: #f2f2f2;
 	}
 
-	nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu, 
+	nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu,
 	nav[role=navigation] .menu.nav-mobile ul li ul.children,
-	nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul, 
+	nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul,
 	nav[role=navigation] .menu.nav-mobile ul li ul.children li ul {
 		display: block;
 		position: relative;
-		z-index: 9999; 
+		z-index: 9999;
 		right: auto;
 		top: auto;
 		margin-top: 0;
 		width: 250px; /* for ie8 & below */
 		width: 25rem;
 	}
-	
+
 		nav[role=navigation] .menu.nav-mobile ul li ul li a {
 
 		}
-	
-		nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li, 
+
+		nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li,
 		nav[role=navigation] .menu.nav-mobile ul li ul.children li {
 			border: 0;
 			border-top: 1px solid #f0f0f0;
-			text-indent: 20px;	
+			text-indent: 20px;
 		}
-		
-			nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul li, 
+
+			nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul li,
 			nav[role=navigation] .menu.nav-mobile ul li ul.children li ul li {
 				text-indent: 40px;
 			}
-			
-				nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul li ul li, 
+
+				nav[role=navigation] .menu.nav-mobile ul li ul.sub-menu li ul li ul li,
 				nav[role=navigation] .menu.nav-mobile ul li ul.children li ul li ul li {
 					text-indent: 60px;
 				}
 
-	
+
 	#main.col620 {
 		width: 100%;
 	}
 		#main.col620.pcont {
-			width: 64.667%; 
+			width: 64.667%;
 		}
-	
+
 	#sidebar.col300 {
 		float: none;
 		display: block;
@@ -3660,24 +3660,24 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		clear: both;
 		margin: 0;
 	}
-	
+
 	.widget {
 		margin: 35px 0; /* for ie8 & below */
 		margin: 3.5rem 0;
 	}
-	
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 400px; /* for ie8 & below */
 		min-height: 40rem;
 	}
-	
+
 	.cycle-slideshow {
 		height: 568px;
 	}
-	
+
 	.slides {
 		height: 568px;
 	}
@@ -3687,24 +3687,24 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         #panel_container_wrapper{
             top: 14% !important;
         }
-		
+
 		.slides .slide-thumb img {
 			max-width: 960px;
 			min-height: 568px;
 		}
-	
-		
+
+
 		.slides .slide-noimg {
 			height: 568px;
 		}
     .cover {
         height: 568px !important;
     }
-		
+
 	.grid-box {
 		width: 44.4%;
 	}
-	
+
 	.slide-title {
 		font-size: 24px; /* for ie8 & below */
 		font-size: 2.4rem;
@@ -3716,61 +3716,61 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		font-size: 1.4rem;
 		line-height: 1.4;
 	}
-	
+
 	.cycle-slideshow:hover #sliderprev,
 	.cycle-slideshow:hover #slidernext {
 		display: none;
 	}
-	
-	
-	
+
+
+
 	.inner-title-box .entry-header {
 		margin-right: 0;
 	}
-	
+
 	article[id*="post-"] {
 		padding-right: 0;
 	}
-	
+
 	.commentlist {
 		margin-right: 0;
 	}
-	
+
 		.commentlist .comment-meta {
 			line-height: 30px;
 			font-size: 13px;
 		}
-	
+
 	#respond {
 		margin-right: 0;
 	}
-	
-	#image-navigation, 
+
+	#image-navigation,
 	#comment-nav-below,
-	#comment-nav-above, 
+	#comment-nav-above,
 	#nav-above, #nav-below {
 		margin-right: 0;
 	}
-	
+
 	.profile-thumb.pdefault {
 		min-height: 230px;
 	}
-	
+
 	article.alt-home-list[id*="post-"] {
 		padding-right: 0;
 	}
-	
+
 	#alt-sidebar .widget-title {
 		font-size: 18px;
 	}
-	
+
 	.latest-title {
 		font-size: 30px;
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 }
-	
+
 
 @media only screen and (max-width: 1024px) {
     nav[role=navigation] .menu #menu-icon {
@@ -3842,11 +3842,11 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		bottom: 30px;
 		padding: 0;
 	}
-	
+
 	.cycle-slideshow {
 		height: 560px;
 	}
-	
+
 	.slides {
 		height: 560px;
 	}
@@ -3867,15 +3867,15 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	    .cover {
             height: 560px !important;
         }
-		
+
 		.slides .slide-noimg {
 			height: 560px;
 		}
-	
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 375px; /* for ie8 & below */
 		min-height: 37.5rem;
 	}
@@ -3891,19 +3891,19 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     #class-booking-page{
         padding: 5px !important;
     }
-	
+
 	.cycle-slideshow {
 		height: auto;
 		background-color: #222;
 	}
-	
+
 	.slides {
 		height: auto;
 	}
 		.slides .slide-thumb {
 			height: 500px;
 		}
-		
+
 		.slides .slide-thumb img {
 			max-width: 800px;
 			min-height: 500px;
@@ -3923,7 +3923,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 			background-color: #222;
 			padding: 24px;
 		}
-		
+
 		.slide-title {
 			font-size: 24px; /* for ie8 & below */
 			font-size: 2.4rem;
@@ -3932,7 +3932,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         #sliderprev, #slidernext {
             display: none !important;
         }
-		
+
 		.slide-copy-wrap {
 			font-size: 14px; /* for ie8 & below */
 			font-size: 1.4rem;
@@ -3963,55 +3963,55 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
             margin:0px auto !important;
             width: 40px;
         }
-	
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 325px; /* for ie8 & below */
 		min-height: 32.5rem;
 	}
-	
+
 	.gallery img {
 		max-width: 98%;
 	}
-	
+
 	.commentlist li[class*=depth-] {
-		margin-left: 25px; /* for ie8 & below */ 
+		margin-left: 25px; /* for ie8 & below */
 		margin-left: 2.5rem;
 	}
-	
-	.commentlist li.depth-1 { 
-		margin-left: 0; 
+
+	.commentlist li.depth-1 {
+		margin-left: 0;
 	}
-	
+
 	#respond label {
-		margin-left: 0;	
+		margin-left: 0;
 	}
-	
-	#respond input[type="text"], 
-	#respond #author, 
-	#respond #email, 
+
+	#respond input[type="text"],
+	#respond #author,
+	#respond #email,
 	#respond #url,
 	#respond #comment {
 		width: 70%;
 	}
-	
+
 	body.page .intro-copy-box .entry-title {
 		font-size: 40px; /* for ie8 & below */
 		font-size: 4rem;
 	}
-	
+
 	.intro-copy-box .post-content {
 		font-size: 17px; /* for ie8 & below */
 		font-size: 1.7rem;
 		line-height: 1.5;
 	}
-	
+
 	.profile-thumb.pdefault {
 		min-height: 180px;
 	}
-	
+
 	.pcont article[id*="post-"] {
 		padding-left: 20px;
 		padding-top: 10px;
@@ -4019,11 +4019,11 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 600px) {
-	
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 300px; /* for ie8 & below */
 		min-height: 30rem;
 	}
@@ -4062,12 +4062,12 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.slides .slide-thumb {
 			height: 128px;
 		}
-		
+
 		.slides .slide-thumb img {
 			max-width: 640px;
 			min-height: 128px;
 		}
-		
+
 		.slides .slide-noimg {
 			height: 128px;
 		}
@@ -4081,19 +4081,19 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
             margin:0px auto !important;
             width: 40px !important;
         }
-	
+
 	#grid-wrap {
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
 	}
-	
+
 	.grid-box {
 		width: 95%;
 		margin-bottom: 5%;
 	}
-	
-	body.page .entry-title, 
+
+	body.page .entry-title,
 	body.single .entry-title, .not-found .entry-title,
 	.inner-title-box .page-title,
 	article.alt-home-list[id*="post-"] .entry-title {
@@ -4101,138 +4101,138 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		font-size: 3rem;
 		line-height: 1.2;
 	}
-	
+
 	body.page .intro-copy-box .entry-title {
 		font-size: 34px; /* for ie8 & below */
 		font-size: 3.4rem;
 	}
-	
+
 	.intro-copy-box {
 		padding-top: 30px;
-		padding-bottom: 35px;	
+		padding-bottom: 35px;
 	}
-	
+
 	.intro-copy-box .post-content {
 		padding-top: 15px;
 		font-size: 16px; /* for ie8 & below */
 		font-size: 1.6rem;
 		line-height: 1.5;
 	}
-	
+
 	#main.col620.pcont {
-		width: 100%; 
+		width: 100%;
 	}
-	
+
 	.inner-title-box.tprof .entry-header {
 		margin-right: 0px;
 		margin-left: 0;
 	}
-	
+
 	.people-job {
 		font-size: 16px;
 	}
-	
+
 	.people-phone {
 		font-size: 18px;
 	}
-	
+
 	.pcont article[id*="post-"] {
 		padding-left: 0;
 		padding-right: 0;
 		padding-top: 20px;
 	}
-	
+
 	.pcont #nav-below {
 		margin-left: 0;
 	}
-	
+
 	.profile-thumb {
 		display: none;
 	}
-	
+
 	.profile-thumb-mobile {
 		display: block;
 	}
-	
+
 	.entry-meta, .category-archive-meta {
 		font-size: 13px; /* for ie8 & below */
 		font-size: 1.3rem;
 	}
 
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 260px; /* for ie8 & below */
 		min-height: 26rem;
 	}
 		.commentlist .vcard {
 			float: none;
 		}
-		
+
 		.commentlist .vcard,
-		.commentlist li.comment .comment-content { 
+		.commentlist li.comment .comment-content {
 			margin-left: 80px; /* for ie8 & below */
-			margin-left: 8.0rem; 
+			margin-left: 8.0rem;
 		}
-		
+
 		.commentlist .vcard time, .comment-meta {
 			float: none;
 			margin-left: 80px; /* for ie8 & below */
 			margin-left: 8.0rem;
 		}
-		
+
 		.author-thumb img,
 		.commentlist .vcard img.avatar {
 			width: 55px;
 			height: 55px;
 		}
-		
+
 		.commentlist li.comment .comment-content {
 			font-size: 13px; /* for ie8 & below */
 			font-size: 1.3rem;
 		}
-				
-	
+
+
 	.gallery img {
 		max-width: 85%;
 	}
-	
+
 	.gallery .gallery-caption {
 		font-size: 11px; /* for ie8 & below */
 		font-size: 1.1rem;
 	}
-	
+
 	#comment-nav-below a {
-		font-size: 13px;	
+		font-size: 13px;
 	}
-	
+
 	.commentlist li[class*=depth-] {
-		margin-left: 20px; /* for ie8 & below */ 
+		margin-left: 20px; /* for ie8 & below */
 		margin-left: 2.0rem;
 	}
-	
-	.commentlist li.depth-1 { 
-		margin-left: 0; 
+
+	.commentlist li.depth-1 {
+		margin-left: 0;
 	}
-	
-	#respond input[type="text"], 
-	#respond #author, 
-	#respond #email, 
+
+	#respond input[type="text"],
+	#respond #author,
+	#respond #email,
 	#respond #url,
 	#respond #comment {
 		width: 100%;
 	}
-	
+
 	#respond #cancel-comment-reply-link {
 		float: none;
 		display: block;
 	}
-	
+
 	.profile-thumb.pdefault {
 		min-height: 130px;
 	}
-	
+
 	#alt-sidebar .widget {
 		display: block;
 		float: none;
@@ -4242,12 +4242,12 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     .cost-detials table{
     width: 100% !important;
     }
-	
+
 }
 
 
 @media only screen and (max-width: 320px) {
-	
+
 	#site-title {
 		font-size: 24px; /* for ie8 & below */
 		font-size: 2.4rem;
@@ -4259,37 +4259,37 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		height: auto;
 		background-color: #222;
 	}
-	
+
 	.slides {
-		
+
 		height: auto;
 	}
 		.slides .slide-thumb {
 			height: 175px;
 		}
-		
+
 		.slides .slide-thumb img {
 			max-width: 480px;
 			min-height: 175px;
 		}
-	
-		
+
+
 		.slides .slide-noimg {
 			height: 175px;
 		}
-		
+
 		.slide-copy {
 			background-image: none;
 			background-color: #222;
 			padding: 18px;
 		}
-		
+
 		.slide-title {
 			font-size: 17px; /* for ie8 & below */
 			font-size: 1.7rem;
 			line-height: 1.1;
 		}
-		
+
 		.slide-copy-wrap {
 			font-size: 12px; /* for ie8 & below */
 			font-size: 1.2rem;
@@ -4298,27 +4298,27 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 			bottom: auto;
 			z-index: 0;
 		}
-		
+
 	.grid-box {
 		font-size: 13px;
 	}
-	
+
 	.grid-box article {
 		padding: 20px;
 	}
-	
+
 	.grid-box .entry-title,
 	body.page .grid-box .entry-title {
 		font-size: 21px; /* for ie8 & below */
 		font-size: 2.1rem;
 	}
-	
+
 	.grid-box .entry-content {
 		margin-bottom: 16px; /* for ie8 & below */
 		margin-bottom: 1.6rem;
 	}
-	
-	body.page .entry-title, 
+
+	body.page .entry-title,
 	body.single .entry-title, .not-found .entry-title,
 	.inner-title-box .page-title,
 	article.alt-home-list[id*="post-"] .entry-title {
@@ -4326,78 +4326,78 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		font-size: 2.4rem;
 		line-height: 1.2;
 	}
-	
+
 	.author-thumb {
 		display: none;
 	}
-	
+
 	.commentlist .vcard,
-	.commentlist li.comment .comment-content { 
-		margin-left: 0; 
+	.commentlist li.comment .comment-content {
+		margin-left: 0;
 	}
-	
+
 	.commentlist .vcard time, .comment-meta {
 		margin-left: 0;
 	}
-	
+
 	.author-thumb img,
 	.commentlist .vcard img.avatar {
 		display: none;
 	}
 
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 170px; /* for ie8 & below */
 		min-height: 17rem;
 	}
-	
+
 	.gallery img {
 		max-width: 82%;
 	}
-	
+
 	.gallery .gallery-caption {
 		font-size: 10px; /* for ie8 & below */
 		font-size: 1rem;
 	}
-	
+
 	.commentlist li[class*=depth-] {
-		margin-left: 12px; /* for ie8 & below */ 
+		margin-left: 12px; /* for ie8 & below */
 		margin-left: 1.2rem;
 	}
-	
-	.commentlist li.depth-1 { 
-		margin-left: 0; 
+
+	.commentlist li.depth-1 {
+		margin-left: 0;
 	}
-	
+
 	#respond {
 		padding: 25px;
 	}
-	
+
 	#reply-title {
 		font-size: 24px;
 	}
-	
-	
 
-	
-	
+
+
+
+
 	body.page .intro-copy-box .entry-title {
 		font-size: 30px; /* for ie8 & below */
 		font-size: 3.0rem;
 	}
-	
+
 	.intro-copy-box .post-content {
 		font-size: 14px; /* for ie8 & below */
 		font-size: 1.4rem;
 		line-height: 1.5;
 	}
-	
+
 	.altthumb {
 		display: none;
 	}
-    
+
 }
 @media only screen and (max-width: 240px) {
 	#site-title {
@@ -4410,28 +4410,28 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.cycle-slideshow {
 		height: auto;
 	}
-	
+
 	.slides {
 		height: auto;
 	}
 		.slides .slide-thumb {
 			height: 150px;
 		}
-		
+
 		.slides .slide-thumb img {
 			max-width: 360px;
 			min-height: 150px;
 		}
-	
-		
+
+
 		.slides .slide-noimg {
 			height: 200px;
 		}
-		
+
 		.slide-copy {
 			padding: 18px;
 		}
-	
+
 	.slide-title {
 		font-size: 16px; /* for ie8 & below */
 		font-size: 1.6rem;
@@ -4446,8 +4446,8 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		bottom: auto;
 		z-index: 0;
 	}
-	
-	body.page .entry-title, 
+
+	body.page .entry-title,
 	body.single .entry-title, .not-found .entry-title,
 	.inner-title-box .page-title,
 	article.alt-home-list[id*="post-"] .entry-title {
@@ -4455,7 +4455,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		font-size: 2.1rem;
 		line-height: 1.2;
 	}
-	
+
 	.inner-title-box .byline {
 		display: block;
 		padding-top: 6px;
@@ -4464,76 +4464,76 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.inner-title-box .meta-by {
 			margin-left: 0;
 		}
-	
+
 	.grid-box article {
 		padding: 18px;
 	}
-	
+
 	.grid-box .entry-meta {
 		font-size: 13px;
 	}
-	
+
 	.grid-box .entry-title,
 	body.page .grid-box .entry-title {
 		font-size: 16px; /* for ie8 & below */
 		font-size: 1.6rem;
 	}
-	
-	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video, 
+
+	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
 	.commentlist li.comment article[id*=comment-] embed, .post-content embed, .full-width-content .post-content embed,
-	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe { 
+	.commentlist li.comment article[id*=comment-] iframe, .post-content iframe, .full-width-content .post-content iframe {
 		min-height: 130px; /* for ie8 & below */
 		min-height: 13rem;
 	}
-	
+
 	.gallery img {
 		max-width: 78%;
 	}
-	
+
 	.gallery .gallery-caption {
 		font-size: 9px; /* for ie8 & below */
 		font-size: 0.9rem;
 	}
-	
+
 	.commentlist li[class*=depth-] {
-		margin-left: 10px; /* for ie8 & below */ 
+		margin-left: 10px; /* for ie8 & below */
 		margin-left: 1.0rem;
 	}
-	
-	.commentlist li.depth-1 { 
-		margin-left: 0; 
+
+	.commentlist li.depth-1 {
+		margin-left: 0;
 	}
-	
+
 	#respond {
 		padding: 20px;
 	}
-	
-	
+
+
 	body.page .intro-copy-box .entry-title {
 		font-size: 26px; /* for ie8 & below */
 		font-size: 2.6rem;
 	}
-	
+
 	.intro-copy-box .post-content {
 		font-size: 13px; /* for ie8 & below */
 		font-size: 1.3rem;
 		line-height: 1.4;
 	}
-	
+
 	.profile-thumb.pdefault {
 		min-height: 65px;
 	}
-	
+
 	.pcont article[id*="post-"] {
 		padding-left: 0;
 		padding-top: 0;
 	}
-	
+
 	.people-job {
 		font-size: 14px;
 	}
-	
+
 	.people-phone {
 		font-size: 16px;
 	}
@@ -4546,56 +4546,56 @@ PRINT STYLES
 ******************************************************************/
 
 @media print {
-	
-	* { 
-		background: transparent !important; 
-		color: #222 !important; 
-		text-shadow: none !important; 
+
+	* {
+		background: transparent !important;
+		color: #222 !important;
+		text-shadow: none !important;
 	}
-	
-	a, a:visited { 
-		color: #222 !important; 
-		text-decoration: underline; 
+
+	a, a:visited {
+		color: #222 !important;
+		text-decoration: underline;
 	}
-	
-	a:after { 
-		content: " (" attr(href) ")"; 
-	} 
-	
-	abbr:after { 
-		content: " (" attr(title) ")"; 
+
+	a:after {
+		content: " (" attr(href) ")";
 	}
-	
-	.ir a:after { 
-		content: ""; 
-	}  
-	
-	pre, 
-	blockquote { 
-		border: 1px solid #999; 
-		page-break-inside: avoid; 
+
+	abbr:after {
+		content: " (" attr(title) ")";
 	}
-	
-	thead { 
-		display: table-header-group; 
+
+	.ir a:after {
+		content: "";
 	}
-	 
-	tr, 
-	img { 
-		page-break-inside: avoid; 
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
 	}
-	
-	@page { 
-		margin: 0.5cm; 
+
+	thead {
+		display: table-header-group;
 	}
-	
-	p, h2, h3 { 
-		orphans: 3; 
-		widows: 3; 
+
+	tr,
+	img {
+		page-break-inside: avoid;
 	}
-	
-	h2, h3{ 
-		page-break-after: avoid; 
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2, h3{
+		page-break-after: avoid;
 	}
 
 }
@@ -4773,9 +4773,9 @@ ul.staff-pricing-section{
 .panel-button{
   border: 2px solid #fff;
   color: #fff;
-  font-size: 1.3em;
-  margin:0px auto;
-  border-radius: 4px;
+  font-size: 1.6em;  font-weight: bold;
+  margin:0px auto;
+  border-radius: 4px;
   padding: 0.6em 2em;
   line-height: 4em;
   text-decoration: none;
@@ -4887,24 +4887,24 @@ ul.staff-pricing-section{
   margin-top: 46px;
 }
 
-table.two td {								
-	text-align: center;     
-	width: 10em;					
-	padding: 0.7em; 		
-}		
-table.two th {								
-	text-align: center;					
+table.two td {
+	text-align: center;
+	width: 10em;
+	padding: 0.7em;
+}
+table.two th {
+	text-align: center;
 	padding: 1em;
-	background-color: #27c3bb;			
+	background-color: #27c3bb;
 	color: white;
-}			      
-table.two tr {	
+}
+table.two tr {
 	height: 1em;
 }
-table.two tr:nth-child(even) {			
-    background-color: #eee;	
+table.two tr:nth-child(even) {
+    background-color: #eee;
 }
-table.two tr:nth-child(odd) {			
+table.two tr:nth-child(odd) {
 	background-color:#fff;
 }
 .business-days{
@@ -5008,7 +5008,7 @@ table.two tr:nth-child(odd) {
 	width:100%;
 	float:left;
 	padding: 15px;
-    position: relative; 
+    position: relative;
 }
 
 #form-div {
@@ -5134,11 +5134,11 @@ input:focus, textarea:focus {
 	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }
-	
+
 .buttons:hover {
 	color: #3498db;
 }
-	
+
 .ease {
 	width: 0px;
 	height: 74px;
@@ -5370,13 +5370,13 @@ input[type=checkbox] {
 }
 .contact-us-map {
         position: relative;
-        padding-bottom: 100%; 
+        padding-bottom: 100%;
         height: 0;
         overflow: hidden;
     }
 .map-wraper-content-map{
         position: relative;
-        padding-bottom: 35%; 
+        padding-bottom: 35%;
         height: 0;
         overflow: hidden;
     }
@@ -5434,7 +5434,7 @@ body.custom-background{
 	background-color: #fff;
 	text-decoration: none;
 }
- 
+
 .crunchify-top {
 	display: none;
     position: fixed;

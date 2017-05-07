@@ -122,11 +122,13 @@ function jec_display_mini_pictures_of_a_category( $category ) {
 
     <?php /* bannière avec marqué "ostéo pour qui"
     pour séparer la page */ ?>
-    <div class="inner-title-wrap">
-        <div class="inner-title-box">
-            <header class="entry-header">
-                <h1 class="entry-title">L'ostéopathie, pour qui?</h1>
-            </header><!-- .entry-header -->
+    <div class="main_title_separator">
+        <div class="inner-title-wrap">
+            <div class="inner-title-box">
+                <header class="entry-header">
+                    <h1 class="entry-title">L'ostéopathie, pour qui?</h1>
+                </header><!-- .entry-header -->
+            </div>
         </div>
     </div>
 
