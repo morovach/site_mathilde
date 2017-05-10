@@ -461,7 +461,7 @@ html, body{
 
     z-index: 2500;
     background-size: cover;
-}.main-page-parallax-0{    margin-bottom: -140px;    background-image: url(http://osteosaintjulien.x10host.com/wp-content/uploads/2017/05/bg-gris-degrade.jpg);    background-size: 100% 100%;}.main-page-parallax-1{    background-image: url(http://osteosaintjulien.x10host.com/wp-content/uploads/2017/05/bg-gris-degrade.jpg);    background-size: 100% 100%;}
+}.main-page-parallax-0, .main-page-parallax-1{    /*background-image: url(http://osteosaintjulien.x10host.com/wp-content/uploads/2017/05/light-blue-center.png);*/    background-color: white;    background-size: 100% 100%;}.main-page-parallax-0{    margin-bottom: -140px;}
 
 	/* layout options ( all have margins right & left of 1%) */
 
@@ -2910,10 +2910,7 @@ jQuery SLIDER STYLES
 		-ms-transform: translate(-50%, -50%);
 		-o-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
-		width: auto;
-		min-width: 102%;
-		height: auto;
-		min-height: 500px;
+        min-width: 100%;        min-height: 100%;}
 	}
 
 		html.no-csstransforms .slides .slide-thumb img{
@@ -3253,12 +3250,10 @@ Author Bio
 	padding: 25px 30px;
 	border-radius: 3px;
 	margin-bottom: 60px;
-}
-
+}
 .author-bio h2{
 	margin-bottom: 16px;
 }
-
 .author-bio h3,
 .author-bio h4,
 .author-bio p{
@@ -3290,14 +3285,14 @@ p.author-description{
 .author-bio #social-media{
 	padding-top: 6px;
 }
-#panel_container_wrapper{    padding: 50px 0;    position: relative;    overflow: hidden;    clear: both;    top:20%;}		.slides .slide-thumb img{			max-width: 100%;			min-height: 100%;		}		.slides .slide-noimg{			height: 568px;		}    .cover{        height: 668px !important;    }	.grid-box{		width: 44.4%;	}	.slide-title{		font-size: 24px; /* for ie8 & below */		font-size: 2.4rem;		line-height: 1.1;	}	.slide-copy-wrap{		font-size: 14px; /* for ie8 & below */		font-size: 1.4rem;		line-height: 1.4;	}	.cycle-slideshow:hover #sliderprev,	.cycle-slideshow:hover #slidernext{		display: none;	}	.inner-title-box .entry-header{		margin-right: 0;	}	article[id*="post-"]{		padding-right: 0;	}	.commentlist{		margin-right: 0;	}		.commentlist .comment-meta{			line-height: 30px;			font-size: 13px;		}	#respond{		margin-right: 0;	}	#image-navigation,	#comment-nav-below,	#comment-nav-above,	#nav-above, #nav-below{		margin-right: 0;	}	.profile-thumb.pdefault{		min-height: 230px;	}	article.alt-home-list[id*="post-"]{		padding-right: 0;	}	#alt-sidebar .widget-title{		font-size: 18px;	}	.latest-title{		font-size: 30px;		margin-top: 20px;		margin-bottom: 20px;	}}
+#panel_container_wrapper{    padding: 50px 0;    position: relative;    overflow: hidden;    clear: both;    top:20%;}.slides .slide-noimg{    height: 568px;}.cover{    height: 668px !important;}.grid-box{    width: 44.4%;}.slide-title{    font-size: 24px; /* for ie8 & below */    font-size: 2.4rem;    line-height: 1.1;}.slide-copy-wrap{    font-size: 14px; /* for ie8 & below */    font-size: 1.4rem;    line-height: 1.4;}.cycle-slideshow:hover #sliderprev,	.cycle-slideshow:hover #slidernext{    display: none;}.inner-title-box .entry-header{    margin-right: 0;}article[id*="post-"]{    padding-right: 0;}.commentlist{    margin-right: 0;}.commentlist .comment-meta{    line-height: 30px;    font-size: 13px;    }#respond{    margin-right: 0;}#image-navigation,	#comment-nav-below,	#comment-nav-above,	#nav-above, #nav-below{    margin-right: 0;}.profile-thumb.pdefault{    min-height: 230px;}article.alt-home-list[id*="post-"]{    padding-right: 0;}#alt-sidebar .widget-title{    font-size: 18px;}.latest-title{    font-size: 30px;    margin-top: 20px;    margin-bottom: 20px;}}
 /******************************************************************
 MEDIA QUERIES & DEVICE STYLES
 Developed by: Andy Clarke & the 320 & Up Extension
 URL: http://stuffandnonsense.co.uk/projects/320andup/
 ******************************************************************/
 @media only screen and (max-width: 2560px){
-	.slide-copy-wrap{		left: 758px;		right: 758px;		padding: 0 2%;	}        .slides .slide-thumb img{       height: 715px;    }  
+	.slide-copy-wrap{		left: 758px;		right: 758px;		padding: 0 2%;	}
 }
 
 @media only screen and (max-width: 2048px){
@@ -3313,7 +3308,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		left: 428px;
 		right: 428px;
 		padding: 0 2.5%;
-	}    .slides .slide-thumb img{       height: 715px;    }          
+	}
 }
 
 @media only screen and (max-width: 1600px){
@@ -3357,10 +3352,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.slides .slide-thumb{
 			height: 665px;
 		}
-
-		.slides .slide-thumb img{
-			min-height: 665px;
-		}
+
 
 
 		.slides .slide-noimg{
@@ -3416,10 +3408,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 			height: 640px;
 		}
 
-		.slides .slide-thumb img{
-			min-height: 640px;
-		}
-
+
 
 		.slides .slide-noimg{
 			height: 640px;
@@ -3462,10 +3451,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.cover{
             height: 600px !important;
         }
-		.slides .slide-thumb img{
-			min-height: 600px;
-		}
-
+
 
 		.slides .slide-noimg{
 			height: 600px;
@@ -3771,10 +3757,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         #panel_container_wrapper{
             top: 13% !important;
         }
-		.slides .slide-thumb img{
-			max-width: 900px;
-			min-height: 560px;
-		}
+
 	    .cover{
             height: 550px !important;
         }
@@ -3814,11 +3797,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.slides .slide-thumb{
 			height: 450px;
 		}
-
-		.slides .slide-thumb img{
-			max-width: 100%;
-			min-height: 100%;
-		}
+
 	    .cover{
             height: 450px !important;
         }
@@ -4159,7 +4138,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	.cycle-slideshow{		height: 128px;		background-color: #222;	}
 	.slides{		height: 128px;	}
     .slides .slide-thumb{        height: 128px;    }
-    .slides .slide-thumb img{        max-width: 480px;        min-height: 175px;    }
+
     .cover{        height: 700px !important;    }
 
 		.slides .slide-noimg{
@@ -4305,13 +4284,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		.slides .slide-thumb{
 			height: 150px;
 		}
-
-		.slides .slide-thumb img{
-			max-width: 360px;
-			min-height: 150px;
-		}
-
-
+
 		.slides .slide-noimg{
 			height: 200px;
 		}
@@ -4690,7 +4663,7 @@ ul.staff-pricing-section{
 
 .sticky{
 	margin-top:0;
-    background: url(library/images/black-overlay.png) no-repeat center center;
+    background-color: rgba(255,255,250,0.6);
     background-size: cover;
 }
 #slide-wrap:hover #slidernext, #slide-wrap:hover #sliderprev{

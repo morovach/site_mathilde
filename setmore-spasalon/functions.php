@@ -12,7 +12,7 @@ if ( ! function_exists( 'setmore_spasalon_setup' ) ):
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function setmore_spasalon_setup() {
-		
+
 	/**
 	 * Make theme available for translation
 	 * Translations can be filed in the /languages/ directory
@@ -23,7 +23,7 @@ function setmore_spasalon_setup() {
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
-	
+
 	/*
 	 * Let WordPress manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
@@ -40,11 +40,11 @@ function setmore_spasalon_setup() {
 		'secondary' => __('Footer Menu', 'setmore-spasalon')
 	) );
 
-	add_theme_support('post-thumbnails'); 
+	add_theme_support('post-thumbnails');
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
-	
-	
+
+
 	// custom backgrounds
 	$setmore_spasalon_custom_background = array(
 		// Background color default
@@ -58,10 +58,10 @@ function setmore_spasalon_setup() {
 	);
 	add_theme_support('custom-background', $setmore_spasalon_custom_background );
 
-	
+
 	// adding post format support
-	add_theme_support( 'post-formats', 
-		array( 
+	add_theme_support( 'post-formats',
+		array(
 			'aside', /* Typically styled without a title. Similar to a Facebook note update */
 			'gallery', /* A gallery of images. Post will likely contain a gallery shortcode and will have image attachments */
 			'link', /* A link to another site. Themes may wish to use the first link tag in the post content as the external link for that post. An alternative approach could be if the post consists only of a URL, then that will be the URL and the title (post_title) will be the name attached to the anchor for it */
@@ -96,18 +96,18 @@ function setmore_spasalon_theme_slug_setup() {
 add_action( 'after_setup_theme', 'setmore_spasalon_theme_slug_setup' );
 
 /**
- * Title filter 
+ * Title filter
  */
 if ( ! function_exists( 'setmore_spasalon_filter_wp_title' ) ) :
 	function setmore_spasalon_filter_wp_title( $old_title, $sep, $sep_location ) {
-		
+
 		if ( is_feed() ) return $old_title;
-	
+
 		$site_name = get_bloginfo( 'name' );
 		$site_description = get_bloginfo( 'description' );
 		// add padding to the sep
 		$ssep = ' ' . $sep . ' ';
-		
+
 		if ( $site_description && ( is_home() || is_front_page() ) ) {
 			return $site_name . ' | ' . $site_description;
 		} else {
@@ -117,23 +117,23 @@ if ( ! function_exists( 'setmore_spasalon_filter_wp_title' ) ) :
 			elseif( is_author() ) $insert = $ssep . __( 'Author', 'setmore-spasalon' );
 			elseif( is_year() || is_month() || is_day() ) $insert = $ssep . __( 'Archives', 'setmore-spasalon' );
 			else $insert = NULL;
-			 
+
 			// get the page number we're on (index)
 			if( get_query_var( 'paged' ) )
 			$num = $ssep . __( 'Page ', 'setmore-spasalon' ) . get_query_var( 'paged' );
-			 
+
 			// get the page number we're on (multipage post)
 			elseif( get_query_var( 'page' ) )
 			$num = $ssep . __( 'Page ', 'setmore-spasalon' ) . get_query_var( 'page' );
-			 
+
 			// else
 			else $num = NULL;
-			 
+
 			// concoct and return new title
 			return $site_name . $insert . $old_title . $num;
-			
+
 		}
-	
+
 	}
 endif;
 // call our custom wp_title filter, with normal (10) priority, and 3 args
@@ -141,11 +141,11 @@ add_filter( 'wp_title', 'setmore_spasalon_filter_wp_title', 10, 3 );
 
 
 /*******************************************************************
-* These are settings for the Theme Customizer in the admin panel. 
+* These are settings for the Theme Customizer in the admin panel.
 *******************************************************************/
 if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 	function setmore_spasalon_theme_customizer( $wp_customize ) {
-		
+
 		$wp_customize->add_panel( 'theme_background_settings', array(
 	    	'priority' => 11,
 	    	'capability' => 'edit_theme_options',
@@ -153,7 +153,7 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 	    	'title' => __( 'Images -  All Pages', 'setmore-spasalon' ),
 	    	'description' => __( 'Description of what this panel does.', 'setmore-spasalon' ),
 		) );
-		
+
 		/* Background Image for Service Page */
 		$wp_customize->add_section( 'setmore_spasalon_logo_section_service' , array(
 			'title'       => __( 'Background Image - Service&rsquo;s', 'setmore-spasalon' ),
@@ -161,17 +161,17 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'description' => __( 'Upload a background image for your services page', 'setmore-spasalon' ),
 			'panel' => 'theme_background_settings',
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_logo_service', array (
 			'sanitize_callback' => 'esc_url_raw',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'setmore_spasalon_logo_service', array(
 			'label'    => __( '', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_logo_section_service',
 			'settings' => 'setmore_spasalon_logo_service',
 		) ) );
-		
+
 		/* Background Image for Staff Page */
 		$wp_customize->add_section( 'setmore_spasalon_logo_section_staff' , array(
 			'title'       => __( 'Background Image - Staff&rsquo;s', 'setmore-spasalon' ),
@@ -179,17 +179,17 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'description' => __( 'Upload a background image for your Staff&rsquo;s page', 'setmore-spasalon' ),
 			'panel' => 'theme_background_settings',
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_logo_staff', array (
 			'sanitize_callback' => 'esc_url_raw',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'setmore_spasalon_logo_staff', array(
 			'label'    => __( '', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_logo_section_staff',
 			'settings' => 'setmore_spasalon_logo_staff',
 		) ) );
-		
+
 		/* Background Image for About Us Page */
 		$wp_customize->add_section( 'setmore_spasalon_logo_section_aboutus' , array(
 			'title'       => __( 'Background Image - About Us', 'setmore-spasalon' ),
@@ -197,17 +197,17 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'description' => __( 'Upload a background image for your About Us page', 'setmore-spasalon' ),
 			'panel' => 'theme_background_settings',
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_logo_aboutus', array (
 			'sanitize_callback' => 'esc_url_raw',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'setmore_spasalon_logo_aboutus', array(
 			'label'    => __( '', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_logo_section_aboutus',
 			'settings' => 'setmore_spasalon_logo_aboutus',
 		) ) );
-		
+
 		/* Background Image for Contact Us Us Page */
 		$wp_customize->add_section( 'setmore_spasalon_logo_section_contactus' , array(
 			'title'       => __( 'Background Image - Contact Us', 'setmore-spasalon' ),
@@ -215,17 +215,17 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'description' => __( 'Upload a background image for your Contact Us page', 'setmore-spasalon' ),
 			'panel' => 'theme_background_settings',
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_logo_contactus', array (
 			'sanitize_callback' => 'esc_url_raw',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'setmore_spasalon_logo_contactus', array(
 			'label'    => __( '', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_logo_section_contactus',
 			'settings' => 'setmore_spasalon_logo_contactus',
 		) ) );
-		
+
 		/* Background Image for Booking Page */
 		$wp_customize->add_section( 'setmore_spasalon_logo_section_booking' , array(
 			'title'       => __( 'Background Image - Booking Page', 'setmore-spasalon' ),
@@ -233,17 +233,17 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'description' => __( 'Upload a background image for your Booking page', 'setmore-spasalon' ),
 			'panel' => 'theme_background_settings',
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_logo_booking', array (
 			'sanitize_callback' => 'esc_url_raw',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'setmore_spasalon_logo_booking', array(
 			'label'    => __( '', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_logo_section_booking',
 			'settings' => 'setmore_spasalon_logo_booking',
 		) ) );
-		
+
 		/* Background Image for Main Content */
 		$wp_customize->add_section( 'setmore_spasalon_logo_section_main_content' , array(
 			'title'       => __( 'Background Image - Main Content', 'setmore-spasalon' ),
@@ -251,76 +251,88 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'description' => __( 'Upload a background image for your main content', 'setmore-spasalon' ),
 			'panel' => 'theme_background_settings',
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_logo_main_content', array (
 			'sanitize_callback' => 'esc_url_raw',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'setmore_spasalon_logo_main_content', array(
 			'label'    => __( '', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_logo_section_main_content',
 			'settings' => 'setmore_spasalon_logo_main_content',
 		) ) );
-		
-		
+
+
 		/* color theme */
 		$wp_customize->add_setting( 'setmore_spasalon_theme_color', array (
 			'default' => '#27c3bb',
 			'sanitize_callback' => 'sanitize_hex_color',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'setmore_spasalon_theme_color', array(
 			'label'    => __( 'Theme Color Option', 'setmore-spasalon' ),
 			'section'  => 'colors',
 			'settings' => 'setmore_spasalon_theme_color',
 			'priority' => 101,
 		) ) );
-		
+
+		$wp_customize->add_setting( 'button_color', array (
+			'default' => '#27c3bb',
+			'sanitize_callback' => 'sanitize_hex_color',
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'button_color', array(
+			'label'    => __( 'Button Color', 'setmore-spasalon' ),
+			'section'  => 'colors',
+			'settings' => 'button_color',
+			'priority' => 104,
+		) ) );
+
 		/* paragraph font-color theme */
 		$wp_customize->add_setting( 'setmore_spasalon_theme_color_paragraph', array (
 			'default' => '#788a95',
 			'sanitize_callback' => 'sanitize_hex_color',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'setmore_spasalon_theme_color_paragraph', array(
 			'label'    => __( 'Paragraph Color Option', 'setmore-spasalon' ),
 			'section'  => 'colors',
 			'settings' => 'setmore_spasalon_theme_color_paragraph',
 			'priority' => 102,
 		) ) );
-		
+
 		/* author bio in posts option */
 		$wp_customize->add_section( 'setmore_spasalon_author_bio_section' , array(
 			'title'       => __( 'Display Author Bio', 'setmore-spasalon' ),
 			'priority'    => 32,
 			'description' => __( 'Option to show/hide the author bio in the posts.', 'setmore-spasalon' ),
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_author_bio', array (
 			'sanitize_callback' => 'esc_html',
 		) );
-		
+
 		 $wp_customize->add_control('author_bio', array(
 			'settings' => 'setmore_spasalon_author_bio',
 			'label' => __('Show the author bio in posts?', 'setmore-spasalon'),
 			'section' => 'setmore_spasalon_author_bio_section',
 			'type' => 'checkbox',
 		));
-		
+
 		/* slider options */
-		
+
 		$wp_customize->add_section( 'setmore_spasalon_slider_section' , array(
 			'title'       => __( 'Slider Options', 'setmore-spasalon' ),
 			'priority'    => 33,
 			'description' => __( 'Adjust the behavior of the image slider.', 'setmore-spasalon' ),
 		) );
-		
+
 		$wp_customize->add_setting( 'setmore_spasalon_slider_effect', array(
 			'default' => 'scrollHorz',
 			'capability' => 'edit_theme_options',
 			'sanitize_callback' => 'esc_html',
 		));
-		
+
 		$wp_customize->add_control( 'effect_select_box', array(
 			'settings' => 'setmore_spasalon_slider_effect',
 			'label' => __( 'Select Effect:', 'setmore-spasalon' ),
@@ -334,12 +346,12 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 				'shuffle' => 'Shuffle',
 			),
 		));
-		
-		
+
+
 		$wp_customize->add_setting( 'setmore_spasalon_slider_timeout', array (
 			'sanitize_callback' => 'esc_html',
 		) );
-		
+
 		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'setmore_spasalon_slider_timeout', array(
 			'label'    => __( 'Autoplay Speed in Seconds', 'setmore-spasalon' ),
 			'section'  => 'setmore_spasalon_slider_section',
@@ -390,8 +402,15 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
 		.otw-button,.wrapup-button {
 			background: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
 		}
-		.feedback-input:focus, #book-now-button a, .panel-button, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover {
+		.feedback-input:focus, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover {
 			border: 2px solid <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
+		}
+        #book-now-button a, .panel-button{
+			border: 2px solid <?php echo esc_attr(get_theme_mod('button_color')); ?>;
+            color: <?php echo esc_attr(get_theme_mod('button_color')); ?> !important;
+		}
+        .menu a, .menu #menu-icon  {
+            color: <?php echo esc_attr(get_theme_mod('button_color')); ?> !important;
 		}
 		.main-page-post .grid-box:hover, .main-staff-post .grid-box:hover, .services-wrap .grid-box:hover{
 			box-shadow: 1px 4px 10px 6px <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
@@ -400,13 +419,13 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
     		background: #fff !important;
     		color: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?> !important;
 		}
-		a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-contact-icon-text ul li strong, .about-us-email-icon-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .about-us-location-icon-text ul li strong, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation] .menu ul li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation] .menu #menu-icon {
+		a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-contact-icon-text ul li strong, .about-us-email-icon-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .about-us-location-icon-text ul li strong, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation]  li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation],.menu ul{
 			color: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
 		}
 	<?php endif; ?>
 	</style>
-	<?php	  
-	} 
+	<?php
+	}
   }
 endif;
 add_action( 'wp_head', 'setmore_spasalon_apply_color' );
@@ -426,8 +445,8 @@ if ( ! function_exists( 'setmore_spasalon_apply_color_paragraph' ) ) :
 		}
 	<?php endif; ?>
 	</style>
-	<?php	  
-	} 
+	<?php
+	}
   }
 endif;
 add_action( 'wp_head', 'setmore_spasalon_apply_color_paragraph' );
@@ -441,8 +460,8 @@ add_action( 'wp_head', 'setmore_spasalon_apply_color_paragraph' );
 if ( ! function_exists( 'setmore_spasalon_main_nav' ) ) :
 function setmore_spasalon_main_nav() {
 	// display the wp3 menu if available
-    wp_nav_menu( 
-    	array( 
+    wp_nav_menu(
+    	array(
     		'theme_location' => 'primary', /* where in the theme it's assigned */
     		'container_class' => 'menu', /* div container class */
     		'fallback_cb' => 'setmore_spasalon_main_nav_fallback' /* menu fallback */
@@ -458,8 +477,8 @@ endif;
 if ( ! function_exists( 'setmore_spasalon_footer_nav' ) ) :
 function setmore_spasalon_footer_nav() {
 	// display the wp3 menu if available
-    wp_nav_menu( 
-    	array( 
+    wp_nav_menu(
+    	array(
     		'theme_location' => 'secondary', /* where in the theme it's assigned */
     		'container_class' => 'footer-menu', /* container class */
     		'fallback_cb' => false,
@@ -489,7 +508,7 @@ add_filter( 'wp_page_menu_args', 'setmore_spasalon_page_menu_args' );
  * Register widgetized area and update sidebar with default widgets
  */
 function setmore_spasalon_widgets_init() {
-	
+
 	register_sidebar( array(
 		'name' => __( 'Blog Sidebar', 'setmore-spasalon' ),
 		'id' => 'sidebar-right',
@@ -498,7 +517,7 @@ function setmore_spasalon_widgets_init() {
 		'before_title' => '<div class="widget-title">',
 		'after_title' => '</div>',
 	) );
-	
+
 	register_sidebar( array(
 		'name' => __( 'Home Page Widget Area', 'setmore-spasalon' ),
 		'id' => 'sidebar-alt',
@@ -507,7 +526,7 @@ function setmore_spasalon_widgets_init() {
 		'before_title' => '<div class="widget-title">',
 		'after_title' => '</div>',
 	) );
-	
+
 	register_sidebar( array(
 		'name' => __( 'Static Page Sidebar', 'setmore-spasalon' ),
 		'id' => 'sidebar-page',
@@ -632,7 +651,7 @@ if ( ! function_exists( 'setmore_spasalon_body_classes' ) ) :
 		if ( ! is_multi_author() ) {
 			$classes[] = 'single-author';
 		}
-	
+
 		return $classes;
 	}
 endif;
@@ -687,67 +706,67 @@ add_filter( 'use_default_gallery_style', '__return_false' );
  */
 if ( ! function_exists( 'setmore_spasalon_pagination' ) ) :
 	function setmore_spasalon_pagination() {
-	
-		global $wp_query; 
-		
+
+		global $wp_query;
+
 		$big = 999999999;
-		  
-		$total_pages = $wp_query->max_num_pages;  
-		  
-		if ($total_pages > 1){  
-		  
-		  $current_page = max(1, get_query_var('paged'));  
-			
-		  echo '<div class="pagination">';  
-			
-		  echo paginate_links(array(  
-			  'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),  
-			  'current' => $current_page,  
-			  'total' => $total_pages,  
-			  'prev_text' => __('&lsaquo; Prev', 'setmore-spasalon'),  
-			  'next_text' => __('Next &rsaquo;', 'setmore-spasalon')  
-			));  
-		  
-		  echo '</div>';  
-			
+
+		$total_pages = $wp_query->max_num_pages;
+
+		if ($total_pages > 1){
+
+		  $current_page = max(1, get_query_var('paged'));
+
+		  echo '<div class="pagination">';
+
+		  echo paginate_links(array(
+			  'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+			  'current' => $current_page,
+			  'total' => $total_pages,
+			  'prev_text' => __('&lsaquo; Prev', 'setmore-spasalon'),
+			  'next_text' => __('Next &rsaquo;', 'setmore-spasalon')
+			));
+
+		  echo '</div>';
+
 		}
-	
+
 	}
 endif;
 
 
 if ( ! function_exists( 'setmore_spasalon_custom_pagination' ) ) :
 	function setmore_spasalon_custom_pagination() {
-		
+
 		global $alt_posts;
-		
+
 		$big = 999999999;
-		  
-		$total_pages = $alt_posts->max_num_pages; 
-		  
+
+		$total_pages = $alt_posts->max_num_pages;
+
 		if ($total_pages > 1){
-		  
+
 		  $alt_posts->query_vars['paged'] > 1 ? $current_page = $alt_posts->query_vars['paged'] : $current_page = 1;
-			
-		  echo '<div class="pagination">';  
-			
-		  echo paginate_links(array(  
+
+		  echo '<div class="pagination">';
+
+		  echo paginate_links(array(
 			  'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-			  'current' => $current_page,  
-			  'total' => $total_pages,  
-			  'prev_text' => __('&lsaquo; Prev', 'setmore-spasalon'),  
-			  'next_text' => __('Next &rsaquo;', 'setmore-spasalon')  
-			));  
-		  
-		  echo '</div>';  
-			
+			  'current' => $current_page,
+			  'total' => $total_pages,
+			  'prev_text' => __('&lsaquo; Prev', 'setmore-spasalon'),
+			  'next_text' => __('Next &rsaquo;', 'setmore-spasalon')
+			));
+
+		  echo '</div>';
+
 		}
-	
+
 	}
 endif;
 
 /**
- * Add "Untitled" for posts without title, 
+ * Add "Untitled" for posts without title,
  */
 function setmore_spasalon_post_title($title) {
 	if ($title == '') {
@@ -763,7 +782,7 @@ add_filter('the_title', 'setmore_spasalon_post_title');
  */
 if ( ! function_exists( 'setmore_spasalon_w3c_valid_rel' ) ) :
 	function setmore_spasalon_w3c_valid_rel( $text ) {
-		$text = str_replace('rel="category tag"', 'rel="tag"', $text); return $text; 
+		$text = str_replace('rel="category tag"', 'rel="tag"', $text); return $text;
 	}
 endif;
 add_filter( 'the_category', 'setmore_spasalon_w3c_valid_rel' );
@@ -781,8 +800,8 @@ add_filter('language_attributes', 'setmore_spasalon_modernizr_addclass');
 if ( ! function_exists( 'setmore_spasalon_modernizr_script' ) ) :
 	function setmore_spasalon_modernizr_script() {
 		wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/library/js/modernizr-2.6.2.min.js', false, '2.6.2');
-	}  
-endif;  
+	}
+endif;
 add_action('wp_enqueue_scripts', 'setmore_spasalon_modernizr_script');
 
 /**
@@ -796,7 +815,7 @@ if ( ! function_exists( 'setmore_spasalon_excerpt' ) ) :
 		$excerpt = implode(" ",$excerpt).'...';
 		} else {
 		$excerpt = implode(" ",$excerpt);
-		}	
+		}
 		$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
 		return $excerpt;
 	}
@@ -812,24 +831,24 @@ if ( ! function_exists('setmore_spasalon_featured_video') ) :
 		$w = get_option( 'embed_size_w' );
 		if ( !is_single() )
 		$url = str_replace( '448', $w, $url );
-		
+
 		if ( ( 0 === strpos( $url, 'http://' ) ) || ( 0 === strpos( $url, 'https://' ) ) || ( 0 === strpos( $url, '//www' ) ) ) {
 			 echo apply_filters( 'the_content', $url );
-			 $content = trim( str_replace( $url, '', $content ) ); 
+			 $content = trim( str_replace( $url, '', $content ) );
 			 } else if ( preg_match ( '#^<(script|iframe|embed|object)#i', $url ) ) {
 			 $h = get_option( 'embed_size_h' );
 			 if ( !empty( $h ) ) {
 			 if ( $w === $h ) $h = ceil( $w * 0.75 );
-			
-			 $url = preg_replace( 
-			 array( '#height="[0-9]+?"#i', '#height=[0-9]+?#i' ), 
-			 array( sprintf( 'height="%d"', $h ), sprintf( 'height=%d', $h ) ), 
-			 $url 
+
+			 $url = preg_replace(
+			 array( '#height="[0-9]+?"#i', '#height=[0-9]+?#i' ),
+			 array( sprintf( 'height="%d"', $h ), sprintf( 'height=%d', $h ) ),
+			 $url
 			 );
 		 }
-		
+
 		echo esc_url($url);
-			$content = trim( str_replace( $url, '', $content ) ); 
+			$content = trim( str_replace( $url, '', $content ) );
 		}
 	}
 endif;
@@ -837,7 +856,7 @@ endif;
 /**
  * Ignore Sticky
  */
- 
+
 function setmore_spasalon_ignore_sticky($query) {
     $query->set( 'ignore_sticky_posts', true );
 }
@@ -847,8 +866,8 @@ add_action('pre_get_posts', 'setmore_spasalon_ignore_sticky');
 /**
  * Enqueue scripts & styles
  */
- 
- 
+
+
  add_action( 'wp_enqueue_scripts', 'setmore_spasalon_awesome' );
 /**
  * Register the awesomeness and add IE7 support
@@ -865,7 +884,7 @@ function setmore_spasalon_awesome() {
 		$wp_styles->add_data( 'prefix-font-awesome-ie', 'conditional', 'lte IE 7' );
 	}
 }
- 
+
 if ( ! function_exists( 'setmore_spasalon_custom_scripts' ) ) :
 	function setmore_spasalon_custom_scripts() {
 		wp_register_script( 'setmore_script', get_template_directory_uri() . '/library/js/short-booking-page-class.js');
@@ -971,7 +990,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	) );
 
 // Booking Page section
-	
+
 	$wp_customize->add_section( 'service_and_class', array(
 	    'priority' => 10,
 	    'capability' => 'edit_theme_options',
@@ -980,13 +999,13 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'description' => '',
 	    'panel' => 'theme_settings',
 	) );
-	
+
     $wp_customize->add_setting( 'booking_default', array(
     	'default' => '',
     	'type' => 'option',
     	'sanitize_callback' => 'esc_html',
 	) );
- 
+
 	$wp_customize->add_control( 'booking_default', array(
     	'label' => 'Booking Page Default',
     	'section' => 'service_and_class',
@@ -996,7 +1015,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
         	'classes'  => 'Classes',
     	),
 	) );
-	
+
 	$wp_customize->add_setting( 'setmore_currency', array(
 		'default' => '$',
 		'type' => 'theme_mod',
@@ -1012,7 +1031,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'SetMore Currency', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 //Home Page Section
 	$wp_customize->add_section( 'home_page', array(
 	    'priority' => 10,
@@ -1038,7 +1057,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Company Key', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'booking_page_url', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1054,7 +1073,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Booking Page URL', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'header_button_name', array(
 		'default' => 'Book Now',
 		'type' => 'theme_mod',
@@ -1070,7 +1089,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Header Button - Name', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'slider_button_name', array(
 		'default' => 'Book a Free Session',
 		'type' => 'theme_mod',
@@ -1086,7 +1105,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Slider Button - Name', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'home_page_header', array(
 		'default' => 'A Perfect Theme For',
 		'type' => 'theme_mod',
@@ -1102,7 +1121,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Home Page Header', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'home_page_sub_hearder_color', array(
 		'default' => 'Salons',
 		'type' => 'theme_mod',
@@ -1118,7 +1137,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Home Page SubHeader(Color Area)', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'home_page_sub_hearder', array(
 		'default' => 'From Setmore',
 		'type' => 'theme_mod',
@@ -1134,7 +1153,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Home Page SubHeader', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'home_page_description', array(
 		'default' => 'Perfect Hair Needs Pefect Care',
 		'type' => 'theme_mod',
@@ -1176,7 +1195,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Address', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'about_us', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1192,7 +1211,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'About US ( short description )', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'phone', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1208,7 +1227,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Phone', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'facsimile', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1224,7 +1243,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Facsimile', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'email', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1240,9 +1259,9 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Email', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 //Social Medial Section
-	
+
 	$wp_customize->add_section( 'social_media_links', array(
 	    'priority' => 12,
 	    'capability' => 'edit_theme_options',
@@ -1267,7 +1286,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'LinkedIn', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'twitter', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1283,7 +1302,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Twitter', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'google_plus', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1299,7 +1318,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Google+', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-	
+
 	$wp_customize->add_setting( 'youtube', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1315,7 +1334,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Youtube', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
-		$wp_customize->add_setting( 'facebook', array(		'default' => '',		'type' => 'theme_mod',		'capability' => 'edit_theme_options',		'transport' => '',		'sanitize_callback' => 'sanitize_text_field',	) );	$wp_customize->add_control( 'facebook', array(	    'type' => 'url',	    'priority' => 27,	    'section' => 'social_media_links',	    'label' => __( 'facebook', 'setmore-spasalon' ),	    'description' => '',	) );        
+		$wp_customize->add_setting( 'facebook', array(		'default' => '',		'type' => 'theme_mod',		'capability' => 'edit_theme_options',		'transport' => '',		'sanitize_callback' => 'sanitize_text_field',	) );	$wp_customize->add_control( 'facebook', array(	    'type' => 'url',	    'priority' => 27,	    'section' => 'social_media_links',	    'label' => __( 'facebook', 'setmore-spasalon' ),	    'description' => '',	) );
 //Business Hours Section
 
 	$wp_customize->add_section( 'business_hours', array(
@@ -1346,7 +1365,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
 	) );
-	
+
 	$wp_customize->add_setting( 'mon_start', array(
 		'default' => '8:00AM - 5:00PM',
 		'type' => 'theme_mod',
@@ -1366,7 +1385,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
 	) );
-	
+
 	$wp_customize->add_setting( 'tue_start', array(
 		'default' => '8:00AM - 5:00PM',
 		'type' => 'theme_mod',
@@ -1386,7 +1405,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
 	) );
-	
+
 	$wp_customize->add_setting( 'wed_start', array(
 		'default' => '8:00AM - 5:00PM',
 		'type' => 'theme_mod',
@@ -1406,7 +1425,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
 	) );
-	
+
 	$wp_customize->add_setting( 'thu_start', array(
 		'default' => '8:00AM - 5:00PM',
 		'type' => 'theme_mod',
@@ -1426,7 +1445,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
 	) );
-	
+
 	$wp_customize->add_setting( 'fri_start', array(
 		'default' => '8:00AM - 5:00PM',
 		'type' => 'theme_mod',
@@ -1445,8 +1464,8 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'class' => 'example-class',
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
-	) );	
-	
+	) );
+
 	$wp_customize->add_setting( 'sat_start', array(
 		'default' => 'CLOSED',
 		'type' => 'theme_mod',
@@ -1466,9 +1485,9 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	        'style' => 'margin: auto;width: 60%;border:3px solid #24afa9;padding: 10px;',
 	    )
 	) );
-	
+
 // Custom Label Section
-	
+
 	$wp_customize->add_section( 'custom_labels', array(
 	    'priority' => 14,
 	    'capability' => 'edit_theme_options',
@@ -1493,7 +1512,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Telephone Enquiry', 'setmore-spasalon' ),
 	    'description' => 'Provide your desired label name',
 	) );
-	
+
 	$wp_customize->add_setting( 'facsimile_custom', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1509,7 +1528,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Facsimile', 'setmore-spasalon' ),
 	    'description' => 'Provide your desired label name',
 	) );
-	
+
 	$wp_customize->add_setting( 'email_custom', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1525,7 +1544,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Email', 'setmore-spasalon' ),
 	    'description' => 'Provide your desired label name',
 	) );
-	
+
 	$wp_customize->add_setting( 'location_custom', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1541,7 +1560,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Location', 'setmore-spasalon' ),
 	    'description' => 'Provide your desired label name',
 	) );
-	
+
 	$wp_customize->add_setting( 'hours_custom', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1557,7 +1576,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'label' => __( 'Business Hours', 'setmore-spasalon' ),
 	    'description' => 'Provide your desired label name',
 	) );
-	
+
 	$wp_customize->add_setting( 'expert_custom', array(
 		'default' => '',
 		'type' => 'theme_mod',
@@ -1597,7 +1616,7 @@ add_action('wp_enqueue_scripts', 'setmore_spasalon_customizer_js');
 // =============================================================================
 
 
-function setmore_spasalon_head_css(){ 
+function setmore_spasalon_head_css(){
 
 	//
 	// 	Tags data
@@ -1612,7 +1631,7 @@ function setmore_spasalon_head_css(){
 		'h4'		=> "Headline 4 (h4 tags)",
 		'h5'		=> "Headline 5 (h5 tags)",
 		'h6'		=> "Headline 6 (h6 tags)",
-		'blockquote'=> "Blockquote (blockquote)",		
+		'blockquote'=> "Blockquote (blockquote)",
 		'p'			=> "Paragraph (p tags)",
 		'li'		=> "Paragraph (li tags)",
 	);
@@ -1624,7 +1643,7 @@ function setmore_spasalon_head_css(){
 		$font_weight = preg_replace("/[^0-9?! ]/","", $font_weight_style);
 		$font_style = preg_replace("/[^A-Za-z?! ]/","", $font_weight_style);
 		$font_color = get_theme_mod("gwfc_" . $key . "_font_color");
-		
+
 		if( $font_style == "" ){ $font_style = "normal"; }
 		if( get_theme_mod( "gwfc_" . $key . "_checkbox" ) == true && $key != 'li'){
 
@@ -1636,7 +1655,7 @@ function setmore_spasalon_head_css(){
 
 			<?php if($font_family != 'default'){ ?>
 			font-family: '<?php echo esc_attr($font_family);?>', sans-serif !important;
-			<?php } ?>			
+			<?php } ?>
 			font-weight: <?php echo esc_attr($font_weight);?> !important;
 			font-style: <?php echo esc_attr($font_style);?> !important;
 			<?php if($font_color != false){ ?>
@@ -1646,7 +1665,7 @@ function setmore_spasalon_head_css(){
 
 		</style>
 		<?php
-		
+
 		}
 	}
 	$list_tags = array( // 1
@@ -1663,7 +1682,7 @@ function setmore_spasalon_head_css(){
 
 			<?php if($font_family != 'default'){ ?>
 			font-family: '<?php echo esc_attr($font_family);?>', sans-serif !important;
-			<?php } ?>			
+			<?php } ?>
 			font-weight: <?php echo esc_attr($font_weight);?> !important;
 			font-style: <?php echo esc_attr($font_style);?> !important;
 			<?php if($font_color != false){ ?>
@@ -1673,7 +1692,7 @@ function setmore_spasalon_head_css(){
 
 		</style>
 		<?php
-		
+
 		}
 	}
 }
@@ -1773,7 +1792,7 @@ if ( ! function_exists( 'setmore_spasalon_header_css_file' ) ) :
   		  		</style>
   		  	<?php
   		  }
-	} 
+	}
 endif;
 add_action( 'wp_head', 'setmore_spasalon_header_css_file' );
 
@@ -1808,7 +1827,7 @@ function setmore_spasalon_logo_customize_register( $wp_customize ) {
  * @return array (Maybe) modified page templates array.
  */
 function wpdocs_filter_theme_page_templates( $page_templates, $this, $post ) {
-    
+
     if( !function_exists( 'wpds_people_profile_cpt' ) ) {
 	   if ( isset( $page_templates['people-profile-template.php'] ) ) {
             unset( $page_templates['people-profile-template.php'] );
@@ -1823,7 +1842,7 @@ function wpdocs_filter_theme_page_templates( $page_templates, $this, $post ) {
             unset( $page_templates['class-booking-page-template.php'] );
         }
     }
-    
+
     if ( $current_blog_id != $food_blog_id ) {
         if ( isset( $page_templates['page-food.php'] ) ) {
             unset( $page_templates['page-food.php'] );

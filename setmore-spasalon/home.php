@@ -67,7 +67,6 @@ $setmore_spasalon_book_class_text = 'bookclass';
             </div>
         </div>
     </div>
-
     <?php
         $setmore_spasalon_args = array(
             'posts_per_page' => 10,
@@ -120,12 +119,12 @@ $setmore_spasalon_book_class_text = 'bookclass';
     <?php endif; ?>
     <?php wp_reset_postdata(); ?>
 </div>
-
-<div class= main-page-parallax-0>
+<div class= main-page-parallax-0>   
+    
     <?php /* bannière avec marqué "ostéo pour qui"
     pour séparer la page */ ?>
-    <div class="main_title_separator">
-        <div class="inner-title-wrap" style="padding : 50px 0 50px 0 ">
+    <div class="main_title_separator">    
+        <div class="inner-title-wrap" style="padding : 50px 0 50px 0 ">        
             <div class="inner-title-box">
                 <header class="entry-header">
                     <h1 class="entry-title">L'ostéopathie, pour qui?</h1>
