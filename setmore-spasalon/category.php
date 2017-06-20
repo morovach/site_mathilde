@@ -1,12 +1,13 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
+    <div class = "header-spacer"> </div>
 
 	<div class="inner-title-wrap">
       <div class="inner-title-box">
 	  <header class="entry-header">
             <h1 class="page-title"><?php
-                printf( __( 'Category: %s', 'setmore-spasalon' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+                printf( __( '%s', 'setmore-spasalon' ), '<span>' . single_cat_title( '', false ) . '</span>' );
             ?></h1>
 
             <?php

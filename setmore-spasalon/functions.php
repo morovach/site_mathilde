@@ -288,6 +288,18 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'priority' => 104,
 		) ) );
 
+		$wp_customize->add_setting( 'parralax_color', array (
+			'default' => '#27c3bb',
+			'sanitize_callback' => 'sanitize_hex_color',
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'parralax_color', array(
+			'label'    => __( 'Parralax Color', 'setmore-spasalon' ),
+			'section'  => 'colors',
+			'settings' => 'parralax_color',
+			'priority' => 105,
+		) ) );
+
 		/* paragraph font-color theme */
 		$wp_customize->add_setting( 'setmore_spasalon_theme_color_paragraph', array (
 			'default' => '#788a95',
@@ -393,10 +405,10 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
 	?>
 	<style id="color-settings">
 	<?php if ( get_theme_mod('setmore_spasalon_theme_color') ) : ?>
-		.pagination li a:hover, .pagination li.active a, #nav-above .nav-next a, #nav-below .nav-next a, #image-navigation .next-image a, #nav-above .nav-previous a, #nav-below .nav-previous a,	#image-navigation .previous-image a, .commentlist .comment-reply-link, .commentlist .comment-reply-login, #respond #submit, .intro-copy-box, .inner-title-wrap, .post-content ol > li:before, .post-content ul > li:before, .about-us-team-title h1:before, table.two th, .staff-book-now, #button-blue, .crunchify-top{
+		.pagination li a:hover, .pagination li.active a, #nav-above .nav-next a, #nav-below .nav-next a, #image-navigation .next-image a, #nav-above .nav-previous a, #nav-below .nav-previous a,	#image-navigation .previous-image a, .commentlist .comment-reply-link, .commentlist .comment-reply-login, #respond #submit, .post-content ol > li:before, .post-content ul > li:before, .about-us-team-title h1:before, table.two th, .staff-book-now, #button-blue, .crunchify-top{
 			background-color: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
 		}
-		.sendCopy label, .business-days, footer[role=contentinfo] {
+		.sendCopy label, .business-days {
 			background: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?> !important;
 		}
 		.otw-button,.wrapup-button {
@@ -409,7 +421,7 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
 			border: 2px solid <?php echo esc_attr(get_theme_mod('button_color')); ?>;
             color: <?php echo esc_attr(get_theme_mod('button_color')); ?> !important;
 		}
-        .menu a, .menu #menu-icon  {
+        .menu a, .menu #menu-icon, .entry-header a {
             color: <?php echo esc_attr(get_theme_mod('button_color')); ?> !important;
 		}
 		.main-page-post .grid-box:hover, .main-staff-post .grid-box:hover, .services-wrap .grid-box:hover{
@@ -419,6 +431,15 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
     		background: #fff !important;
     		color: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?> !important;
 		}
+        .intro-copy-box , .inner-title-wrap , footer[role=contentinfo]{
+    		background-color: <?php echo esc_attr(get_theme_mod('parralax_color')); ?> !important;
+        }
+        .business-days{
+            color: <?php echo esc_attr(get_theme_mod('parralax_color')); ?>
+        }
+        .main-page-parallax , footer[role=contentinfo]{
+    		background: <?php echo esc_attr(get_theme_mod('parralax_color')); ?> !important;
+        }
 		a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-contact-icon-text ul li strong, .about-us-email-icon-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .about-us-location-icon-text ul li strong, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation]  li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation],.menu ul{
 			color: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
 		}

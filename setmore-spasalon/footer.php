@@ -5,7 +5,7 @@
 </div><!-- #wrapper -->
 
 <footer id="colophon" role="contentinfo">
-    <a href="#" class="crunchify-top"><i class="fa fa-hand-o-up"></i></a>
+    <a href="#" class="crunchify-top"><i class="fa fa-arrow-up "></i></a>
     <div id="site-generator">
         <?php echo esc_html('&copy; ', 'setmore-spasalon') . esc_attr( get_bloginfo( 'name', 'display' ) );  ?>
         <?php setmore_spasalon_footer_nav(); ?>
