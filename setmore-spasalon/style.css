@@ -463,7 +463,11 @@ html, body{
     z-index: 2500;
     background-size: cover;
 }
-.main-page-parallax-0, .main-page-parallax-1{    /*background-image: url(http://osteosaintjulien.x10host.com/wp-content/uploads/2017/05/light-blue-center.png);*/    background-color: white;    background-size: 100% 100%;}
+
+.main-page-parallax{
+    float: left;
+    width: 100%;
+}
 
 	/* layout options ( all have margins right & left of 1%) */
 
@@ -655,6 +659,10 @@ h5, .h5{}
 
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a{}
 
+.entry-header h1 em, .entry-header h1 b{
+    font-family: Indie flower ! important;
+}
+
 /******************************************************************
 HEADER SYTLES
 ******************************************************************/
@@ -664,7 +672,6 @@ header[role=banner]{
     z-index: 3000;
     width: 100%;
     top: 0;
-    padding: 20px 0;
 }
 	header[role=banner],
 	header[role=banner] div{
@@ -1048,7 +1055,7 @@ THEME DEFAULT COLOR
 .otw-button,.wrapup-button{
     background: #27c3bb;
 }
-.feedback-input:focus, #book-now-button a, .panel-button, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover{
+.feedback-input:focus, .panel-button, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover{
     border: 2px solid #27c3bb;
 }
 .main-page-post .grid-box:hover, .main-staff-post .grid-box:hover, .services-wrap .grid-box:hover{
@@ -1155,6 +1162,7 @@ POSTS & CONTENT STYLES
 			color: #95a5a6;
 			margin: 0 0 24px 0; /* for ie8 & below */
 			margin: 0 0 2.4rem 0;
+            display: none;
 		}
 
 		.entry-summary{
@@ -1469,6 +1477,13 @@ POSTS & CONTENT STYLES
 
 		article[id*=post-] footer a{}
 
+        #article-picture img{
+            border: 0.5px solid black;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        
 		.more-link{
 
 		}
@@ -1479,6 +1494,10 @@ POSTS & CONTENT STYLES
 			margin-left: 20px;
 		}
 
+    #menu-articles{
+        text-align: left;
+    }
+        
 /******************************************************************
 GALLERY STYLES
 ******************************************************************/
@@ -1731,10 +1750,7 @@ PAGE LINK STYLES
 #comment-nav-above,
 #nav-above,
 #nav-below{
-	display: block;
-	overflow: hidden;
-	margin: 0 30px 50px 0; /* for ie8 & below */
-	margin: 0 3rem 5rem 0;
+	display: none;
 }
 	.pcont #nav-below{
 		margin-left: 30px;
@@ -1790,6 +1806,14 @@ SIDEBARS & ASIDES
 	margin-top: 35px; /* for ie8 & below */
 	margin-top: 3.5rem;
 }
+
+.contact-us-sidebar{
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    /* width: 40%; JEC google place*/
+    width: 100%;
+}
+
 	.sbfix #sidebar{
         margin-top: 0px;
         background: rgba(0,0,0,0.1);
@@ -2620,7 +2644,7 @@ ALT HOMEPAGE STYLES
 	}
 
 .inner-title-wrap{
-	padding: 20px 0 0px 0;
+	margin-top: 50px;
 	text-align: center;
 }
 
@@ -2873,99 +2897,176 @@ SOCIAL MEDIA BUTTONS STYLES
 		background-image: url(library/images/icon-email.png);
 	}
 
-/******************************************************************
+/*****************************************************************
 jQuery SLIDER STYLES
 ******************************************************************/
-#load-cycle{
-	background: url(library/images/loading.gif) no-repeat center center;
-	width: 100%;
-	height: auto;
-	min-height: 100px;
-    display:none;
-}
-
 #slide-wrap{
-	border-top: 0;
-    height: 715px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
-.cover{
-
-  z-index: 2000;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 200px;
+.img-wrapper{
+    height: 682px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.slide-cover{
-    z-index: 2001;
-    /*background: rgba(220,220,220,0.5); JEC */
+.img-wrapper-helper{
+    display: inline-block;
     height: 100%;
     width: 100%;
+}
+
+.img-wrapper-helper img {
+    min-width: 100%;
+    position: relative;
+    top: 37%;
+    transform: translateY(-37%);
+}
+
+#slider-overlay{
     position: absolute;
     top: 0;
+    margin-top: 0;
+    height: 683px;
+    width: 100%;
+    overflow: hidden;
+    background: url(https://osteopathe-saint-julien-en-genevois.fr/wp-content/uploads/2017/06/logo_overlay.png);
+    background-size: contain;
+    z-index: 1000;
 }
 
-.cycle-slideshow{
-	position: absolute;
-	height: 715px;
-	width: 100%;
-	display: block;
-	overflow: hidden;
-    top: 0;
+#slider-overlay img{
+    height: 100%;
+    width: 100%;
 }
 
-.slides{
-	height: 715px;
-	width: 100%;
-	overflow: hidden;
+#header-overlay h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: initial;
 }
-	.slides .slide-thumb{
-		position: relative;
-		width: 100%;
-		height: 715px;
-		overflow: hidden;
-		white-space: nowrap;
-	}
 
-	.slides .slide-thumb img{
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		-moz-transform: translate(-50%, -50%);
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		-o-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-        min-width: 100%;        min-height: 100%;}
-	}
+#header-overlay h2{
+    line-height: initial;
+}
+
+#header-overlay{
+    position: absolute;
+    top: 0%;
+    margin-top: 580px;
+    width: 100%;
+    text-align: center;
+    z-index: 2000;
+
+}
+
+#book-now-button{
+    margin-top: 20px;
+    max-width: 250px;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #333366;
+    border-radius: 4px;
+}
+
+ #book-now-button a{
+     font-size: 30px;
+     margin: 0;
+     border: none;
+     line-height: initial;
+     padding: 0;
+     text-decoration: none;
+
+ }
+
+.sticky-header #site-logo{
+    display: initial;
+    
+}
+
+#site-logo{
+    display: none;
+}
+
+#logo-overlay{
+    position: absolute;
+    top: 0%;
+    margin-top:  100px;
+    margin-left: 10%;
+    height: 327px;
+    z-index: 2000;
+}
+
+#logo-overlay img{
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo-overlay img:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1024px){
+    #book-now-button{
+        margin-top: 0;
+    }
+    /* This is to have an overlay OVER the picture */
+    #header-overlay{
+        position: absolute;
+        top: 0%;
+        margin-top: 60vw;
+    }
+
+    #header-overlay h1{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #header-overlay h2{
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    #logo-overlay{
+        position: absolute;
+        top: 0%;
+        margin-top: 10vw;
+        margin-left: 5vw;
+        width: 40%;
+        height: auto;
+    }
+
+    #logo-overlay img{
+        width: 100%;
+    }
+
+    .img-wrapper-helper img, #slider-overlay img {
+        max-width: 100%;
+        top: 0;
+        height: auto;
+        transform: none;
+    }
+
+    .img-wrapper, #slider-overlay{
+        height: auto;
+    }
+
+}
+
+    .cycle-slideshow{
+        position: relative;
+    }
+
+    .slides{
+        width: 100%
+    }
 
 		html.no-csstransforms .slides .slide-thumb img{
 			left: 0;
 			top: 0;
-		}
-
-	.slides .slide-noimg{
-		position: relative;
-		width: 100%;
-		height: 500px;
-		overflow: hidden;
-		white-space: nowrap;
-		background-color: #f0f0f0;
-		font-family: "Droid Sans", Arial, Helvetica, sans-serif;
-		font-size: 21px;
-		font-weight: 400;
-		text-transform: uppercase;
-		color: #d0d0d0;
-		text-align: center;
-	}
-		.slides .slide-noimg p{
-			position: absolute;
-			width: 100%;
-			left: 0;
-			top: 42%;
 		}
 
 	.slide-title{
@@ -3004,41 +3105,6 @@ jQuery SLIDER STYLES
 			border-radius: 3px;
 		}
 
-
-#sliderprev,
-#slidernext{
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	border-radius: 50%;
-	text-decoration: none;
-	background-color: #fff;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 50px;
-	width: 72px;
-	height: 72px;
-	line-height: 67px;
-	z-index: 2000;
-	text-indent: -9999px;
-	outline: none;
-	opacity: 0.9;
-	display: none;
-}
-
-	#sliderprev{
-		background: url(library/images/slider-nav.png)  no-repeat 0 -13px;
-		left: 10px;
-	}
-
-	#slidernext{
-		background: url(library/images/slider-nav.png)  no-repeat -128px -11px;
-		right: 20px;
-	}
-
-	.cycle-slideshow:hover #sliderprev,
-	.cycle-slideshow:hover #slidernext{
-		display: block;
-	}
 
 .cycle-paused:after{
 	content: 'Paused';
@@ -3160,6 +3226,7 @@ body.page .grid-box .entry-title{
 
 	.grid-box .entry-content p:last-child{
 		margin-bottom: 0;
+        font-family: alice;
 	}
 
 	.grid-box .entry-content.people-info{
@@ -3314,7 +3381,6 @@ p.author-description{
 .author-bio #social-media{
 	padding-top: 6px;
 }
-.slides .slide-noimg{    height: 568px;}
 .grid-box{    width: 44.4%;}
 .slide-title{    font-size: 24px; /* for ie8 & below */    font-size: 2.4rem;    line-height: 1.1;}
 .slide-copy-wrap{    font-size: 14px; /* for ie8 & below */    font-size: 1.4rem;    line-height: 1.4;}
@@ -3332,21 +3398,37 @@ p.author-description{
     width: 100%;
 }
 
+.map-container {
+    width: 100%;
+    float: left;
+}
+.map-container iframe{
+	width: 100%;
+	display: block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+	pointer-events: auto;
+}
+
 .contact-us-section{
-  height: auto;
-  margin-bottom: 40px;
+  height: 100px;
   text-align: left;
   width: 350px;
-  padding: 15px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .contact-wraper-content-inner-right{
     float: right;
+    margin-right: 30%;
+    margin-bottom: 0;
 }
 
 .contact-wraper-content-inner-left{
     float: left;
+    margin-left: 30%;
+    margin-bottom: 0;
 }
 
 #site-logo>a>img{
@@ -3360,7 +3442,75 @@ p.author-description{
     max-width: 150px;
     width: 150%;
     height: 150%;
-    
+    transition: all 0.5s ease-in-out;
+
+}
+
+#site-logo>a>img:hover{
+    transform: scale(1.1);
+}
+
+.review-item{
+    border: none !important;
+    flex: 1 1 0 ! important;
+}
+
+.review-text {
+    text-align: justify ! important;
+}
+
+#wrapper-google-reviews{
+    float: left;
+    width: 100%;
+    background: rgba(0,0,0,0.1);
+}
+
+.write-review-button{
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 11px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: x-large;
+}
+
+.write-review-button a{
+    text-decoration: none;
+}
+
+
+.about-us-icon i{
+  background-color: #333366;
+  color: #fff;
+  border: 1px solid #333366;
+  border-radius: 100%;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 9px;
+  float: left;
+}
+
+.about-us-icon i:hover{
+    background: #fff;
+    color:#333366;
+}
+
+.about-us-text {
+    margin-left: 55px;
+}
+
+.about-us-text, #contact-us-diary{
+    margin-bottom:20px;
+}
+#contact-us-info #site-title{
+    padding: 5px;
+    text-align: center;
+}
+.about-us-sidebar{
+    margin-top: 20px !important;
 }
 /******************************************************************
 MEDIA QUERIES & DEVICE STYLES
@@ -3370,7 +3520,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 @media only screen and (max-width: 2560px){
 	.slide-copy-wrap{		left: 758px;		right: 758px;		padding: 0 2%;	}
-    
+
     .contact-wraper-content-inner-right{
         margin-right: 30%;
         width: 20%;
@@ -3379,7 +3529,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     .contact-wraper-content-inner-left{
         margin-left: 30%;
         width: 20%;
-    }    
+    }
 }
 
 @media only screen and (max-width: 2048px){
@@ -3396,14 +3546,16 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		right: 428px;
 		padding: 0 2.5%;
 	}
-    
+
     .contact-wraper-content-inner-right{
-        margin-right: 15%;
+        margin-right: 20%;
     }
 
     .contact-wraper-content-inner-left{
-        margin-left: 15%;
-    }        
+        margin-left: 20%;
+    }
+
+
 }
 
 @media only screen and (max-width: 1600px){
@@ -3444,12 +3596,23 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         #site-heading{
             margin-left: 10px !important;
         }
-        #book-now-button{
-            margin-right: 6px !important;
-        }
 }
 
 @media only screen and (max-width: 1152px){
+    .contact-wraper-content-inner-right{
+    margin-left: 0;
+    /* margin-right: 0; */
+    width: inherit;
+    float: left;
+    }
+
+    .contact-wraper-content-inner-left{
+    margin-left: 0;
+    /* margin-right: 0; */
+    width: inherit;
+    float: left;
+    }
+
 	.slide-copy-wrap{
 		left: 54px;
 		right: 54px;
@@ -3573,38 +3736,28 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 824px){
-    
-    .contact-wraper-content-inner-right{
-    margin-left: 0;
-    /* margin-right: 0; */
-    width: inherit;
-    float: left;
+
+    .write-review-button{
+        margin-bottom: 10px;
+        width: 90%;
+}
+
+
+    .write-review-button a{
+        font-size: large;
     }
 
-    .contact-wraper-content-inner-left{
-    margin-left: 0;
-    /* margin-right: 0; */
-    width: inherit;
-    float: left;
-    } 
-
-    #slide-wrap {
-		height: 568px;
+    #wrapper-google-reviews{
+        float: left;
+        width: 100%;
     }
 
-    .cover{
-        top: 100px;
+    #google-reviews {
+        display: inline-block !important;
     }
 
-	.cycle-slideshow{
-		height: 568px;
-	}
-
-	.slides{
-		height: 568px;
-	}
-		.slides .slide-thumb{
-			height: 568px;
+    .review-item{
+        overflow: hidden;
     }
 
     #form-div{
@@ -3620,11 +3773,11 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	#site-description{
 		margin-right: 0;
 	}
-    
+
     #map {
         height: 200px;
         width: 100%;
-    }    
+    }
 
 
 	header[role=banner] #searchform{
@@ -3788,9 +3941,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     #class-booking-page{
         padding: 5px !important;
     }
-    .contact-us-section{
-        width:100% !important;
-    }
+
 	.slide-copy-wrap{
 		left: 30px;
 		right: 30px;
@@ -3803,10 +3954,6 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
             width: 40% !important;
             margin: 2.5% 4% !important;
         }
-
-		.slides .slide-noimg{
-			height: 560px;
-		}
 
 	.commentlist li.comment article[id*=comment-] video, .post-content video, .full-width-content .post-content video,
 	.commentlist li.comment article[id*=comment-] object, .post-content object, .full-width-content .post-content object,
@@ -3821,6 +3968,32 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 640px){
+
+    .about-us-inner-section{
+        width: 100%;
+        float: left;
+    }
+
+    .about-us-icon {
+        width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-text{
+        float: left;
+        width: 100%;
+        margin: 0;
+    }
+    .about-us-text li{
+        text-align: center;
+    }
+
+    .contact-us-section{
+        width:100% !important;
+        margin: 10px auto;
+        height: auto;
+        float: left;
+    }
     #form-div{
     width: 100% !important;
     }
@@ -3828,35 +4001,6 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         padding: 5px !important;
     }
 
-    #slide-wrap {
-		height: 450px;
-    }
-
-    .cover{
-        top: 80px;
-    }
-
-	.cycle-slideshow{
-		height: 450px;
-		background-color: #222;
-	}
-
-	.slides{
-		height: 450px;
-	}
-
-    .slides .slide-thumb{
-        height: 450px;
-    }
-
-    .slides .slide-noimg{
-        height: 450px;
-    }
-
-        #book-now-button{
-            display: none !important;
-
-        }
 		.slide-copy{
 			background-image: none;
 			background-color: #222;
@@ -3986,29 +4130,29 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 480px){
-    
+
+    .about-us-icon {
+        width: 45px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #site-logo>a>img{
         max-height: 100px;
         max-width: 100px;
         width: 100%;
         height: 100%;
-        
-    }    
-    
+
+    }
+
 	.contact-us-section i{
 	   width: 25px !important;
 	   height: 25px !important;
        line-height: 25px !important;
        font-size: 25px !important;
-       
+
     }
-    .contact-us-section .about-us-contact-icon-text, .contact-us-section,.about-us-reservation-icon-text, .about-us-handi-icon-text, .about-us-email-icon-text, .contact-us-section .about-us-location-icon-text{
-        margin-left: 10px !important;
-        padding: 0px;
-    }
-    .contact-wraper-content-inner{
-        padding: 10px !important;
-    }
+
 	#site-title{
 		font-size: 26px; /* for ie8 & below */
 		font-size: 2.6rem;
@@ -4023,15 +4167,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
     #map {
         display: none;
-    }           
-        
-    #slide-wrap{		height: 650px;	}
-    .cover{top: 120px;    text-align: center; }
-    .cycle-slideshow{		height: 180px;	}
-    .slides {        height: 180px;    }
-    .slides .slide-thumb{        height: 180px;    }
-    .slides .slide-noimg{        height: 180px;    }
-
+    }
 
         nav[role=navigation]{
             margin:0px auto !important;
@@ -4201,7 +4337,15 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 }
 
-@media only screen and (max-width: 320px){
+@media screen and (max-width:450px){
+    .panel-button{
+        padding: 1em 1em !important;
+        font-size: 1.1em;
+    }
+
+}
+
+@media only screen and (max-width: 350px){
 
 	#site-title{
 		font-size: 24px; /* for ie8 & below */
@@ -4210,10 +4354,6 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     #class-booking-page{
         padding: 5px !important;
     }
-
-		.slides .slide-noimg{
-			height: 175px;
-		}
 
 		.slide-copy{
 			background-image: none;
@@ -4337,6 +4477,8 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 }
 
+@media screen and (max-width:300px){    .panel-button{        padding: 1em 1em !important;        font-size: 0.8em;    }}
+
 @media only screen and (max-width: 240px){
 	#site-title{
 		font-size: 21px; /* for ie8 & below */
@@ -4457,7 +4599,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 	}
 }
 
-
+@media screen and (max-width:185px){    .panel-button{        padding: 1em 1em !important;        font-size: 0.4em;    }}
 
 /******************************************************************
 PRINT STYLES
@@ -4666,7 +4808,7 @@ ul.staff-pricing-section{
   font-weight: normal;
   line-height: 40px;
   text-shadow: 0 0 5px #111;
-  margin-bottom: 7px;    
+  margin-bottom: 7px;
 
 }
 .panel-textwidget h4{
@@ -4688,24 +4830,7 @@ ul.staff-pricing-section{
 #sidebar-pannel-button{
   font-size: large;
 }
-#book-now-button{
-    float:right;
-    display: inline-block;
-    padding-top: 2.5rem;
-}
-#book-now-button a{
- padding: 10px 20px;
-  padding: 1rem 2rem;
-  color: #7f8c8d;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid #fff;
-  border-radius: 4px;
-}
+
 .sticky-header{
 	position:fixed;
 	margin-top:-100px;
@@ -4718,9 +4843,6 @@ ul.staff-pricing-section{
 	margin-top:0;
     background-color: rgba(255,250,250,0.95);
     background-size: cover;
-}
-#slide-wrap:hover #slidernext, #slide-wrap:hover #sliderprev{
-    display: block;
 }
 .main-page-post .grid-box:hover{
 
@@ -4836,101 +4958,7 @@ table.two tr:nth-child(odd){
     background-color: rgb(229, 227, 223);
 
 }
-.about-us-location-icon i{
-  background-color: #333366;
-  color: #fff;
-  border: 1px solid #333366;
-  border-radius: 100%;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  padding: 9px;
-  float: left;
-}
 
-.about-us-location-icon i:hover{
-    background: #fff;
-    color:#333366;
-}
-
-.about-us-reservation-icon i{
-  background-color: #333366;
-  color: #fff;
-  border: 1px solid #333366;
-  border-radius: 100%;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  padding: 9px;
-  float: left;
-}
-
-.about-us-reservation-icon i:hover{
-    background: #fff;
-    color:#333366;
-}
-
-.about-us-handi-icon i{
-  background-color: #333366;
-  color: #fff;
-  border: 1px solid #333366;
-  border-radius: 100%;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  padding: 9px;
-  float: left;
-}
-
-.about-us-handi-icon i:hover{
-    background: #fff;
-    color:#333366;
-}    
-
-
-.about-us-email-icon i{
-  background-color: #333366;
-  color: #fff;
-  border: 1px solid #333366;
-  border-radius: 100%;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  padding: 9px;
-  float: left;
-}
-
-.about-us-email-icon i:hover{
-    background: #fff;
-    color:#333366;
-}
-
-.about-us-contact-icon i{
-  background-color: #333366;
-  color: #fff;
-  border: 1px solid #333366;
-  border-radius: 100%;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  padding: 9px;
-  float: left;
-}
-
-.about-us-contact-icon i:hover{
-    background: #fff;
-    color:#333366;
-}
-
-.about-us-contact-icon-text, .about-us-email-icon-text, .about-us-location-icon-text , .about-us-reservation-icon-text , .about-us-handi-icon-text{
-    margin-left: 55px;
-}
-
-.about-us-text, #contact-us-diary{
-    margin-bottom:20px;
-}
-#contact-us-info #site-title{
-    padding: 5px;
-    text-align: center;
-}
-.about-us-sidebar{
-    margin-top: 20px !important;
-}
 #class-booking-page{
     background: rgba(0,0,0,0.4);
     border: 1px solid rgba(255,255,255,0.2);
@@ -5144,8 +5172,9 @@ input:focus, textarea:focus{
     width: 100%;
     float: left;
     position: relative;
+    margin-bottom: 30px;
 }
-.contact-wraper-content{    
+.contact-wraper-content{
     margin: 0;
     background-size: cover;
     border: none;
@@ -5154,7 +5183,7 @@ input:focus, textarea:focus{
     width: 100%;
     float: left;
 }
-.contact-wraper-content-inner{    
+.contact-wraper-content-inner{
     padding: 30px;
 }
 .map-wraper-content-map{
@@ -5180,10 +5209,7 @@ input:focus, textarea:focus{
     background-size: cover;
     text-align: center;
 }
-.contact-us-sidebar{
-    margin-top: 0px !important;
-    width: 100%;
-}
+
 .contact-us-sidebar aside .widget-title{
     border: none !important;
     margin-bottom: 0px !important;
@@ -5332,12 +5358,7 @@ input[type=checkbox]{
         width: 100% !important;
         height: 100% !important;
 }
-@media screen and (max-width:450px){
-    .panel-button{
-        padding: 1em 1em !important;
-        font-size: 1.1em;
-    }
-}@media screen and (max-width:300px){    .panel-button{        padding: 1em 1em !important;        font-size: 0.8em;    }}@media screen and (max-width:185px){    .panel-button{        padding: 1em 1em !important;        font-size: 0.4em;    }}
+
 body.custom-background{
   -webkit-background-size: cover;
   -moz-background-size: cover;

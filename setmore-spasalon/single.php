@@ -16,7 +16,7 @@
         
         <div id="main" class="col620 clearfix" role="main">
                	
-               	 <div class="imgthumb"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'full' ); ?></a></div>
+               	 <div class="imgthumb" id="article-picture"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'full' ); ?></a></div>
 				<?php get_template_part( 'content', 'single' ); ?>
 
 				<?php setmore_spasalon_content_nav( 'nav-below' ); ?>

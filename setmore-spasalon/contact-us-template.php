@@ -101,7 +101,8 @@
                 <div class="about-us-location-icon-text">
                     <ul>
                         <li><strong>Adresse:</strong><br>
-                            <?php echo esc_html($setmore_spasalon_address) ?>
+                            <?php echo esc_html($setmore_spasalon_address_street) ?>
+                            <?php echo esc_html($setmore_spasalon_address_city) ?>
                         </li>
                     </ul>
                 </div>

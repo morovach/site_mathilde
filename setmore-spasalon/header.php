@@ -24,7 +24,8 @@
  	global	$setmore_spasalon_home_page_sub_hearder;
  	global	$setmore_spasalon_home_page_description;
  //contact page section
- 	global	$setmore_spasalon_address;
+ 	global	$setmore_spasalon_address_street;
+ 	global	$setmore_spasalon_address_city;
  	global	$setmore_spasalon_about_us;
  	global	$setmore_spasalon_phone;
  	global	$setmore_spasalon_facsimile;
@@ -58,7 +59,8 @@
  	$setmore_spasalon_home_page_sub_hearder_color		= get_theme_mod('home_page_sub_hearder_color');
  	$setmore_spasalon_home_page_sub_hearder				= get_theme_mod('home_page_sub_hearder');
  	$setmore_spasalon_home_page_description				= get_theme_mod('home_page_description');
- 	$setmore_spasalon_address							= get_theme_mod('address');
+ 	$setmore_spasalon_address_street                    = get_theme_mod('address_street');
+ 	$setmore_spasalon_address_city                      = get_theme_mod('address_city');
  	$setmore_spasalon_about_us							= get_theme_mod('about_us');
  	$setmore_spasalon_phone								= get_theme_mod('phone');
  	$setmore_spasalon_facsimile							= get_theme_mod('facsimile');

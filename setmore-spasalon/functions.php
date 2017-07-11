@@ -417,9 +417,11 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
 		.feedback-input:focus, .staff-book-now:hover, .crunchify-top:hover,.otw-button:hover {
 			border: 2px solid <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
 		}
-        #book-now-button a, .panel-button{
-			border: 2px solid <?php echo esc_attr(get_theme_mod('button_color')); ?>;
+        #book-now-button a, .panel-button, .write-review-button{
             color: <?php echo esc_attr(get_theme_mod('button_color')); ?> !important;
+		}
+        .panel-button, .write-review-button{
+			border: 2px solid <?php echo esc_attr(get_theme_mod('button_color')); ?>;
 		}
         .menu a, .menu #menu-icon, .entry-header a {
             color: <?php echo esc_attr(get_theme_mod('button_color')); ?> !important;
@@ -440,7 +442,7 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
         .main-page-parallax , footer[role=contentinfo]{
     		background: <?php echo esc_attr(get_theme_mod('parralax_color')); ?> !important;
         }
-		a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-contact-icon-text ul li strong, .about-us-email-icon-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .about-us-location-icon-text ul li strong, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation]  li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation],.menu ul{
+		a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar .widget-title, #wp-calendar caption, .about-us-text ul li strong, #contact-us-info .widget-title, .widget-title, #contact-us-info #site-title>a, .custom_title h1, .staff-social-buttons a:link, .contact-us-sidebar aside .widget-title, .feedback-input, .panel-textwidget h2, nav[role=navigation]  li>a:hover, .cost-detials table tr td span, footer .crunchify-top:hover .fa-hand-o-up, nav[role=navigation],.menu ul{
 			color: <?php echo esc_attr(get_theme_mod('setmore_spasalon_theme_color')); ?>;
 		}
 	<?php endif; ?>
@@ -1201,7 +1203,7 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 	    'panel' => 'theme_settings',
 	) );
 
-	$wp_customize->add_setting( 'address', array(
+	$wp_customize->add_setting( 'address_street', array(
 		'default' => '',
 		'type' => 'theme_mod',
 		'capability' => 'edit_theme_options',
@@ -1209,13 +1211,29 @@ function setmore_spasalon_theme_settings_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
-	$wp_customize->add_control( 'address', array(
+	$wp_customize->add_control( 'address_street', array(
 	    'type' => 'textarea',
 	    'priority' => 19,
 	    'section' => 'contact_page',
-	    'label' => __( 'Address', 'setmore-spasalon' ),
+	    'label' => __( 'Address Street', 'setmore-spasalon' ),
 	    'description' => '',
 	) );
+    
+	$wp_customize->add_setting( 'address_city', array(
+		'default' => '',
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'transport' => '',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'address_city', array(
+	    'type' => 'textarea',
+	    'priority' => 19,
+	    'section' => 'contact_page',
+	    'label' => __( 'Address city', 'setmore-spasalon' ),
+	    'description' => '',
+	) );    
 
 	$wp_customize->add_setting( 'about_us', array(
 		'default' => '',
@@ -1669,7 +1687,10 @@ function setmore_spasalon_head_css(){
 		if( get_theme_mod( "gwfc_" . $key . "_checkbox" ) == true && $key != 'li'){
 
 		?>
-		<link id='gwfc-<?php echo esc_attr($key); ?>-font-family' href="//fonts.googleapis.com/css?family=<?php echo str_replace(" ", "+", get_theme_mod("gwfc_" . $key . "_font_family") ) . ":" . $font_weight_style . ( $font_weight_style != '400' ? ',400' : '' ) ; ?>" rel='stylesheet' type='text/css'>
+
+		<!-- JEC Commented to remove bad link
+        <link id='gwfc-<?php echo esc_attr($key); ?>-font-family' href="//fonts.googleapis.com/css?family=<?php echo str_replace(" ", "+", get_theme_mod("gwfc_" . $key . "_font_family") ) . ":" . $font_weight_style . ( $font_weight_style != '400' ? ',400' : '' ) ; ?>" rel='stylesheet' type='text/css'>
+        -->
 
 		<style id="<?php echo esc_attr("gwfc-" . $key ."-style"); ?>">
 		<?php echo esc_attr($key); ?>{
@@ -1689,6 +1710,13 @@ function setmore_spasalon_head_css(){
 
 		}
 	}
+    ?>
+    <!-- JEC add new google font here-->
+    <link href="https://fonts.googleapis.com/css?family=Alice|Indie+Flower" rel="stylesheet">
+
+    <?php
+
+
 	$list_tags = array( // 1
 		'li'		=> "Paragraph (li tags)",
 	);

@@ -91,8 +91,9 @@
                                 <i class="fa fa-map-marker fa-fw"> </i>
                             </div>
                             <div class="about-us-location-icon-text">
-                                <?php if ( ! empty($setmore_spasalon_address)) : ?>
-                                <p><?php echo esc_html($setmore_spasalon_address) ?></p>
+                                <?php if ( ! empty($setmore_spasalon_address_street)) : ?>
+                                <p><?php echo esc_html($setmore_spasalon_address_street) ?></p>
+                                <p><?php echo esc_html($setmore_spasalon_address_city) ?></p>
                             </div>
                         </div>
                         <?php endif; ?>
