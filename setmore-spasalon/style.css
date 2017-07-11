@@ -3748,8 +3748,9 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
     }
 
     #wrapper-google-reviews{
-        float: left;
-        width: 100%;
+        float: left !important;
+        width: 100% !important;
+        margin-bottom: 30px;
     }
 
     #google-reviews {
@@ -3920,6 +3921,8 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		margin: 0;
 	}
 
+    
+    
 	.widget{
 		margin: 35px 0; /* for ie8 & below */
 		margin: 3.5rem 0;
