@@ -6,9 +6,11 @@
 
 <footer id="colophon" role="contentinfo">
     <a href="#" class="crunchify-top"><i class="fa fa-arrow-up "></i></a>
-    <div id="site-generator">
+    <div id="site-generator">   
         <?php echo esc_html('&copy; ', 'setmore-spasalon') . esc_attr( get_bloginfo( 'name', 'display' ) );  ?>
         <?php setmore_spasalon_footer_nav(); ?>
+        <!-- Your like button code -->
+      <div class="fb-share-button" data-href="https://osteopathe-saint-julien-en-genevois.fr/" data-layout="button_count">
     </div>
     <?php
  	//social media page section
@@ -98,7 +100,7 @@
 			</span>
 			<?php endif; ?>
 		</div>
-		</div>
+    </div>
 </footer><!-- #colophon -->
 <?php wp_footer(); ?>
 </body>

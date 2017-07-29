@@ -1,4 +1,12 @@
 <?php
+// function ajout_defer( $url ) {
+   // if ( FALSE === strpos( $url, '.js' ) ) {
+    // return $url; // Ce n'est pas notre fichier
+   // }
+   // return "$url' defer='defer";
+// }
+// add_filter( 'clean_url', 'ajout_defer', 11, 1 );
+
 /**
  * Sets up the theme and provides some helper functions. Some helper functions
  * are used in the theme as custom template tags. Others are attached to action and

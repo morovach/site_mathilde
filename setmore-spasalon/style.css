@@ -659,7 +659,7 @@ h5, .h5{}
 
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a{}
 
-.entry-header h1 em, .entry-header h1 b{
+.entry-header h2 em, .entry-header h1 b{
     font-family: Indie flower ! important;
 }
 
@@ -2565,10 +2565,12 @@ footer[role=contentinfo]{
 	#site-generator{
 		font-size: 15px; /* for ie8 & below */
 		font-size: 15px;
-		text-align: center;display: table-cell;
+		text-align: center;
 		vertical-align: middle;
         overflow: hidden;
         color: #000;
+        width: 100%;
+        /* position: absolute;         */
 	}
 
 	#site-generator a{
@@ -3511,6 +3513,11 @@ p.author-description{
 }
 .about-us-sidebar{
     margin-top: 20px !important;
+}
+
+.fb-share-button{
+    margin: 10px 0 10px 0;
+    width: 200px;
 }
 /******************************************************************
 MEDIA QUERIES & DEVICE STYLES
@@ -4689,9 +4696,6 @@ Book Now Button STYLES
   clear:both;
 }
 
-.staff-social-buttons{
-    margin: 25px auto;
-}
 .staff-social-buttons a:link{
 text-decoration: none;
 }
@@ -5415,8 +5419,7 @@ body.custom-background{
     overflow: hidden;
 }
 #footer-social-buttons .staff-social-buttons{
-        float: right;
-        margin: 25px 10px;
+        text-align: center;
 }
 footer #powered-setmore{
     color: #6D6667 !important;

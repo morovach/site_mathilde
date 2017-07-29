@@ -18,6 +18,9 @@
                	
                	 <div class="imgthumb" id="article-picture"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'full' ); ?></a></div>
 				<?php get_template_part( 'content', 'single' ); ?>
+                <p> <span class="date updated published"> Publié en 2017 par </span>
+                <span class="vcard author"><span class="fn"> Mathilde Vignes Ostéopathe D.F.O </span></span> </p>
+
 
 				<?php setmore_spasalon_content_nav( 'nav-below' ); ?>
 
