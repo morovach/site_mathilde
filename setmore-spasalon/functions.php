@@ -319,6 +319,18 @@ if ( ! function_exists( 'setmore_spasalon_theme_customizer' ) ) :
 			'settings' => 'sidebar_color',
 			'priority' => 105,
 		) ) );
+        
+		$wp_customize->add_setting( 'main_page_icons_color', array (
+			'default' => '#27c3bb',
+			'sanitize_callback' => 'sanitize_hex_color',
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_page_icons_color', array(
+			'label'    => __( 'Couleur Sidebar', 'setmore-spasalon' ),
+			'section'  => 'colors',
+			'settings' => 'main_page_icons_color',
+			'priority' => 105,
+		) ) );        
 
 		$wp_customize->add_setting( 'article_headings_color', array (
 			'default' => '#27c3bb',
@@ -512,14 +524,14 @@ if ( ! function_exists( 'setmore_spasalon_apply_color' ) ) :
         } 
         
         .about-us-icon i{
-            border: 2px solid <?php echo esc_attr(get_theme_mod('sidebar_color')); ?> !important;
-            background: <?php echo esc_attr(get_theme_mod('sidebar_color')); ?>;
+            border: 2px solid <?php echo esc_attr(get_theme_mod('main_page_icons_color')); ?> !important;
+            background: <?php echo esc_attr(get_theme_mod('main_page_icons_color')); ?>;
             color: white;
         }
         
         .about-us-icon i:hover{
-            border: 2px solid <?php echo esc_attr(get_theme_mod('sidebar_color')); ?> !important;
-            color: <?php echo esc_attr(get_theme_mod('sidebar_color')); ?>;
+            border: 2px solid <?php echo esc_attr(get_theme_mod('main_page_icons_color')); ?> !important;
+            color: <?php echo esc_attr(get_theme_mod('main_page_icons_color')); ?>;
             background: white;
         }
         

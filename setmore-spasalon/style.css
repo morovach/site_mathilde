@@ -440,6 +440,11 @@ h5, .h5{
 #firstHeading{
     white-space: nowrap;
 }
+
+#header-overlay span{
+    display: inline-block;
+}
+
 /******************************************************************
 GENERAL LAYOUT STYLES
 ******************************************************************/
@@ -3936,6 +3941,14 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 480px){
+
+    #header-overlay h1{
+        font-size: 25px;
+    }
+
+    #header-overlay h2{
+        display: none;
+    }
 
     .contact-us-section{
         width: calc(100%/1);

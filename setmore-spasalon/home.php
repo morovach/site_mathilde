@@ -62,7 +62,7 @@
 </div>
 
 <div id= header-overlay>
-        <h1 itemprop="headline">Ostéopathe à Saint Julien en Genevois</h1>
+        <h1 itemprop="headline"><span>Ostéopathe à</span> <span>Saint Julien en Genevois</span></h1>
         <h2>Confiez votre santé à une professionnelle </h2>
 </div>
 
@@ -95,9 +95,9 @@
                     <ul>
                         <li>
                             <a target="_blank" href="https://www.clicrdv.com/jeremy-moulin-osteopathe-Saint-Julien-en-Genevois?colors[content_links]=000000&colors[even_timeslot_col_bg]=c6ddec&colors[odd_timeslot_col_bg]=b4e1ff&popin=1&calendar_id=621377&styles=transparent&nologo=1&nofooter=1&clicrdv_widget=1&widget_width=600&websource=http%3A%2F%2Fosteosaintjulien.x10host.com%2Fprendre-rendez-vous%2F"; style="text-decoration:none" onclick='handleOutBoundLinkClicks("main_page")'>
-                                <strong>Prendre rendez-vous facilement</strong>
+                                <strong>Cliquez pour prendre RDV</strong>
                             </a>
-                            <br>Cliquez pour prendre rendez-vous,
+                            <br>Cliquez sur l'icône pour prendre rendez-vous facilement en ligne,
                             <br>Le cabinet est ouvert de <?php echo esc_html($setmore_spasalon_mon_start) ?>
                         </li>
                     </ul>
