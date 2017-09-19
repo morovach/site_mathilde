@@ -1,4 +1,12 @@
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+    <header class="entry-header">
+        <h1 class="entry-title article-title"><?php the_title(); ?></h1>
+    </header><!-- .entry-header -->
+
+    <div class="imgthumb" id="article-picture"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'full' ); ?></a></div>
+
 
 	<div class="entry-content post-content">
 		<?php the_content(); ?>
@@ -19,6 +27,9 @@
 	<!--END .author-bio-->
     <?php endif; ?>
 
+    <p> <span class="date updated published"> Publié en 2017  </span> par
+    <span class="vcard author"><span class="fn"> Mathilde Vignes Ostéopathe D.F.O </span></span> </p>    
+    
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php

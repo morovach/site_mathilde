@@ -62,12 +62,12 @@
 </div>
 
 <div id= header-overlay>
-        <h1 itemprop="headline">Mathilde Vignes Ostéopathe D.F.O</h1>
+        <h1 itemprop="headline">Ostéopathe à Saint Julien en Genevois</h1>
         <h2>Confiez votre santé à une professionnelle </h2>
 </div>
 
 <div id="logo-overlay">
-    <a href= "#article-section"><img src="https://osteopathe-saint-julien-en-genevois.fr/wp-content/uploads/2017/06/logo.png"> </a>
+    <img src="https://osteopathe-saint-julien-en-genevois.fr/wp-content/uploads/2017/06/logo.png">
 </div>
 
 <!-- Add an image of the size 1024x715 , like the slider, to have an overlay of the same size -->
@@ -85,148 +85,133 @@
 
     <div class="home-intro-frame">
         <div class="contact-wraper-content">
-            <div class="contact-wraper-content-inner-left"> <!-- style="right:0; left:0; margin-right:auto; margin-left: auto"> -->
-                <div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <a target="_blank" href="https://www.clicrdv.com/jeremy-moulin-osteopathe-Saint-Julien-en-Genevois?colors[content_links]=000000&colors[even_timeslot_col_bg]=c6ddec&colors[odd_timeslot_col_bg]=b4e1ff&popin=1&calendar_id=621377&styles=transparent&nologo=1&nofooter=1&clicrdv_widget=1&widget_width=600&websource=http%3A%2F%2Fosteosaintjulien.x10host.com%2Fprendre-rendez-vous%2F">
-                                <i class="fa fa-calendar fa-fw"></i>
-                            </a>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <a target="_blank" href="https://www.clicrdv.com/jeremy-moulin-osteopathe-Saint-Julien-en-Genevois?colors[content_links]=000000&colors[even_timeslot_col_bg]=c6ddec&colors[odd_timeslot_col_bg]=b4e1ff&popin=1&calendar_id=621377&styles=transparent&nologo=1&nofooter=1&clicrdv_widget=1&widget_width=600&websource=http%3A%2F%2Fosteosaintjulien.x10host.com%2Fprendre-rendez-vous%2F"; style="text-decoration:none">
-                                        <strong>Reservez dès maintenant</strong>
-                                    </a>
-                                    <br>Cliquez pour prendre rendez-vous,
-                                    <br>Le cabinet est ouvert de <?php echo esc_html($setmore_spasalon_mon_start) ?>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="contact-us-section">
+                <div class="about-us-icon">
+                    <a target="_blank" href="https://www.clicrdv.com/jeremy-moulin-osteopathe-Saint-Julien-en-Genevois?colors[content_links]=000000&colors[even_timeslot_col_bg]=c6ddec&colors[odd_timeslot_col_bg]=b4e1ff&popin=1&calendar_id=621377&styles=transparent&nologo=1&nofooter=1&clicrdv_widget=1&widget_width=600&websource=http%3A%2F%2Fosteosaintjulien.x10host.com%2Fprendre-rendez-vous%2F" onclick='handleOutBoundLinkClicks("main_page")'>
+                        <i class="fa fa-user-md fa-fw"></i>
+                    </a>
                 </div>
-                <div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <a HREF=mailto:<?php echo esc_html($setmore_spasalon_email) ?>> <i class="fa fa-at fa-fw"> </i> </a>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <?php if ( ! empty($setmore_spasalon_email_custom)) : ?>
-                                        <strong><?php echo esc_html($setmore_spasalon_email_custom) ?>:</strong>
-                                        <br>
-                                    <?php else: ?>
-                                        <a HREF=mailto:<?php echo esc_html($setmore_spasalon_email) ?> style="text-decoration:none"> <strong>Email</strong> </a>
-                                        <br>
+                <div class="about-us-text">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.clicrdv.com/jeremy-moulin-osteopathe-Saint-Julien-en-Genevois?colors[content_links]=000000&colors[even_timeslot_col_bg]=c6ddec&colors[odd_timeslot_col_bg]=b4e1ff&popin=1&calendar_id=621377&styles=transparent&nologo=1&nofooter=1&clicrdv_widget=1&widget_width=600&websource=http%3A%2F%2Fosteosaintjulien.x10host.com%2Fprendre-rendez-vous%2F"; style="text-decoration:none" onclick='handleOutBoundLinkClicks("main_page")'>
+                                <strong>Prendre rendez-vous facilement</strong>
+                            </a>
+                            <br>Cliquez pour prendre rendez-vous,
+                            <br>Le cabinet est ouvert de <?php echo esc_html($setmore_spasalon_mon_start) ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-us-section">
+                <div class="about-us-icon">
+                    <a href="https://goo.gl/maps/j7mdx9MChB12">
+                        <i class="fa fa-map-marker fa-fw"></i>
+                    </a>
+                </div>
+                <div class="about-us-text">
+                    <ul>
+                        <li>
+                            <a href="https://goo.gl/maps/j7mdx9MChB12" style="text-decoration:none"> <strong>Adresse</strong> </a>
+                            <br> <?php echo esc_html($setmore_spasalon_address_street) ?>
+                            <br> <?php echo esc_html($setmore_spasalon_address_city) ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>             
+            <div class="contact-us-section">
+                <div class="about-us-icon">
+                    <a href=tel:+33665206608> <i class="fa fa-phone fa-fw"> </i> </a>
+                </div>
+                <div class="about-us-text">
+                    <ul>
+                        <li>
+                            <?php if ( ! empty($setmore_spasalon_telephone_custom)) : ?>
+                                <strong><?php echo esc_html($setmore_spasalon_telephone_custom) ?>:</strong>
+                                <br>
+                            <?php else: ?>
+                                <a href="tel:+33665206608" style="text-decoration:none"> <strong>Téléphone</strong> </a> <br>
+                            <?php endif; ?>
+                            <?php if ( ! empty($setmore_spasalon_phone)) : ?>
+                                Mathilde Vignes Ostéopathe D.F.O</br>
+                                <?php echo esc_html($setmore_spasalon_phone) ?>
+                            <?php endif; ?>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+            <div class="contact-us-section">
+                <div class="about-us-icon">
+                    <a HREF=mailto:<?php echo esc_html($setmore_spasalon_email) ?>> <i class="fa fa-at fa-fw"> </i> </a>
+                </div>
+                <div class="about-us-text">
+                    <ul>
+                        <li>
+                            <?php if ( ! empty($setmore_spasalon_email_custom)) : ?>
+                                <strong><?php echo esc_html($setmore_spasalon_email_custom) ?>:</strong>
+                                <br>
+                            <?php else: ?>
+                                <a HREF=mailto:<?php echo esc_html($setmore_spasalon_email) ?> style="text-decoration:none"> <strong>Email</strong> </a>
+                                <br>
 
-                                    <?php endif; ?>
-                                    <?php if ( ! empty($setmore_spasalon_email)) : ?>
-                                        <?php echo esc_html($setmore_spasalon_email) ?>
-                                        <br><a href="/formulaire-de-contact/">Formulaire de contact</a>
-                                    <?php endif; ?>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty($setmore_spasalon_email)) : ?>
+                                <?php echo esc_html($setmore_spasalon_email) ?>
+                                <br><a class="icon-link-id" href="/formulaire-de-contact/">Formulaire de contact</a>
+                            <?php endif; ?>
+                        </li>
+                    </ul>
                 </div>
-                <div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <a target="_blank" href="https://search.google.com/local/writereview?placeid=ChIJK1hbnol7jEcRE7ywC4Hc89o">
-                                <i class="fa fa-thumbs-o-up fa-fw"></i>
-                            </a>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <a target="_blank" href="https://search.google.com/local/writereview?placeid=ChIJK1hbnol7jEcRE7ywC4Hc89o" style="text-decoration:none"> <strong>Votre avis compte</strong> </a>
-                                    <br>Cliquez pour me laisser un avis
-                                    <a target="_blank" href="https://www.google.com/maps/place/Mathilde+Vignes+Ost%C3%A9opathe+D.F.O/@46.1489837,6.084976,17z/data=!3m1!4b1!4m10!1m2!2m1!1sosteopathe+Saint-Julien-en-Genevois!3m6!1s0x478c7b899e5b582b:0xdaf3dc810bb0bc13!8m2!3d46.14898!4d6.08717!9m1!1b1?hl=fr"><br>Vous pouvez aussi voir les autres avis</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            </div>            
+            <div class="contact-us-section">
+                <div class="about-us-icon">
+                    <a target="_blank" href="https://search.google.com/local/writereview?placeid=ChIJK1hbnol7jEcRE7ywC4Hc89o">
+                        <i class="fa fa-thumbs-o-up fa-fw"></i>
+                    </a>
+                </div>
+                <div class="about-us-text">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://search.google.com/local/writereview?placeid=ChIJK1hbnol7jEcRE7ywC4Hc89o" style="text-decoration:none"> <strong>Votre avis compte</strong> </a>
+                            <br>Cliquez pour me laisser un avis
+                            <a class="icon-link-id" target="_blank" href="https://www.google.com/maps/place/Mathilde+Vignes+Ost%C3%A9opathe+D.F.O/@46.1489837,6.084976,17z/data=!3m1!4b1!4m10!1m2!2m1!1sosteopathe+Saint-Julien-en-Genevois!3m6!1s0x478c7b899e5b582b:0xdaf3dc810bb0bc13!8m2!3d46.14898!4d6.08717!9m1!1b1?hl=fr"><br>Vous pouvez aussi voir les autres avis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>         
+            <div class="contact-us-section">
+                <div class="about-us-icon">
+                    <i class="fa fa-wheelchair fa-fw"></i>
+                </div>
+                <div class="about-us-text">
+                    <ul>
+                        <li>
+                            <strong>Mobilité réduite</strong>
+                            <br> Le cabinet a un accès facilité pour les personnes à mobilité réduite
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="contact-wraper-content-inner-right"> <!-- style="right:0; left:0; margin-right:auto; margin-left: auto"> -->
-                <div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <a href="#map">
-                                <i class="fa fa-map-marker fa-fw"></i>
-                            </a>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <a href="#map" style="text-decoration:none"> <strong>Adresse</strong> </a>
-                                    <br> <?php echo esc_html($setmore_spasalon_address_street) ?>
-                                    <br> <?php echo esc_html($setmore_spasalon_address_city) ?>
-                                </li>
-                            </ul>
-                        </div>
+            
+          
+            
+            <!--<div class="contact-us-section">
+                <div class="about-us-inner-section">
+                    <div class="about-us-icon">
+                        <a href="#article-section">
+                            <i class="fa fa-arrow-down fa-fw"></i>
+                        </a>
                     </div>
-                </div>            
-                <div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <a href=tel:+33665206608> <i class="fa fa-phone fa-fw"> </i> </a>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <?php if ( ! empty($setmore_spasalon_telephone_custom)) : ?>
-                                        <strong><?php echo esc_html($setmore_spasalon_telephone_custom) ?>:</strong>
-                                        <br>
-                                    <?php else: ?>
-                                        <a href="tel:+33665206608" style="text-decoration:none"> <strong>Téléphone</strong> </a> <br>
-                                    <?php endif; ?>
-                                    <?php if ( ! empty($setmore_spasalon_phone)) : ?>
-                                        <?php echo esc_html($setmore_spasalon_phone) ?>
-                                    <?php endif; ?>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="about-us-text">
+                        <ul>
+                            <li>
+                                <a href="#article-section" style="text-decoration:none"> <strong>A qui s'adresse l'otéoapthie ?</strong> </a>
+                                <br> Cliquez pour voir mes champs d'intervention
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <i class="fa fa-wheelchair fa-fw"></i>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <strong>Mobilité réduite</strong>
-                                    <br> Le cabinet a un accès facilité pour les personnes à mobilité réduite
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-              
-                
-                <!--<div class="contact-us-section">
-                    <div class="about-us-inner-section">
-                        <div class="about-us-icon">
-                            <a href="#article-section">
-                                <i class="fa fa-arrow-down fa-fw"></i>
-                            </a>
-                        </div>
-                        <div class="about-us-text">
-                            <ul>
-                                <li>
-                                    <a href="#article-section" style="text-decoration:none"> <strong>A qui s'adresse l'otéoapthie ?</strong> </a>
-                                    <br> Cliquez pour voir mes champs d'intervention
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -242,11 +227,13 @@
 
 <div class= main-page-parallax>
 
-    <div class="inner-title-wrap" id = "article-section">
+    <!--This is an anchor to give a link that will be placed with an offset -->
+    <div class="anchor" id = "article-section"></div>
+    <div class="inner-title-wrap" >
         <div class="inner-title-box">
             <header class="entry-header">
-                <h2 class="entry-title"><b><em>Prenez soin de votre corps</b></em></h2>
-                <h2 class="entry-title"><b><em>c'est le seul endroit où vous êtes obligés de vivre</b></em></h2>
+                <h2 class="entry-title"><em>"Prenez soin de votre corps</em></h2>
+                <h2 class="entry-title"><em>c'est le seul endroit où vous êtes obligés de vivre"</em></h2>
             </header>
             <!-- .entry-header -->
         </div>
@@ -273,23 +260,6 @@
                          */
                         get_template_part( 'home_content', get_post_format() );
                         ?>
-                    <?php /* This piece of code is to retrieve the mini picture
-                        If there is a picture inside the post, it will be able to catch it otherwize
-                        it will try to find anotehr relative picture */ ?>
-                    <?php if ( has_post_thumbnail()) : ?>
-                    <!--/*the_post_thumbnail(  array(350, 350) )*/ est une optimisation pour réduire la taille des images: compression et gagner beaucoup de temps de chargement-->
-                    <div class="imgthumb"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail(  array(350, 350) ); ?></a></div>
-                    <?php else : ?>
-                    <?php $setmore_spasalon_postimgs = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC' ) );
-                        if ( !empty($setmore_spasalon_postimgs) ) {
-                            $setmore_spasalon_firstimg = array_shift( $setmore_spasalon_postimgs );
-                            $setmore_spasalon_th_image = wp_get_attachment_image( $setmore_spasalon_firstimg->ID, 'full', false );?>
-                    <div class="imgthumb">
-                        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php echo esc_url($setmore_spasalon_th_image); ?></a>
-                    </div>
-                    <?php } ?>
-                    <?php /*This place is to retrieve the text of the post*/   ?>
-                    <?php endif; ?>
                 </div>
                 <?php endif; ?>
                 <?php endwhile; ?>
@@ -366,6 +336,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+
 $(document).ready(function(){
 //Enable again to scroll when click on the map
 $('.map-container')
@@ -386,6 +357,7 @@ $('a[href*="#"]')
       &&
       location.hostname == this.hostname
     ) {
+      
       //get the size of the top navigation bar
       var clientHeight = document.getElementById('branding').offsetHeight;
       // Figure out element to scroll to

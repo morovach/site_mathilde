@@ -5,13 +5,6 @@
 </div><!-- #wrapper -->
 
 <footer id="colophon" role="contentinfo">
-    <a href="#" class="crunchify-top"><i class="fa fa-arrow-up "></i></a>
-    <div id="site-generator">   
-        <?php echo esc_html('&copy; ', 'setmore-spasalon') . esc_attr( get_bloginfo( 'name', 'display' ) );  ?>
-        <?php setmore_spasalon_footer_nav(); ?>
-        <!-- Your like button code -->
-      <div class="fb-share-button" data-href="https://osteopathe-saint-julien-en-genevois.fr/" data-layout="button_count">
-    </div>
     <?php
  	//social media page section
  	global	$setmore_spasalon_linkedin;
@@ -19,7 +12,8 @@
  	global	$setmore_spasalon_google_plus; 	global	$setmore_spasalon_youtube;
  	global  $setmore_spasalon_email;
  	global	$setmore_spasalon_facebook;
- 	//custom CS & JS page section
+ 	global	$jec_site_banner_title;
+ 	global	$home_page_sub_hearder;
 	global	$setmore_spasalon_custom_css;
 	global	$setmore_spasalon_custom_js;
 	global	$setmore_spasalon_google_tracking_code;
@@ -31,9 +25,20 @@
  	$setmore_spasalon_custom_css					= get_option('custom_css');
  	$setmore_spasalon_custom_js						= get_option('custom_js');
  	$setmore_spasalon_google_tracking_code			= get_option('google_tracking_code');
+ 	$jec_site_banner_title			                = get_theme_mod('banner_title');
+ 	$home_page_sub_hearder			                = get_theme_mod('home_page_sub_hearder');
 	?>
+
+    <a href="#" class="crunchify-top"><i class="fa fa-arrow-up "></i></a>
+    <div id="site-generator">
+    <h1 id="footer-title"> <?php echo esc_html($home_page_sub_hearder) ?> </h1>
+    <h1 id="footer-title"> <?php echo esc_html($jec_site_banner_title) ?> </h1>
+        <?php setmore_spasalon_footer_nav(); ?>
+        <!-- Your like button code -->
+        <!--Pour insérer un bouton partager sur facebook -->
+        <!-- <div class="fb-share-button" data-href="https://osteopathe-saint-julien-en-genevois.fr/" data-layout="button_count"></div> -->
 	<div id="footer-social-buttons">
-	<div class="staff-social-buttons">
+        <div class="staff-social-buttons">
 			<?php if ( ! empty($setmore_spasalon_linkedin) ) : ?>
 			<span class="linkedin-button">
    			<a href="<?php echo esc_url($setmore_spasalon_linkedin) ?>" class="social-li">
@@ -101,6 +106,7 @@
 			<?php endif; ?>
 		</div>
     </div>
+
 </footer><!-- #colophon -->
 <?php wp_footer(); ?>
 </body>

@@ -11,6 +11,34 @@
 <body <?php body_class(); ?>>
 
 <script>
+    <!--Analytics tracking code-->
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-98811254-2', 'auto');
+    ga('send', 'pageview');
+
+    /**
+    * Fonction de suivi des clics sur des liens sortants dans Analytics
+    * Cette fonction utilise une chaîne d'URL valide comme argument et se sert de cette chaîne d'URL
+    * comme libellé d'événement. Configurer la méthode de transport sur 'beacon' permet d'envoyer le clic
+    * au moyen de 'navigator.sendBeacon' dans les navigateurs compatibles.
+    */
+    function handleOutBoundLinkClicks(label) {
+      ga('send', 'event', {
+        eventCategory: 'Outbound Link',
+        eventAction: 'click',
+        transport: 'beacon',
+        eventLabel: label
+      });
+    }
+
+  
+</script>
+
+<!--Facebook SDK, pour pouvoir avec des boutons partagés etc...
+<script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1979671505600275',
@@ -29,7 +57,9 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<?php 
+-->
+
+<?php
 	//booking page section
  	global	$setmore_spasalon_default_booking_page;
  	global	$setmore_spasalon_symbol;
@@ -56,18 +86,20 @@
 	global	$setmore_spasalon_wed_start;
 	global	$setmore_spasalon_thu_start;
 	global	$setmore_spasalon_fri_start;
-	global	$setmore_spasalon_sat_start;	 
-//custom labels page section	
+	global	$setmore_spasalon_sat_start;
+//custom labels page section
 	global	$setmore_spasalon_telephone_custom;
 	global	$setmore_spasalon_facsimile_custom;
 	global	$setmore_spasalon_email_custom;
 	global	$setmore_spasalon_location_custom;
 	global	$setmore_spasalon_hours_custom;
 	global	$setmore_spasalon_expert_custom;
-	global	$setmore_spasalon_email_send_button_custom; 	 
+	global	$setmore_spasalon_email_send_button_custom;
 //I-Frame booking page section
  	 global	$setmore_spasalon_frame_service_booking_page;
- 	 global	$setmore_spasalon_frame_class_booking_page;	 
+ 	 global	$setmore_spasalon_frame_class_booking_page;
+    //JEC
+    global $jec_site_banner_title;
  	$setmore_spasalon_default_booking_page 				= get_option('booking_default');
  	$setmore_spasalon_symbol							= get_theme_mod('setmore_currency');
  	$setmore_spasalon_company_key						= get_theme_mod('company_key');
@@ -102,12 +134,13 @@
  	$setmore_spasalon_thu_start							= get_theme_mod('thu_start');
  	$setmore_spasalon_fri_start							= get_theme_mod('fri_start');
  	$setmore_spasalon_sat_start							= get_theme_mod('sat_start');
+ 	$jec_site_banner_title							    = get_theme_mod('banner_title');
 ?>
 
 <div id="wrapper">
 
     <div id="container">
-    
+
         <header id="branding" role="banner">
           <div id="inner-header" class="clearfix">
             <div id="site-heading">
@@ -117,13 +150,13 @@
                 <div id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
                 <?php endif; ?>
             </div>
-           <?php if ( ! empty($setmore_spasalon_default_booking_page) ) : ?> 
+           <?php if ( ! empty($setmore_spasalon_default_booking_page) ) : ?>
             <?php if ($setmore_spasalon_default_booking_page === 'blabla' ) : ?>
         		<div id="book-now-button">
                 	<ul><li><a class="Setmore_button_iframe" id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/<?php echo esc_html($setmore_spasalon_company_key)?>"><?php echo esc_html($setmore_spasalon_header_button_name) ?></a></li></ul>
             	</div>
             <?php endif; ?>
-            
+
             <?php if ($setmore_spasalon_default_booking_page ==='blabla' ) : ?>
         		<div id="book-now-button">
                 	<ul><li><a class="Setmore_button_iframe" id="Setmore_button_iframe" style="float:none" href="https://my.setmore.com/shortBookingPage/<?php echo esc_html($setmore_spasalon_company_key)?>/bookclass"><?php echo esc_html($setmore_spasalon_header_button_name) ?></a></li></ul>
@@ -131,10 +164,10 @@
             <?php endif; ?>
             <?php endif; ?>
             <nav id="access" role="navigation">
-                <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'setmore-spasalon' ); ?></h1>
+                <div class="assistive-text section-heading"><?php _e( 'Main menu', 'setmore-spasalon' ); ?></div>
                 <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'setmore-spasalon' ); ?>"><?php _e( 'Skip to content', 'setmore-spasalon' ); ?></a></div>
                 <?php setmore_spasalon_main_nav(); // Adjust using Menus in Wordpress Admin ?>
             </nav><!-- #access -->
           </div>
-           
+
         </header><!-- #branding -->

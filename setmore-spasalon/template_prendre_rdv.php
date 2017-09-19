@@ -63,20 +63,10 @@
 
 <div class = "header-spacer"> </div>
 
-
-
-
-<div class="inner-title-wrap">
-    <div class="inner-title-box">
-        <header class="entry-header">
-            <h1 class="entry-title"><?php the_title(); ?></h1>
-        </header><!-- .entry-header -->
-    </div>
-</div>
-
 <div id="content" class="clearfix sbfix pgsb">
 
     <div id="main" class="col620 clearfix" role="main">
+    
         <!--
           Below we include the Login Button social plugin. This button uses
           the JavaScript SDK to present a graphical Login button that triggers

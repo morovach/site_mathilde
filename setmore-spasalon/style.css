@@ -558,7 +558,6 @@ a, a:visited{
 a:hover{
 	text-decoration: none;
 }
-a:active{} /* on click */
 a:link{
 	-webkit-tap-highlight-color : rgba(0,0,0,0); /* this highlights links on Iphones / iPads */
 }
@@ -594,51 +593,8 @@ WORDPRESS BODY CLASSES
 want to style a page via body class? go ahead
 ******************************************************************/
 
-body.rtl{}
-body.home{} /* home page */
-body.blog{}
-body.archive{} /* archive page */
-body.date{} /* date archive page */
-	body.date-paged-1{} /* replace the number to the corresponding page number */
-body.search{} /* search page */
-	body.search-results{} /* search result page */
-	body.search-no-results{} /* no results search page */
-	body.search-paged-1{} /* individual paged search (i.e. body.search-paged-3) */
-body.error404{} /* 404 page */
-body.single{} /* single post page */
-	body.postid-1{} /* individual post page by id (i.e. body.postid-73) */
-	body.single-paged-1{} /* individual paged single (i.e. body.single-paged-3) */
-body.attachment{} /* attatchment page */
-	body.attachmentid-1{} /* individual attatchment page (i.e. body.attachmentid-763) */
-	body.attachment-mime-type{} /* style mime type pages */
-body.author{} /* author page */
-	body.author-nicename{} /* user nicename (i.e. body.author-samueladams) */
-	body.author-paged-1{} /* paged author archives (i.e. body.author-paged-4) for page 4 */
-body.category{} /* category page */
-	body.category-1{} /* individual category page (i.e. body.category-6) */
-	body.category-paged-1{} /* replace the number to the corresponding page number */
-body.tag{} /* tag page */
-	body.tag-slug{} /* individual tag page (i.e. body.tag-news) */
-	body.tag-paged-1{} /* replace the number to the corresponding page number */
-body.page-template{} /* custom page template page */
-	body.page-template-page-php{} /* individual page template (i.e. body.page-template-contact-php */
-	body.page-paged-1{} /* replace the number to the corresponding page number */
-	body.page-parent{}
-	body.page-child{}
-	body.parent-pageid-1{} /* replace the number to the corresponding page number */
-body.logged-in{} /* if user is logged in */
-body.paged{} /* paged items like search results or archives */
-	body.paged-1{} /* individual paged (i.e. body.paged-3) */
 
 /* new browser classes */
-body.browser-lynx{} /* lynx browsers */
-body.browser-gecko{} /* firefox browsers */
-body.browser-opera{} /* opera browsers */
-body.browser-ns4{} /* ns4 browsers */
-body.browser-safari{} /* safari browsers */
-body.browser-chrome{} /* chrome browsers */
-body.browser-ie{} /* ie browsers ( aka dinosaurs) */
-body.browser-iphone{} /* iphones (expirimental, best to use Media Queries) */
 
 
 /******************************************************************
@@ -653,15 +609,7 @@ h2, .h2{
 	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
-h3, .h3{}
-h4, .h4{}
-h5, .h5{}
 
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a{}
-
-.entry-header h2 em, .entry-header h1 b{
-    font-family: Indie flower ! important;
-}
 
 /******************************************************************
 HEADER SYTLES
@@ -699,8 +647,6 @@ header[role=banner]{
 		width: 15%;
 		min-height: 60px; /* for ie8 & below */
 		min-height: 6rem;
-		padding-top: 20px;
-		padding-top: 2rem; /* for ie8 & below */
 		margin-bottom: 10px; /* for ie8 & below */
 		margin-bottom: 1rem;
 	}
@@ -845,12 +791,12 @@ div.menu{
 				display: block;
 				text-decoration: none;
 			}
-				div.menu ul li:last-child a{}
-				div.menu ul li a:hover{}
-		div.menu ul li.current-menu-item a,
-		div.menu ul li.current_page_item a{}
-		div.menu ul li ul.sub-menu,
-		div.menu ul li ul.children{
+            div.menu ul li a:hover{
+                font-weight: bold;
+            }
+
+            div.menu ul li ul.sub-menu,
+            div.menu ul li ul.children{
 			position: absolute;
 			z-index: 9999;
 			width: 200px; /* for ie8 & below */
@@ -858,9 +804,6 @@ div.menu{
 			word-wrap: break-word;
 			display: none;
 		}
-			div.menu ul li ul li a{}
-				div.menu ul li ul li a:hover{}
-			div.menu ul li ul li:last-child a{}
 			div.menu ul li:hover > ul{
 				display: inline;
 			}
@@ -896,7 +839,6 @@ div.menu{
 			margin-top: 0.8rem;
 		}
 			.widget_nav_menu ul li ul.sub-menu a,
-			.widget_nav_menu ul li ul.children a{}
 
 			.widget_nav_menu ul li ul li ul.sub-menu,
 			.widget_nav_menu ul li ul li ul.children{
@@ -912,8 +854,6 @@ div.menu{
 
 nav[role=navigation]{
 	display: inline-block;
-	padding-top: 20px;
-	padding-top: 2rem; /* for ie8 & below */
 	width: 80%;
     float:right;
 }
@@ -923,7 +863,6 @@ nav[role=navigation]{
 
 	}
 
-		nav[role=navigation] .menu ul li{}
 			nav[role=navigation] .menu ul li a,
 			nav[role=navigation] .menu #menu-icon{
 				padding: 10px 20px; /* for ie8 & below */
@@ -933,6 +872,9 @@ nav[role=navigation]{
 				-o-box-sizing: border-box;
 				box-sizing: border-box;
 				text-transform: uppercase;
+                font-size: 15px;
+                background: rgba(255,250,250,0.4);
+                transition: all 0.5s ease-in-out;
 			}
 
 			nav[role=navigation] .menu #menu-icon{
@@ -941,7 +883,7 @@ nav[role=navigation]{
 			}
 
 				nav[role=navigation] .menu ul li a:hover{
-
+                    color: #ffffff !important;
 				}
 
 				nav[role=navigation] .menu ul li:first-child a{
@@ -1031,8 +973,6 @@ nav[role=navigation]{
 
 				}
 
-			nav[role=navigation] .menu ul li ul li:last-child a{}
-			nav[role=navigation] .menu ul li:hover ul{}
 				nav[role=navigation] .menu ul li ul li ul.sub-menu,
 				nav[role=navigation] .menu ul li ul li ul.children{
 					margin-top: -38px; /* for ie8 & below */
@@ -1051,6 +991,7 @@ THEME DEFAULT COLOR
 }
 .sendCopy label, .business-days, footer[role=contentinfo]{
     background: #27c3bb;
+    color: #ffffff;
 }
 .otw-button,.wrapup-button{
     background: #27c3bb;
@@ -1070,8 +1011,6 @@ a, a:visited, #sidebar .widget-title, #reply-title, .latest-title, #alt-sidebar 
 p{
     color: #788a95;
 }
-
-
 
 /******************************************************************
 POSTS & CONTENT STYLES
@@ -1108,8 +1047,6 @@ POSTS & CONTENT STYLES
 		}
 
 	body.page-template-full-width-php #main,
-	body.page-template-full-width-page-php #main{}
-	body.attachment #main{}
 
 		article[id*=post-]{
 			padding: 35px 30px; /* for ie8 & below */
@@ -1141,17 +1078,8 @@ POSTS & CONTENT STYLES
 			margin: 2.0rem 0 1.2rem;
 		}
 
-		article[id=post-not-found] h1{}
 
 		/* want to style individual post classes? Booya! */
-		.post-id{} /* post by id (i.e. post-3) */
-		.post{} /* general post style */
-		.page{} /* general article on a page style */
-		.attachment{} /* general style on an attatchment */
-		.sticky{} /* sticky post style */
-		.hentry{} /* hentry class */
-		.category-slug{} /* style by category (i.e. category-videos) */
-		.tag-slug{} /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.entry-meta,
@@ -1177,7 +1105,6 @@ POSTS & CONTENT STYLES
 					text-decoration: underline;
 				}
 
-			.meta time{}
 
 			.meta-by,
 			.meta-on,
@@ -1351,25 +1278,6 @@ POSTS & CONTENT STYLES
 					list-style: disc;
 				}
 
-				.post-content ul > li:before{
-					content: "";
-					position: absolute;
-					left: 0;
-					top: 6px;
-					background-image: url(library/images/arrow-bullet.png);
-					background-repeat: no-repeat;
-					background-position: center center;
-					border-radius: 50%;
-					color: #fff;
-					font-family: Arial, Helvetica, sans-serif;
-					font-weight: 700;
-					font-size: 9px; /* for ie8 & below */
-					font-size: 0.9rem;
-					line-height: 14px;
-					text-align: center;
-					width: 14px;
-					height: 14px;
-				}
 
 			.commentlist li.comment article[id*=comment-] blockquote,
 			.post-content blockquote{
@@ -1475,15 +1383,14 @@ POSTS & CONTENT STYLES
 			margin: 2.4rem 0 0;
 		}
 
-		article[id*=post-] footer a{}
 
         #article-picture img{
-            border: 0.5px solid black;
+            border: 1px solid #333366;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
         }
-        
+
 		.more-link{
 
 		}
@@ -1497,7 +1404,7 @@ POSTS & CONTENT STYLES
     #menu-articles{
         text-align: left;
     }
-        
+
 /******************************************************************
 GALLERY STYLES
 ******************************************************************/
@@ -1608,10 +1515,6 @@ line breaks are adjacent */
 }
 
 
-.size-full{}
-.size-large{}
-.size-medium{}
-.size-thumbnail{}
 
 /******************************************************************
 POST FORMAT STYLES
@@ -1699,10 +1602,6 @@ PAGE NAVI STYLES
 }
 
 /* fallback previous & next links */
-.wp-prev-next{}
-	.wp-prev-next ul{}
-		.wp-prev-next .prev-link{}
-		.wp-prev-next .next-link{}
 
 /******************************************************************
 PAGE LINK STYLES
@@ -1765,7 +1664,6 @@ PAGE LINK STYLES
 #comment-nav-below a,
 #nav-above a,
 #nav-below a,
-#image-navigation a{}
 
 #nav-above a,
 #nav-below a,
@@ -1793,7 +1691,6 @@ PAGE LINK STYLES
 	#comment-nav-below a:hover,
 	#nav-above a:hover,
 	#nav-below a:hover,
-	#image-navigation a:hover{}
 
 
 
@@ -1816,26 +1713,25 @@ SIDEBARS & ASIDES
 
 	.sbfix #sidebar{
         margin-top: 0px;
-        background: rgba(0,0,0,0.1);
         text-align: center;
 	}
 
 	.sbfix.pgsb #sidebar{
-		margin-top: 30px;
-        background: rgba(0,0,0,0.1);
+		margin-top: 0px;
         text-align: center;
 	}
 
 	#sidebar .widget{
-		background-color: transparent;
 		padding: 28px 32px; /* for ie8 & below */
 		padding: 2.8rem 3.2rem;
 		word-wrap: break-word;
 		font-size: 14px;
 	}
-		#sidebar .widget a{}
+    
+    #sidebar .widget b{
+		font-size: 160%;
+    }
 
-		#sidebar .widget a:hover{}
 
 		#sidebar .widget li,
 		.widget_nav_menu li,
@@ -1874,31 +1770,14 @@ SIDEBARS & ASIDES
 
 			}
 
-			.post-content .widget-title{}
 
 /* links widget */
-.widget_links{}
-.widget_links ul{}
-.widget_links ul li{}
-.widget_links ul li a{}
 
 /* meta widget */
-.widget_meta{}
-.widget_meta ul{}
-.widget_meta ul li{}
-.widget_meta ul li a{}
 
 /* pages widget */
-.widget_pages{}
-.widget_pages ul{}
-.widget_pages ul li{}
-.widget_pages ul li a{}
 
 /* recent-posts widget */
-.widget_recent_entries{}
-.widget_recent_entries ul{}
-.widget_recent_entries ul li{}
-.widget_recent_entries ul li a{}
 .widget_recent_entries .post-date{
 	margin-left: 10px;
 	font-style: italic;
@@ -1906,18 +1785,8 @@ SIDEBARS & ASIDES
 }
 
 /* archives widget */
-.widget_archive{}
-.widget_archive ul{}
-.widget_archive ul li{}
-.widget_archive ul li a{}
-.widget_archive select{}
-.widget_archive option{}
 
 /* tag-cloud widget */
-.widget_links{}
-.widget_links li:after{}
-.widget_links li:before{}
-.widget_tag_cloud{}
 .widget_tag_cloud a{
 	padding: 3px; /* for ie8 & below */
 	padding: 0.3rem;
@@ -1925,11 +1794,8 @@ SIDEBARS & ASIDES
 .widget_tag_cloud a:after{
 	content: ",";
 }
-.widget_tag_cloud a:before{}
-.tagcloud{}
 
 /* calendar widget */
-.widget_calendar{}
 #wp-calendar{
 	text-align: center;
 	width: 95%;
@@ -1950,7 +1816,6 @@ SIDEBARS & ASIDES
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
-#wp-calendar tr td{}
 #wp-calendar caption{
 	font-size: 18px; /* for ie8 & below */
 	font-size: 1.8rem;
@@ -1960,54 +1825,24 @@ SIDEBARS & ASIDES
 	text-transform: uppercase;
 }
 
-#wp-calendar a{}
 #wp-calendar #today{
 	background-color: #ECF0F1;
 }
-#wp-calendar #prev{}
-#wp-calendar #next{}
-#wp-calendar #next a{}
-#wp-calendar #prev a{}
 
 /* category widget */
-.widget_categories{}
-.widget_categories ul{}
-.widget_categories ul li{}
-.widget_categories ul ul.children{}
-.widget_categories a{}
-.widget_categories select{}
-.widget_categories select#cat{}
-.widget_categories select.postform{}
-.widget_categories option{}
-.widget_categories .level-0{}
-.widget_categories .level-1{}
-.widget_categories .level-2{}
-.widget_categories .level-3{}
 
 /* recent-comments widget */
-.recentcomments{}
-#recentcomments{}
-#recentcomments li{}
-#recentcomments li a{}
-.widget_recent_comments{}
 
 /* search widget */
-#searchform{}
-.widget_search{}
 .widget_search #s{
 	width: 60%;
 }
-.screen-reader-text{}
 
 /* text widget */
-.textwidget{}
-.widget_text{}
-.textwidget p{}
 
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
-#comments{}
 #comments-title{
 	font-family: "Droid Sans", Arial, Helvetica, sans-serif;
 	font-size: 30px; /* for ie8 & below */
@@ -2017,10 +1852,6 @@ COMMENT STYLES
 	margin: 0 3rem 2rem 0;
 	color: #bdc3c7;
 }/* h3 comment title */
-	#comments span{} /* number of comments span */
-.comment-nav{}
-	.comment-nav ul{}
-		.comment-nav ul li{}
 
 .commentlist{
 	margin: 0 30px 0 0;
@@ -2030,7 +1861,6 @@ COMMENT STYLES
 
 	}
 
-body.page-template-full-width-php .commentlist{}
 
 	.commentlist li.comment{
 		position: relative;
@@ -2087,30 +1917,6 @@ body.page-template-full-width-php .commentlist{}
 				margin-left: 0;
 				margin-top: 0;
 			}
-			.commentlist li.depth-2{}
-			.commentlist li.depth-3{}
-			.commentlist li.depth-4{}
-			.commentlist li.depth-5{}
-				.commentlist li.comment ul.children li{}
-				.commentlist li.comment ul.children li.alt{}
-				.commentlist li.comment ul.children li.byuser{}
-				.commentlist li.comment ul.children li.comment{}
-				.commentlist li.comment ul.children li.depth-1{} /* change number for different depth */
-				.commentlist li.comment ul.children li.bypostauthor{}
-				.commentlist li.comment ul.children li.comment-author-admin{}
-				.commentlist li.comment ul.children .alt{}
-				.commentlist li.comment ul.children .odd{}
-				.commentlist li.comment ul.children .even{}
-			.commentlist .alt{}
-			.commentlist .odd{}
-			.commentlist .even{}
-			.commentlist .parent{}
-			.commentlist .comment{}
-			.commentlist .children{}
-			.commentlist .pingback{}
-			.commentlist .bypostauthor{}
-			.commentlist .comment-author{}
-			.commentlist .comment-author-admin{}
 
 				.commentlist .bypostauthor > article > footer > .vcard cite.fn:after{
 					content: " (Author)";
@@ -2120,9 +1926,6 @@ body.page-template-full-width-php .commentlist{}
 					font-style: italic;
 				}
 
-			.commentlist .thread-alt{}
-			.commentlist .thread-odd{}
-			.commentlist .thread-even{}
 			.commentlist .vcard{
 				margin-left: 95px; /* for ie8 & below */
 				margin-left: 9.5rem;
@@ -2153,13 +1956,11 @@ body.page-template-full-width-php .commentlist{}
 							text-decoration: underline;
 						}
 
-				.commentlist .vcard img.photo{}
 				.commentlist .vcard img.avatar{
 					position: absolute;
 					left: 26px;
 					top: 26px;
 				}
-				.commentlist .vcard cite.fn a.url{}
 			.commentlist .comment-meta{
 				line-height: 30px;
 				font-size: 14px;
@@ -2172,8 +1973,6 @@ body.page-template-full-width-php .commentlist{}
 						text-decoration: underline;
 					}
 
-			.commentlist .commentmetadata{}
-				.commentlist .commentmetadata a{}
 			.commentlist li.comment .comment-content{
 				margin-left: 95px; /* for ie8 & below */
 				margin-left: 9.5rem;
@@ -2214,7 +2013,6 @@ body.page-template-full-width-php .commentlist{}
 					border-radius: 3px;
 				}
 
-					.commentlist a.comment-reply-link:hover{}
 
 					.nocomments{
 						padding: 15px; /* for ie8 & below */
@@ -2226,8 +2024,6 @@ body.page-template-full-width-php .commentlist{}
 COMMENT FORM STYLES
 ******************************************************************/
 
-#respond-form{}
-body.page-template-full-width-php #respond-form{}
 
 #respond{
 	background-color: #fefefe;
@@ -2303,9 +2099,6 @@ body.page-template-full-width-php #respond-form{}
 		#respond #cancel-comment-reply-link{
 			float: right;
 		}
-			#respond #cancel-comment-reply-link a{}
-	#respond #commentform{}
-		#respond .comments-logged-in-as{}
 		#respond #comment-form-elements{
 			margin: 12px 0; /* for ie8 & below */
 			margin: 1.2rem 0;
@@ -2365,9 +2158,6 @@ body.page-template-full-width-php #respond-form{}
 						margin-bottom: 2px;
 					}
 
-				#respond input[type=text]{}
-			#respond #allowed_tags{}
-				#respond #comment{}
 				#respond #submit{
 					border: 0;
 					padding: 10px 18px;
@@ -2387,7 +2177,6 @@ body.page-template-full-width-php #respond-form{}
 			background-color: #f6e7eb;
 		}
 
-		#commentform input:valid{}
 
 		/* no comments */
 		.nocomments{
@@ -2986,7 +2775,7 @@ jQuery SLIDER STYLES
 
 .sticky-header #site-logo{
     display: initial;
-    
+
 }
 
 #site-logo{
@@ -3004,11 +2793,19 @@ jQuery SLIDER STYLES
 
 #logo-overlay img{
     height: 100%;
+}
+
+#home-imgthumb img{
     transition: all 0.5s ease-in-out;
 }
 
-#logo-overlay img:hover{
+#home-imgthumb img:hover{
     transform: scale(1.1);
+}
+    
+#footer-title{
+    color: #000000;
+    font-size: 100%;
 }
 
 @media screen and (max-width:1024px){
@@ -3228,7 +3025,7 @@ body.page .grid-box .entry-title{
 
 	.grid-box .entry-content p:last-child{
 		margin-bottom: 0;
-        font-family: alice;
+        /*font-family: alice; JEC*/
 	}
 
 	.grid-box .entry-content.people-info{
@@ -3414,25 +3211,6 @@ p.author-description{
 	pointer-events: auto;
 }
 
-.contact-us-section{
-  height: 100px;
-  text-align: left;
-  width: 350px;
-  margin: 0 auto;
-}
-
-.contact-wraper-content-inner-right{
-    float: right;
-    margin-right: 30%;
-    margin-bottom: 0;
-}
-
-.contact-wraper-content-inner-left{
-    float: left;
-    margin-left: 30%;
-    margin-bottom: 0;
-}
-
 #site-logo>a>img{
 	margin-left: auto;
     margin-right: auto;
@@ -3464,7 +3242,6 @@ p.author-description{
 #wrapper-google-reviews{
     float: left;
     width: 100%;
-    background: rgba(0,0,0,0.1);
 }
 
 .write-review-button{
@@ -3485,23 +3262,23 @@ p.author-description{
 
 
 .about-us-icon i{
-  background-color: #333366;
   color: #fff;
-  border: 1px solid #333366;
   border-radius: 100%;
   margin-right: 4px;
   margin-bottom: 4px;
   padding: 9px;
   float: left;
+  margin-left: calc(50% - 60px);  
+  width: 100px !important;
+  height: 100px !important;
+  font-size: 80px !important;
+  line-height: 100px!important;
+  transition: all 0.2s ease-in-out;
+  
 }
 
 .about-us-icon i:hover{
     background: #fff;
-    color:#333366;
-}
-
-.about-us-text {
-    margin-left: 55px;
 }
 
 .about-us-text, #contact-us-diary{
@@ -3518,6 +3295,44 @@ p.author-description{
 .fb-share-button{
     margin: 10px 0 10px 0;
     width: 200px;
+}
+
+.icon-link-id{
+    text-decoration: none;
+}
+.icon-link-id:hover{
+    font-weight: bold;
+}
+
+
+.about-us-icon{
+    width: 100%;
+    float: left;
+}
+
+.about-us-text strong{
+    font-size: 25px;
+}
+
+.contact-us-section{
+    width: calc(100%/3);
+    float: left;
+    text-align: center;
+    height: 300px;
+}
+
+.article-title{
+    text-align: center
+}
+    
+.anchor {
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.textwidget a{
+    font-size: 160%;
 }
 /******************************************************************
 MEDIA QUERIES & DEVICE STYLES
@@ -3598,7 +3413,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 
         nav[role=navigation] .menu ul li a, nav[role=navigation] .menu #menu-icon{
-            padding: 1rem !important;
+            padding: 1.5rem !important;
         }
         #site-heading{
             margin-left: 10px !important;
@@ -3628,6 +3443,12 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 }
 
 @media only screen and (max-width: 1024px){
+
+    .contact-us-section{
+        width: calc(100%/2);
+        float: left;
+        text-align: center;
+    }
 
 	#inner-header{
 		width: 96%;
@@ -3928,8 +3749,8 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 		margin: 0;
 	}
 
-    
-    
+
+
 	.widget{
 		margin: 35px 0; /* for ie8 & below */
 		margin: 3.5rem 0;
@@ -3979,31 +3800,6 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 @media only screen and (max-width: 640px){
 
-    .about-us-inner-section{
-        width: 100%;
-        float: left;
-    }
-
-    .about-us-icon {
-        width: 70px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .about-us-text{
-        float: left;
-        width: 100%;
-        margin: 0;
-    }
-    .about-us-text li{
-        text-align: center;
-    }
-
-    .contact-us-section{
-        width:100% !important;
-        margin: 10px auto;
-        height: auto;
-        float: left;
-    }
     #form-div{
     width: 100% !important;
     }
@@ -4141,10 +3937,10 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
 
 @media only screen and (max-width: 480px){
 
-    .about-us-icon {
-        width: 45px;
-        margin-left: auto;
-        margin-right: auto;
+    .contact-us-section{
+        width: calc(100%/1);
+        float: left;
+        text-align: center;
     }
 
     #site-logo>a>img{
@@ -4152,14 +3948,6 @@ URL: http://stuffandnonsense.co.uk/projects/320andup/
         max-width: 100px;
         width: 100%;
         height: 100%;
-
-    }
-
-	.contact-us-section i{
-	   width: 25px !important;
-	   height: 25px !important;
-       line-height: 25px !important;
-       font-size: 25px !important;
 
     }
 
@@ -4848,7 +4636,6 @@ ul.staff-pricing-section{
 
 .sticky{
 	margin-top:0;
-    background-color: rgba(255,250,250,0.95);
     background-size: cover;
 }
 .main-page-post .grid-box:hover{
@@ -5202,14 +4989,6 @@ input:focus, textarea:focus{
     height: 340px;
     color: #000;
 }
-
-.contact-us-section i{
-      width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 38px;
-}
-
 
 .contact-us-sidebar #meta-2{
     background: rgba(0,0,0,0.1);

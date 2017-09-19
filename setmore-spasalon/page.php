@@ -2,23 +2,12 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
     <div class = "header-spacer"> </div>
-	<div class="inner-title-wrap">
-      <div class="inner-title-box">
-	  <header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	  </header><!-- .entry-header -->
-      </div>
-    </div>
 
     <div id="content" class="clearfix sbfix pgsb">
 
         <div id="main" class="col620 clearfix" role="main">
 
 			<?php get_template_part( 'content', 'page' ); ?>
-            <p> <span class="date updated published"> Publié en 2017 par </span>
-            <span class="vcard author"><span class="fn"> Mathilde Vignes Ostéopathe D.F.O </span></span> </p>
-
-
 			<?php comments_template( '', true ); ?>
 
         </div> <!-- end #main -->
